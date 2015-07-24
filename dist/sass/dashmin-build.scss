@@ -1,0 +1,49 @@
+// Webfonts
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+
+$adm-primary-font: 'Ruda', sans-serif;
+$adm-secondary-font: 'Ruda', sans-serif;
+
+// Mixins + Variables
+@import "dashboard/mixins";
+@import "dashboard/variables";
+
+// Common styles
+@import "dashboard/main";
+
+// Bootstrap overrides
+@import "dashboard/overrides";
+
+// Modal dialogs
+@import "dashboard/modal";
+
+// Sidebar
+@import "dashboard/sidebar";
+
+// Top bar
+@import "dashboard/header";
+
+// Theme buttons
+@import "dashboard/buttons";
+
+// General UI
+@import "dashboard/ui";
+
+// Badges
+@import "dashboard/badges";
+
+// Index page styles
+@import "dashboard/index";
+
+// Panels
+@import "dashboard/panels";
+
+// Footer styles
+@import "dashboard/footer";
+
+// Login styles
+@import "dashboard/login";
+
+// Responsive styles
+@import "dashboard/responsive";

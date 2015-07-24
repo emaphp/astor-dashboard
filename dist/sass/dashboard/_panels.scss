@@ -1,0 +1,279 @@
+/**
+ * Panels
+ */
+
+.panel-row {
+    margin-top: 25px;
+}
+
+.panel {
+    height: 250px;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+
+// Info panel
+.info-panel {
+    text-align: center;
+	background: $adm-info-panel-background;
+	color: $adm-info-panel-color;
+
+    .info-panel-header {
+        background: $adm-info-panel-header-background;
+        padding: 3px;
+        margin-bottom: 15px;
+        color: $adm-info-panel-header-color;
+
+        h5 {
+            text-transform: $adm-info-panel-header-text-transform;
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+
+    .small {
+        font-size: 10px;
+        color: $adm-info-panel-color;
+        text-transform: uppercase;
+    }
+
+    .fa {
+        color: $adm-info-panel-icon-color;
+    }
+}
+
+// Calendar panel
+.calendar-panel {
+    background: $adm-calendar-panel-background;
+	text-align: center;
+	background-position: center center;
+    color: $adm-calendar-panel-color;
+    padding-top: 27px;
+
+    p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .calendar-status {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+// Twitter panel
+.twitter-panel {
+    background: $adm-twitter-panel-background;
+	text-align: center;
+
+    i {
+        color: $adm-twitter-panel-icon-color;
+        margin-top: 40px;
+    }
+
+    p {
+        color: $adm-twitter-panel-color;
+        margin: 10px;
+        font-weight: 500;
+
+        a {
+            color: $adm-twitter-panel-link-color;
+
+            &:hover {
+                color: $adm-twitter-panel-link-hover-color;
+            }
+        }
+    }
+
+    .user {
+        color: $adm-twitter-panel-user-color;
+        font-weight: $adm-twitter-panel-user-weight;
+    }
+}
+
+// Tasks panel
+.tasks-panel {
+    display: block;
+    border: 0;
+
+    input {
+        &[type=checkbox] {
+            display: none;
+
+            &:checked + label {
+                text-decoration: line-through;
+
+                &:before {
+                    border: 1px solid $adm-tasks-panel-task-hover-color;
+                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNpinHLMhgEHKADia0xQThIQs6JJ9gPxZhYQAcS6QHwDiI8hSYJAC0gBPxDLAvFcIJ6JJJkDxFNBVtgBcQ8Qa6BLghgwN4A4a9ElQYAFSj8C4mwg3o8sCQIAAQYA78QTYqnPZuEAAAAASUVORK5CYII=') no-repeat center center;
+                }
+            }
+        }
+
+        &[type=submit] {
+            background: $adm-tasks-panel-submit-background;
+            border: none;
+            padding: 0px;
+            margin: 0 auto;
+            width: 100%;
+            height: 55px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 11px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.5s ease;
+
+            &:hover {
+                background: $adm-tasks-panel-submit-hover-background;
+            }
+        }
+    }
+
+    label {
+        background: $adm-tasks-panel-task-background;
+        color: $adm-tasks-panel-task-color;
+        height: 65px;
+        line-height: 65px;
+        width: 100%;
+        display: block;
+        border-bottom: $adm-tasks-panel-task-border;
+
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-indent: 52px;
+        cursor: pointer;
+        transition: all 0.7s ease;
+        margin: 0px;
+
+        &:before {
+            content:"";
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: absolute;
+            margin: 26px 0px 0px 18px;
+            border-radius: 100%;
+            transition: border 0.7s ease;
+        }
+
+        &:hover {
+            background: $adm-tasks-panel-task-hover-background;
+            color: $adm-tasks-panel-task-hover-color;
+        }
+
+        &:hover:before {
+            border: 1px solid $adm-tasks-panel-task-hover-color;
+        }
+    }
+}
+
+// Profile panel
+.profile-panel {
+    background: $adm-profile-panel-background;
+	padding-top: 15px;
+	padding-bottom: 5px;
+    border: 0;
+
+    h4 {
+        margin-left: 10px;
+    }
+
+    .profile-details {
+        background: $adm-profile-panel-details-background;
+        margin-top: -15px;
+        background-attachment: relative;
+        background-position: center center;
+        min-height: 150px;
+        width: 100%;
+        @include bg-size(cover);
+
+        h3 {
+            color: $adm-profile-panel-details-color;
+            padding-top: 50px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        h6 {
+            color: $adm-profile-panel-details-color;
+            text-align: center;
+            margin-bottom: 0px;
+            font-weight: 900;
+        }
+    }
+
+    .profile-button {
+        a {
+            display: block;
+            background: $adm-profile-panel-button-background;
+            height: 50px;
+            color: white;
+            padding-top: 15px;
+            font-weight: 400;
+            font-size: 15px;
+            @include transition(background-color 0.6s);
+
+            &:hover {
+                background: $adm-profile-panel-button-hover-background;
+                @include transition(background-color 0.6s);
+            }
+        }
+    }
+
+    .profile-bottom {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+// Stats panel
+
+.stats-panel {
+    text-align: center;
+	background: $adm-stats-panel-background;
+    color: $adm-stats-panel-color;
+
+    .stats-header {
+        padding: 3px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-weight: 200;
+        margin-top: 10px;
+    }
+
+    .stats-body {
+        i {
+            color: $adm-stats-panel-icon-color;
+        }
+
+        p {
+            color: $adm-stats-panel-body-color;
+        }
+    }
+
+    .stats-footer {
+        h5 {
+            margin-left:10px;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+
+        i {
+            color: $adm-stats-panel-footer-icon-color;
+        }
+    }
+}

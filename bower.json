@@ -1,0 +1,36 @@
+{
+  "name": "astor-dashmin",
+  "version": "1.0.0",
+  "homepage": "https://github.com/emaphp/astor-dashmin",
+  "authors": [
+    "emaphp <emmanuel.antico@gmail.com>"
+  ],
+  "description": "Dashboard components for Astor Framework",
+  "main": "dist/css/dashmin.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "astor",
+    "framework",
+    "dashmin",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery.scrollTo": "~2.1.1",
+    "datatables": "~1.10.7",
+    "jquery.bandoneon": "~1.0.0",
+    "select2": "~4.0.0",
+    "astor-datatables": "~1.0.1",
+    "font-awesome": "~4.3.0"
+  }
+}

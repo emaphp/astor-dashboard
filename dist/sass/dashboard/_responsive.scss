@@ -1,0 +1,105 @@
+/**
+ * Responsive styles
+ */
+
+@media (max-width: 768px) {
+    .header {
+        position: absolute;
+    }
+
+    #sidebar {
+        height: auto;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    #main-content {
+        margin: 0px!important;
+        position: none !important;
+    }
+
+    #sidebar > ul > li > a > span {
+        line-height: 35px;
+    }
+
+    #sidebar > ul > li {
+        margin: 0 10px 5px 10px;
+    }
+
+    #sidebar > ul > li > a {
+        height:35px;
+        line-height:35px;
+        padding: 0 10px;
+        text-align: left;
+    }
+
+    #sidebar ul > li > a .arrow, #sidebar > ul > li > a .arrow.open {
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    #sidebar ul > li.active > a .arrow, #sidebar ul > li > a:hover .arrow, #sidebar ul > li > a:focus .arrow,
+    #sidebar > ul > li.active > a .arrow.open, #sidebar > ul > li > a:hover .arrow.open, #sidebar > ul > li > a:focus .arrow.open {
+        margin-top: 15px;
+    }
+
+    #sidebar > ul > li > a, #sidebar > ul > li > ul.sub > li {
+        width: 100%;
+    }
+
+    #sidebar > ul > li > ul.sub > li > a {
+        background: transparent !important ;
+    }
+
+    #sidebar {
+        margin: 0px !important;
+    }
+
+    /* sidebar collabler */
+    #sidebar .btn-navbar.collapsed .arrow {
+        display: none;
+    }
+
+    #sidebar .btn-navbar .arrow {
+        position: absolute;
+        right: 35px;
+        width: 0;
+        height: 0;
+        top:48px;
+        border-bottom: 15px solid darken($adm-sidebar-background, $adm-default-darken);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+
+    .modal-footer .btn {
+        margin-bottom: 0px !important;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+    }
+
+    .dcjq-icon {
+        top: 10px;
+    }
+
+    ul.sidebar-menu li ul.sub li a {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .notify-row, .search, .sr-input, .sr-btn {
+        display: none;
+    }
+
+    ul.top-menu > li {
+        float: right;
+    }
+
+    .hidden-phone {
+        display: none !important;
+    }
+}

@@ -1,0 +1,149 @@
+/**
+ * Sidebar
+ */
+
+#sidebar {
+    width: 210px;
+    height: 100%;
+    position: fixed;
+    background: $adm-sidebar-background;
+
+    // User login info
+    .login-info {
+        margin-bottom: 1.4em;
+        color: $adm-sidebar-login-info-color;
+
+        a {
+            color: $adm-sidebar-login-info-color;
+            .fa {
+                font-size: 28px;
+            }
+
+            h5 {
+                font-weight: 700;
+            }
+        }
+    }
+
+    ul li {
+        position: relative;
+    }
+
+    .sub-menu > .sub li {
+        padding-left: 32px;
+
+        &:last-child {
+            padding-bottom: 10px;
+        }
+
+        a {
+            display: block;
+        }
+    }
+}
+
+#sidebar-menu {
+    margin: 75px 0 0;
+    padding: 0;
+
+    ul.sub {
+        margin: -2px 0 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+
+            &:last-child {
+                @include radius(0 0 4px 4px);
+            }
+
+            a {
+                font-size: 12px;
+                padding: 6px 0;
+                line-height: 35px;
+                height: 35px;
+                @include transition(all 0.3s ease);
+                color: $adm-sidebar-sub-link-color;
+                background: $adm-sidebar-sub-link-background;
+
+                &:hover {
+                    color: $adm-sidebar-sub-link-hover-color;
+                    background: $adm-sidebar-sub-link-hover-background;
+                }
+            }
+
+            &.active {
+                a {
+                    color: $adm-sidebar-sub-link-active-color;
+                    background: $adm-sidebar-sub-link-active-background;
+                    @include transition(all 0.3s ease);
+                    display: block;
+                }
+            }
+        }
+    }
+
+    li {
+        margin-bottom: 5px;
+        margin-left:10px;
+        margin-right:10px;
+
+        a {
+            color: $adm-sidebar-link-color;
+            background: $adm-sidebar-link-background;
+            text-decoration: none;
+            display: block;
+            padding: 15px 0 15px 10px;
+            font-size: 12px;
+            outline: none;
+            @include transition(all 0.3s ease);
+
+            span {
+                display: inline-block;
+            }
+
+            i {
+                font-size: 15px;
+                padding-right: 6px;
+            }
+        }
+
+        a.active, a:hover, a:focus {
+            background: $adm-sidebar-link-active-background;
+            color: $adm-sidebar-link-active-color;
+            display: block;
+            @include transition(all 0.3s ease);
+        }
+    }
+
+    li.sub-menu{
+        line-height: 15px;
+    }
+}
+
+// Sidebar toggle
+.sidebar-toggle-box {
+    float: left;
+    padding-right: 15px;
+    margin-top: 20px;
+
+    .fa-bars {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+    }
+}
+
+.sidebar-closed > #sidebar > ul {
+    display: none;
+}
+
+.sidebar-closed #main-content {
+    margin-left: 0px;
+}
+
+.sidebar-closed #sidebar {
+    margin-left: -180px;
+}

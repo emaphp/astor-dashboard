@@ -1,0 +1,23 @@
+/**
+ * Footer
+ */
+
+footer {
+    min-height: 60px;
+    background: $adm-footer-background;
+    color: $adm-footer-color;
+    padding: 20px 0 8px 0;
+}
+
+.go-top {
+    margin-right: 1%;
+    float: right;
+    background: $adm-footer-go-top-background;
+    width: 20px;
+    height: 20px;
+    @include radius(50%);
+
+    i {
+        color: $adm-footer-go-top-color;
+    }
+}

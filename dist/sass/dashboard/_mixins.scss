@@ -1,0 +1,25 @@
+/**
+ * Mixins
+ */
+
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+@mixin bg-size($bg-size) {
+    -webkit-background-size: $bg-size;
+    -moz-background-size: $bg-size;
+    -o-background-size: $bg-size;
+    background-size: $bg-size;
+}

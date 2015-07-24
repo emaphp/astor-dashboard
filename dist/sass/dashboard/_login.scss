@@ -1,0 +1,86 @@
+/**
+ * Login page styles
+ */
+
+.login-body {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.form-login {
+    max-width: 330px;
+    margin: $adm-login-form-margin;
+	background: $adm-login-form-background;
+    @include radius($adm-login-form-border-radius);
+
+    h2.form-login-heading {
+        font-family: $adm-login-heading-font;
+        margin: 0;
+        padding: 25px 20px;
+        text-align: $adm-login-heading-text-align;
+        background: $adm-login-heading-background;
+        @include radius($adm-login-heading-border-radius);
+        color: $adm-login-heading-color;
+        font-size: $adm-login-heading-font-size;
+        text-transform: $adm-login-heading-text-transform;
+        font-weight: 300;
+    }
+}
+
+.login-wrap {
+    padding: 20px;
+
+    .registration {
+        text-align: center;
+    }
+
+    label {
+        font-weight: 400;
+    }
+}
+
+.login-social-link {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.btn-facebook {
+    font-family: $adm-btn-facebook-font;
+    color: $adm-btn-facebook-color;
+    background-color: $adm-btn-facebook-background;
+    border-color: $adm-btn-facebook-border-color;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.open .dropdown-toggle.btn-facebook {
+    color: $adm-btn-facebook-color;
+    background-color: darken($adm-btn-facebook-background, $adm-default-darken);
+    border-color: $adm-btn-facebook-border-color, $adm-default-darken;
+}
+
+.btn-twitter {
+    font-family: $adm-btn-twitter-font;
+    color: $adm-btn-twitter-color;
+    background-color: $adm-btn-twitter-background;
+    border-color: $adm-btn-twitter-border-color;
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active,
+.btn-twitter.active,
+.open .dropdown-toggle.btn-twitter {
+    color: $adm-btn-twitter-color;
+    background-color: darken($adm-btn-twitter-background, $adm-default-darken);
+    border-color: $adm-btn-twitter-border-color, $adm-default-darken;
+}
+
+@media (max-width:320px) {
+    .login-social-link a {
+        padding: 15px 17px !important;
+    }
+}

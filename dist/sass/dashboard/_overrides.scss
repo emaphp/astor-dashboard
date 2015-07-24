@@ -1,0 +1,29 @@
+/**
+ * Bootstrap overrides
+ */
+
+.btn-round {
+    @include radius(12px);
+}
+
+.accordion-heading .accordion-toggle {
+	display: block;
+	cursor: pointer;
+	border-top: 1px solid #f5f5f5;
+	padding: 5px 0px;
+	line-height: 28.75px;
+	text-transform: uppercase;
+	color: #1a1a1a;
+	background-color: #fff;
+	outline: none !important;
+	text-decoration: none;
+}
+
+hr {
+    margin: 25px 20px;
+    border-top: $adm-hr-border;
+}
+
+label {
+    font-weight: normal;
+}

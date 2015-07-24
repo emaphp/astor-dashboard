@@ -1,0 +1,120 @@
+/**
+ * Index page styles
+ */
+
+// status box
+.status-box {
+    background: $adm-status-box-background;
+
+    &:hover {
+        background: $adm-status-box-hover-background;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+
+        p {
+            color: $adm-status-box-hover-color;
+        }
+
+        .status-icon {
+            border-bottom: 1px solid $adm-status-box-hover-background;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 12px;
+        color: $adm-body-background;
+    }
+
+    .status-icon {
+        padding: 15px;
+        text-align: center;
+        color: $adm-status-box-icon-color;
+        border-bottom: $adm-status-box-hover-border;
+
+        span {
+            font-size: $adm-status-box-icon-size;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+// Right aside
+#right-aside {
+    background: $adm-right-aside-background;
+	padding-top: 20px;
+
+    h3 {
+        background: $adm-right-aside-header-background;
+        color: $adm-right-aside-header-color;
+        font-size: 16px;
+        padding: 0 10px;
+        line-height: 60px;
+        height: 60px;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    i {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .item {
+        border-bottom: $adm-right-aside-item-border;
+        display: inline-block;
+        padding: 15px 0 10px;
+        width: 100%;
+        background: $adm-right-aside-item-background;
+
+        &:hover {
+            background: $adm-right-aside-item-hover-background;
+        }
+
+        .item-thumb {
+            width: 30px;
+            margin: 0 8px 0 16px;
+            display: block;
+            float: left;
+
+            .badge {
+                background: $adm-right-aside-item-badge-color;
+            }
+        }
+
+        .item-details {
+            width: 170px;
+            float: left;
+
+            p {
+                color: $adm-right-aside-item-color;
+
+                muted {
+                    font-size: 10px;
+                    font-style: italic;
+                }
+
+                a {
+                    color: $adm-right-aside-item-link-color;
+                }
+            }
+        }
+
+        .item-link {
+            padding: 5px 0;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+    }
+
+    .contact {
+        padding: 20px 0 15px;
+
+        .item-details {
+            margin-left: 10px;
+        }
+    }
+}

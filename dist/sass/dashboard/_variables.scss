@@ -1,0 +1,209 @@
+/**
+ * General
+ */
+
+$adm-primary-color: #7459E1 !default;
+$adm-secondary-color: #4588E0 !default;
+
+$adm-default-darken: 10% !default;
+$adm-default-desaturate: 10% !default;
+$adm-default-lighten: 10% !default;
+
+/**
+ * Common styles
+ */
+
+$adm-body-color: #444 !default;
+$adm-body-background: #f2f2f2 !default;
+
+$adm-hr-border: solid 1px lighten($adm-primary-color, 25%);
+
+$adm-selection-color: #fff !default;
+$adm-selection-background: darken($adm-primary-color, $adm-default-darken) !default;
+
+/**
+ * Modal dialogs
+ */
+
+$adm-modal-header-background: $adm-primary-color !default;
+$adm-modal-header-color: #fff !default;
+
+/**
+ * Header
+ */
+
+$adm-top-bar-icon-color: $adm-primary-color !default;
+$adm-top-bar-icon-background: transparent !default;
+$adm-top-bar-icon-hover-color: lighten($adm-top-bar-icon-color, $adm-default-lighten) !default;
+$adm-top-bar-icon-size: 16px !default;
+$adm-top-bar-icon-border-radius: 4px !default;
+$adm-top-bar-icon-badge-color: $adm-secondary-color !default;
+
+$adm-top-bar-logout-color: #fff !default;
+$adm-top-bar-logout-background: $adm-primary-color !default;
+$adm-top-bar-logout-border-radius: 4px !default;
+$adm-top-bar-logout-hover-color: #fff !default;
+$adm-top-bar-logout-hover-background: transparent !default;
+
+$adm-top-bar-logo-font-size: 20px !default;
+$adm-top-bar-logo-font-family: $adm-secondary-font !default;
+$adm-top-bar-logo-color: #fff !default;
+$adm-top-bar-logo-hover-color: #fff !default;
+
+$adm-top-bar-dropdown-border-radius: 4px !default;
+$adm-top-bar-dropdown-header-background: $adm-primary-color !default;
+$adm-top-bar-dropdown-header-color: #fff !default;
+$adm-top-bar-dropdown-item-color: #333 !default;
+$adm-top-bar-dropdown-item-border: 1px solid #ebebeb !default;
+$adm-top-bar-dropdown-item-hover-background: #f0f0f0 !default;
+$adm-top-bar-dropdown-item-hover-color: darken($adm-primary-color, $adm-default-darken) !default;
+$adm-top-bar-dropdown-item-hover-border: 1px solid $adm-primary-color !default;
+
+$adm-top-bar-inbox-item-color: #000 !default;
+$adm-top-bar-inbox-item-hover-color: #222 !default;
+$adm-top-bar-inbox-item-from: darken($adm-primary-color, $adm-default-darken) !default;
+
+/**
+ * Sidebar
+ */
+
+$adm-sidebar-background: #424a5d !default;
+$adm-sidebar-login-info-color: #f2f2f2 !default;
+
+// Main link
+$adm-sidebar-link-color: #d0d0d0 !default;
+$adm-sidebar-link-background: transparent !default;
+$adm-sidebar-link-active-color: #fff !default;
+$adm-sidebar-link-active-background: darken($adm-secondary-color, $adm-default-darken) !default;
+
+// Submenu links
+$adm-sidebar-sub-link-color: #d0d0d0 !default;
+$adm-sidebar-sub-link-background: transparent !default;
+$adm-sidebar-sub-link-hover-color: #fff !default;
+$adm-sidebar-sub-link-hover-background: transparent !default;
+$adm-sidebar-sub-link-active-color: lighten($adm-secondary-color, $adm-default-lighten) !default;
+$adm-sidebar-sub-link-active-background: transparent !default;
+
+/**
+ * Index page styles
+ */
+
+$adm-status-box-background: transparent !default;
+$adm-status-box-icon-color: #888 !default;
+$adm-status-box-icon-size: 38px !default;
+$adm-status-box-hover-background: #fff !default;
+$adm-status-box-hover-color: darken($adm-secondary-color, $adm-default-darken) !default;
+$adm-status-box-hover-border: 1px solid #999 !default;
+
+$adm-right-aside-background: #fff !default;
+$adm-right-aside-header-background: $adm-primary-color !default;
+$adm-right-aside-header-color: #fff !default;
+$adm-right-aside-item-background: #fff !default;
+$adm-right-aside-item-color: #444 !default;
+$adm-right-aside-item-link-color: darken($adm-secondary-color, $adm-default-darken) !default;
+$adm-right-aside-item-hover-background: #f2f2f2 !default;
+$adm-right-aside-item-border: 1px solid #eaeaea !default;
+$adm-right-aside-item-badge-color: $adm-secondary-color !default;
+
+/**
+ * Panels
+ */
+
+// Info panel
+$adm-info-panel-background: #fff !default;
+$adm-info-panel-color: #555 !default;
+$adm-info-panel-header-background: $adm-secondary-color !default;
+$adm-info-panel-header-color: #fff !default;
+$adm-info-panel-header-text-transform: uppercase !default;
+$adm-info-panel-icon-color: $adm-primary-color !default;
+
+// Calendar panel
+$adm-calendar-panel-background: url(../img/calendar.jpg) no-repeat center top !default;
+$adm-calendar-panel-color: #fff !default;
+
+// Twitter panel
+$adm-twitter-panel-background: #3BB2DB !default;
+$adm-twitter-panel-color: #f2f2f2 !default;
+$adm-twitter-panel-icon-color: #fff !default;
+$adm-twitter-panel-user-color: #fff !default;
+$adm-twitter-panel-user-weight: 900 !default;
+$adm-twitter-panel-link-color: darken($adm-primary-color, $adm-default-darken) !default;
+$adm-twitter-panel-link-hover-color: $adm-primary-color !default;
+
+// Tasks panel
+$adm-tasks-panel-task-background: #393D40 !default;
+$adm-tasks-panel-task-color: #888 !default;
+$adm-tasks-panel-task-hover-background: #222 !default;
+$adm-tasks-panel-task-hover-color: $adm-secondary-color !default;
+$adm-tasks-panel-task-border: 1px solid #444 !default;
+$adm-tasks-panel-submit-background: $adm-primary-color !default;
+$adm-tasks-panel-submit-hover-background: #6AAE3C !default;
+
+// Profile panel
+$adm-profile-panel-background: #fff !default;
+$adm-profile-panel-details-background: url(../img/profile.jpg) no-repeat center top !default;
+$adm-profile-panel-details-color: #fff !default;
+$adm-profile-panel-button-color: #fff !default;
+$adm-profile-panel-button-background: $adm-primary-color !default;
+$adm-profile-panel-button-hover-background: $adm-secondary-color !default;
+
+// Stats panel
+$adm-stats-panel-background: #444c57 !default;
+$adm-stats-panel-color: #fff !default;
+$adm-stats-panel-icon-color: #fff !default;
+$adm-stats-panel-body-color: lighten($adm-primary-color, $adm-default-lighten) !default;
+$adm-stats-panel-footer-icon-color: lighten($adm-primary-color, $adm-default-lighten) !default;
+
+/**
+ * Theme buttons
+ */
+
+$adm-btn-theme-font: $adm-secondary-font !default;
+$adm-btn-theme-color: #fff !default;
+$adm-btn-theme-background: $adm-primary-color !default;
+$adm-btn-theme-border-color: $adm-primary-color !default;
+
+/*
+ * Login
+ */
+
+$adm-login-form-margin: 100px auto 0 !default;
+$adm-login-form-border-radius: 5px !default;
+$adm-login-form-background: #fff !default;
+$adm-login-heading-font: $adm-secondary-font !default;
+$adm-login-heading-font-size: 20px !default;
+$adm-login-heading-text-align: center !default;
+$adm-login-heading-text-transform: uppercase !default;
+$adm-login-heading-color: #fff !default;
+$adm-login-heading-background: $adm-primary-color !default;
+$adm-login-heading-border-radius: 5px 5px 0 0 !default;
+
+$adm-btn-facebook-font: $adm-secondary-font !default;
+$adm-btn-facebook-color: #fff !default;
+$adm-btn-facebook-background: #5193ea !default;
+$adm-btn-facebook-border-color: $adm-btn-facebook-background !default;
+
+$adm-btn-twitter-font: $adm-secondary-font !default;
+$adm-btn-twitter-color: #fff !default;
+$adm-btn-twitter-background: #44ccfe !default;
+$adm-btn-twitter-border-color: $adm-btn-twitter-background !default;
+
+/**
+ * Badges
+ */
+
+$adm-badge-primary-background: $adm-primary-color !default;
+$adm-badge-secondary-background: $adm-secondary-color !default;
+$adm-badge-success-background: #a9d86e !default;
+$adm-badge-warning-background: #fcb322 !default;
+$adm-badge-error-background: #ff6c60 !default;
+$adm-badge-info-background: #41cac0 !default;
+
+/**
+ * Footer
+ */
+
+$adm-footer-color: #fff !default;
+$adm-footer-background: $adm-secondary-color !default;
+$adm-footer-go-top-color: #fff !default;
+$adm-footer-go-top-background: darken($adm-primary-color, $adm-default-lighten) !default;

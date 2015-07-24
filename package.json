@@ -1,0 +1,33 @@
+{
+  "name": "astor-dashmin",
+  "version": "1.0.0",
+  "description": "Dashboard components for Astor Framework",
+  "main": "dist/css/dashmin.css",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emaphp/astor-dashmin.git"
+  },
+  "keywords": [
+    "astor",
+    "dashmin",
+    "dashboard",
+    "framework"
+  ],
+  "author": "Emmanuel Antico <emmanuel.antico@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emaphp/astor-dashmin/issues"
+  },
+  "homepage": "https://github.com/emaphp/astor-dashmin#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ruby-sass": "^1.0.5"
+  }
+}

@@ -1,0 +1,49 @@
+/**
+ * Common styles
+ */
+
+body {
+    color: $adm-body-color;
+	background: $adm-body-background;
+    font-family: 'Ruda', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#main-content {
+    margin-left: 210px;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+
+    > .row {
+        margin-top: 25px;
+    }
+}
+
+::selection {
+    background: $adm-selection-background;
+    color: $adm-selection-color;
+}
+
+::-moz-selection {
+    background: $adm-selection-background;
+    color: $adm-selection-color;
+}

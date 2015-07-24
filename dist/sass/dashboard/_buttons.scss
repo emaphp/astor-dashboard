@@ -1,0 +1,20 @@
+/**
+ * Theme buttons
+ */
+
+.btn-theme {
+    font-family: $adm-btn-theme-font;
+    color: $adm-btn-theme-color;
+    background-color: $adm-btn-theme-background;
+    border-color: $adm-btn-theme-border-color;
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+    color: $adm-btn-theme-color;
+    background-color: darken($adm-btn-theme-background, $adm-default-darken);
+    border-color: darken($adm-btn-theme-border-color, $adm-default-darken);
+}
