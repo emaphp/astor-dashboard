@@ -21,6 +21,8 @@ $adm-hr-border: solid 1px lighten($adm-primary-color, 25%);
 $adm-selection-color: #fff !default;
 $adm-selection-background: darken($adm-primary-color, $adm-default-darken) !default;
 
+$adm-wrapper-min-height: 620px !default;
+
 /**
  * Modal dialogs
  */

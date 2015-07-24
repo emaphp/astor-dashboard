@@ -2,6 +2,12 @@
  * Responsive styles
  */
 
+@media (min-width: 1024px) {
+    .wrapper {
+        min-height: $adm-wrapper-min-height;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         position: absolute;

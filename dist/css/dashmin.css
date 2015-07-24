@@ -729,10 +729,10 @@ ul.top-bar > li {
  * Footer
  */
 footer {
-  min-height: 60px;
+  min-height: 30px;
   background: #4588E0;
   color: #fff;
-  padding: 20px 0 8px 0; }
+  padding: 14px 0 12px 0; }
 
 .go-top {
   margin-right: 1%;
@@ -825,6 +825,9 @@ footer {
 /**
  * Responsive styles
  */
+@media (min-width: 1024px) {
+  .wrapper {
+    min-height: 620px; } }
 @media (max-width: 768px) {
   .header {
     position: absolute; }
