@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keyword" content="">
+        <title>Astor Dashmin - Datatables</title>
+        <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../bower_components/select2/dist/css/select2.min.css" rel="stylesheet" />
+        <link href="../dist/css/dashmin.css" rel="stylesheet">
+        <link href="../dist/css/datatables.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <section id="container" >
+            <header>
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Mostrar/Ocultar navegación"></div>
+                </div>
+                <a href="#" class="logo">astorframework</a>
+                <div class="nav notify-row">
+                    <ul class="nav top-bar">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-icon" href="#">
+                                <i class="fa fa-tasks"></i><span class="badge">2</span>
+                            </a>
+                            <ul class="dropdown-menu extended tasks-bar">
+                                <div class="notify-arrow"></div>
+                                <li>
+                                    <p class="dropdown-header">2 tareas pendientes</p>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="task-info">
+                                            <div class="description">Administración de sitio</div>
+                                            <div class="percent">40%</div>
+                                        </div>
+                                        <div class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% completado</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="task-info">
+                                            <div class="description">Actualización de base de datos</div>
+                                            <div class="percent">60%</div>
+                                        </div>
+                                        <div class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="sr-only">60% completado</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Ver tareas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-icon" href="index.html#">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge">3</span>
+                            </a>
+                            <ul class="dropdown-menu extended inbox">
+                                <div class="notify-arrow"></div>
+                                <li>
+                                    <p class="dropdown-header">3 mensajes nuevos</p>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo"><img alt="avatar" src="../dist/img/contacts/contact-1.png"></span>
+                                        <span class="subject">
+                                            <span class="from">Felicitas Duarte</span>
+                                            <span class="time">1 minuto</span>
+                                        </span>
+                                        <span class="message">
+                                            Sed ut perspiciatis unde.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo"><img alt="avatar" src="../dist/img/contacts/contact-2.png"></span>
+                                        <span class="subject">
+                                            <span class="from">Jacinta Martinez</span>
+                                            <span class="time">40 min.</span>
+                                        </span>
+                                        <span class="message">
+                                         Ut enim ad minima veniam.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo">
+                                            <img alt="avatar" src="../dist/img/contacts/contact-3.png">
+                                        </span>
+                                        <span class="subject">
+                                            <span class="from">Josefa Orozco</span>
+                                            <span class="time">2 hrs.</span>
+                                        </span>
+                                        <span class="message">
+                                            Et harum quidem rerum facilis.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Ver mensajes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="nav pull-right top-bar">
+                        <li><a class="logout" href="login.html"><i class="fa fa-power-off">&nbsp;</i>Logout</a></li>
+                    </ul>
+                </div>
+            </header>
+            <aside>
+                <div id="sidebar" class="nav-collapse">
+                    <ul id="sidebar-menu">
+                        <div class="login-info text-center">
+                            <a href="#">
+                                <i class="fa fa-user fa-3"></i>
+                                <h5 class="text-center">Emmanuel Antico</h5>
+                            </a>
+                            <small>Administrador</small>
+                        </div>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">
+                                <i class="fa fa-desktop"></i>
+                                <span>Interfaz</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="general.html">General</a></li>
+                                <li class="active"><a href="botones.html">Botones</a></li>
+                                <li><a href="formularios.html">Formularios</a></li>
+                                <li><a href="tablas.html">Tablas</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a class="active" href="#">
+                                <i class="fa fa-cogs"></i>
+                                <span>Plugins</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="active"><a href="datatables.html">Datatables</a></li>
+                                <li><a href="select2.html">Select2</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Extras</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="blank.html">Página en blanco</a></li>
+                                <li><a href="login.html">Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section id="main-content">
+                <section class="wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="content-box">
+                                <h4>Datatables</h4>
+                                <table width="100%" id="tbAstor" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Año</th>
+                                            <th class="text-center"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Eliminar registro</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Está a punto de eliminar "<span id="modal-display"></span>". Desea continuar?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <form id="modal-form" method="post" action="">
+                                        <input type="hidden" name="_method" value="delete" />
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true">&nbsp;</span>Eliminar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer>
+                <div class="text-center">
+                    Copyright 2015 Emmanuel Antico
+                    <a href="#" class="go-top">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+            </footer>
+        </section>
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../bower_components/jquery.bandoneon/dist/jquery.bandoneon.min.js"></script>
+        <script type="text/javascript" src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../bower_components/astor-datatables/dist/js/astor-datatables.min.js"></script>
+        <script type="text/javascript" src="../dist/js/dashmin.js"></script>
+        <script type="text/javascript">
+            $('#tbAstor').DataTable({
+                data: [{"id":1,"nombre":"Simfon\u00eda de Tango","a\u00f1o":"1955"},{"id":2,"nombre":"Tango Progresivo: Octeto Buenos Aires","a\u00f1o":"1956"},{"id":3,"nombre":"Tango Moderno tambi\u00e9n llamado simplemente Octeto Buenos Aires","a\u00f1o":"1957"},{"id":4,"nombre":"Lo que vendr\u00e1","a\u00f1o":"1957"},{"id":5,"nombre":"Tango en Hi-Fi","a\u00f1o":"1957"},{"id":6,"nombre":"An Evening in Buenos Aires","a\u00f1o":"1959"},{"id":7,"nombre":"Take Me Dancing! The Latin Rhythms of Astor Piazzolla & his Quintet","a\u00f1o":"1959"},{"id":8,"nombre":"Piazzolla interpreta a Piazzolla","a\u00f1o":"1961"},{"id":9,"nombre":"Piazzolla o No? Bailable y apiazolado","a\u00f1o":"1961"},{"id":10,"nombre":"Nuestro tiempo","a\u00f1o":"1962"},{"id":11,"nombre":"Tango contempor\u00e1neo - Astor Piazzolla y su nuevo octeto","a\u00f1o":"1963"},{"id":12,"nombre":"Tango para una ciudad - Astor Piazzolla y su quinteto nuevo tango","a\u00f1o":"1963"},{"id":13,"nombre":"20 a\u00f1os de vanguardia con sus conjuntos","a\u00f1o":"1964"},{"id":14,"nombre":"Concierto en el Philarmonic Hall de New York","a\u00f1o":"1965"},{"id":15,"nombre":"El Tango con Edmundo Rivero y textos de Jorge Luis Borges ","a\u00f1o":"1965"},{"id":16,"nombre":"Historia del Tango Vol. 1: La guardia Vieja","a\u00f1o":"1967"},{"id":17,"nombre":"Historia del tango Vol. 2: La \u00e9poca rom\u00e1ntica","a\u00f1o":"1967"},{"id":18,"nombre":"Adi\u00f3s Nonino - Astor Piazzolla con su quinteto ","a\u00f1o":"1969"},{"id":19,"nombre":"Pulsaci\u00f3n - Astor Piazzolla y su orquesta","a\u00f1o":"1970"},{"id":20,"nombre":"Amelita Baltar interpreta a Piazzolla y Ferrer","a\u00f1o":"1970"},{"id":21,"nombre":"En persona solos de Piazzolla con recitados de Ferrer","a\u00f1o":"1970"},{"id":22,"nombre":"La bicicleta blanca Amelita Baltar con Piazzolla","a\u00f1o":"1971"},{"id":23,"nombre":"Concierto para quinteto","a\u00f1o":"1971"},{"id":24,"nombre":"M\u00fasica popular contempor\u00e1nea de la Ciudad de Buenos Aires Volumen 1","a\u00f1o":"1971"},{"id":25,"nombre":"M\u00fasica popular contempor\u00e1nea de la Ciudad de Buenos Aires Volumen 2 ","a\u00f1o":"1972"},{"id":26,"nombre":"Libertango ","a\u00f1o":"1974"},{"id":27,"nombre":"Summit - Reuni\u00f3n Cumbre con Gerry Mulligan ","a\u00f1o":"1974"},{"id":28,"nombre":"Piazzolla y Amelita Baltar","a\u00f1o":"1974"},{"id":29,"nombre":"Il pleut sur Santiago","a\u00f1o":"1975"},{"id":30,"nombre":"Lumi\u00e8re - Suite Troileana","a\u00f1o":"1975"},{"id":31,"nombre":"Armaguedon","a\u00f1o":"1977"},{"id":32,"nombre":"Olympia 77","a\u00f1o":"1977"},{"id":33,"nombre":"Persecuta","a\u00f1o":"1977"},{"id":34,"nombre":"Viaje de Bodas ","a\u00f1o":"1977"},{"id":35,"nombre":"Piazzolla 78","a\u00f1o":"1978"},{"id":36,"nombre":"Biyuya","a\u00f1o":"1979"},{"id":37,"nombre":"Volver - Astor Piazzolla con su quinteto","a\u00f1o":"1982"},{"id":38,"nombre":"Aconcagua - SWF Rundfunkorchester ","a\u00f1o":"1983"},{"id":39,"nombre":"Oblivion","a\u00f1o":"1984"},{"id":41,"nombre":"El exilio de Gardel","a\u00f1o":"1984"},{"id":42,"nombre":"Tango: Zero Hour","a\u00f1o":"1986"},{"id":43,"nombre":"Tristezas de un doble A","a\u00f1o":"1987"},{"id":44,"nombre":"The New Tango junto a Gary Burton ","a\u00f1o":"1987"},{"id":45,"nombre":"The Rough Dancer and the Cyclical Night (Tango Apassionado)","a\u00f1o":"1988"},{"id":46,"nombre":"Sur","a\u00f1o":"1988"},{"id":47,"nombre":"La Camorra: The Solitude of Passionate Provocation","a\u00f1o":"1989"},{"id":48,"nombre":"Five Tango Sensations","a\u00f1o":"1989"},{"id":49,"nombre":"Bandone\u00f3n Sinf\u00f3nico","a\u00f1o":"1990"}],
+                columns: [
+                    {data: 'id'},
+                    {data: 'nombre'},
+                    {data: 'año'},
+                    {
+                        data: null,
+                        className: 'text-center',
+                        render: function(data, type, full, meta) {
+                            var content = '';
+
+                            content += '<a class="btn btn-primary btn-sm" href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true">&nbsp;</span>Editar</a>';
+                            content += '&nbsp;'
+                            content += '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal" data-id="' + data.id + '" data-display="' + data.nombre + '"><span class="glyphicon glyphicon-remove" aria-hidden="true">&nbsp;</span>Borrar</button>';
+
+                            return content;
+                        }
+                    }
+                ]
+            });
+
+            // Asociar eventos en diálogo
+            $('#modal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget), // Botón 'Borrar'
+                    id = button.data('id'),          // Id de registro
+                    display = button.data('display'),// Descriptor
+                    modal = $(this);                 // Diálogo
+
+                modal.find('#modal-display').text(display);
+                modal.find('#modal-form').attr('action', '/datatables/' + id);
+            });
+        </script>
+  </body>
+</html>

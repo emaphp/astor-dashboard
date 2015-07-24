@@ -9,6 +9,15 @@ gulp.task('dashmin', function() {
       .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('default', ['dashmin'], function () {
-    gulp.watch('dist/sass/**/*.scss', ['dashmin']);
+gulp.task('datatables', function () {
+    return sass('dist/sass/datatables-build.scss', {
+        loadPath: './bower_components/astor-datatables/dist/sass'
+    })
+      .on('error', function (err) {console.error('Error!', err.message);})
+      .pipe(concat('datatables.css'))
+      .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('default', ['dashmin', 'datatables'], function () {
+    gulp.watch('dist/sass/**/*.scss', ['dashmin', 'datatables']);
 });
