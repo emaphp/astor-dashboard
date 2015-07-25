@@ -9,12 +9,15 @@ $adm-default-darken: 10% !default;
 $adm-default-desaturate: 10% !default;
 $adm-default-lighten: 10% !default;
 
+$adm-primary-font: sans-serif, serif !default;
+$adm-secondary-font: sans-serif, serif !default;
+
 /**
  * Common styles
  */
 
 $adm-body-color: #444 !default;
-$adm-body-background: #f8f8f8 !default;
+$adm-body-background: #f6f6f6 !default;
 
 $adm-hr-border: solid 1px lighten($adm-primary-color, 25%);
 
@@ -106,6 +109,15 @@ $adm-right-aside-item-link-color: darken($adm-secondary-color, $adm-default-dark
 $adm-right-aside-item-hover-background: #f2f2f2 !default;
 $adm-right-aside-item-border: 1px solid #eaeaea !default;
 $adm-right-aside-item-badge-color: $adm-secondary-color !default;
+
+/**
+ * General UI
+ */
+
+$adm-ui-content-box-background: #fff !default;
+$adm-ui-content-box-color: $adm-body-color !default;
+$adm-ui-content-header-color: #333 !default;
+$adm-ui-content-header-icon-color: $adm-primary-color !default;
 
 /**
  * UI Panels

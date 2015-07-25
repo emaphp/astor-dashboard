@@ -1,11 +1,20 @@
+/**
+ * General UI
+ */
+
 .content-box {
-    background: #ffffff;
+    background: $adm-ui-content-box-background;
+    color: $adm-ui-content-box-color;
 	padding: 8px 15px 15px;
 	margin-bottom: 15px;
 	box-shadow: 0px 3px 2px #aab2bd;
 
-    h4 {
+    .content-header {
         margin-bottom: 1em;
-        color: #444;
+        color: $adm-ui-content-header-color;
+
+        .fa {
+            color: $adm-ui-content-header-icon-color;
+        }
     }
 }

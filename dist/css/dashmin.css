@@ -22,6 +22,9 @@
  * Index page styles
  */
 /**
+ * General UI
+ */
+/**
  * UI Panels
  */
 /**
@@ -41,7 +44,7 @@
  */
 body {
   color: #444;
-  background: #f8f8f8;
+  background: #f6f6f6;
   font-family: 'Ruda', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
@@ -423,14 +426,20 @@ ul.top-bar > li {
   background-color: #502ed9;
   border-color: #502ed9; }
 
+/**
+ * General UI
+ */
 .content-box {
-  background: #ffffff;
+  background: #fff;
+  color: #444;
   padding: 8px 15px 15px;
   margin-bottom: 15px;
   box-shadow: 0px 3px 2px #aab2bd; }
-  .content-box h4 {
+  .content-box .content-header {
     margin-bottom: 1em;
-    color: #444; }
+    color: #333; }
+    .content-box .content-header .fa {
+      color: #7459E1; }
 
 /**
  * Badges types
@@ -468,7 +477,7 @@ ul.top-bar > li {
   .status-box p {
     text-align: center;
     font-size: 12px;
-    color: #f8f8f8; }
+    color: #f6f6f6; }
   .status-box .status-icon {
     padding: 15px;
     text-align: center;
