@@ -14,7 +14,7 @@ $adm-default-lighten: 10% !default;
  */
 
 $adm-body-color: #444 !default;
-$adm-body-background: #f2f2f2 !default;
+$adm-body-background: #f8f8f8 !default;
 
 $adm-hr-border: solid 1px lighten($adm-primary-color, 25%);
 
@@ -108,29 +108,16 @@ $adm-right-aside-item-border: 1px solid #eaeaea !default;
 $adm-right-aside-item-badge-color: $adm-secondary-color !default;
 
 /**
- * Panels
+ * UI Panels
  */
 
 // Info panel
-$adm-info-panel-background: #fff !default;
-$adm-info-panel-color: #555 !default;
-$adm-info-panel-header-background: $adm-secondary-color !default;
+$adm-info-panel-background: #444c57 !default;
+$adm-info-panel-color: #fff !default;
+$adm-info-panel-header-background: $adm-primary-color !default;
 $adm-info-panel-header-color: #fff !default;
 $adm-info-panel-header-text-transform: uppercase !default;
 $adm-info-panel-icon-color: $adm-primary-color !default;
-
-// Calendar panel
-$adm-calendar-panel-background: url(../img/calendar.jpg) no-repeat center top !default;
-$adm-calendar-panel-color: #fff !default;
-
-// Twitter panel
-$adm-twitter-panel-background: #3BB2DB !default;
-$adm-twitter-panel-color: #f2f2f2 !default;
-$adm-twitter-panel-icon-color: #fff !default;
-$adm-twitter-panel-user-color: #fff !default;
-$adm-twitter-panel-user-weight: 900 !default;
-$adm-twitter-panel-link-color: darken($adm-primary-color, $adm-default-darken) !default;
-$adm-twitter-panel-link-hover-color: $adm-primary-color !default;
 
 // Tasks panel
 $adm-tasks-panel-task-background: #393D40 !default;
@@ -148,13 +135,6 @@ $adm-profile-panel-details-color: #fff !default;
 $adm-profile-panel-button-color: #fff !default;
 $adm-profile-panel-button-background: $adm-primary-color !default;
 $adm-profile-panel-button-hover-background: $adm-secondary-color !default;
-
-// Stats panel
-$adm-stats-panel-background: #444c57 !default;
-$adm-stats-panel-color: #fff !default;
-$adm-stats-panel-icon-color: #fff !default;
-$adm-stats-panel-body-color: lighten($adm-primary-color, $adm-default-lighten) !default;
-$adm-stats-panel-footer-icon-color: lighten($adm-primary-color, $adm-default-lighten) !default;
 
 /**
  * Theme buttons

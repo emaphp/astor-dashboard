@@ -1,12 +1,13 @@
 /**
- * Panels
+ * UI Panels
  */
 
 .panel-row {
     margin-top: 25px;
 }
 
-.panel {
+// UI Panel
+.ui-panel {
     height: 250px;
 	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -46,55 +47,6 @@
 
     .fa {
         color: $adm-info-panel-icon-color;
-    }
-}
-
-// Calendar panel
-.calendar-panel {
-    background: $adm-calendar-panel-background;
-	text-align: center;
-	background-position: center center;
-    color: $adm-calendar-panel-color;
-    padding-top: 27px;
-
-    p {
-        margin-top: 20px;
-        font-size: 15px;
-    }
-
-    .calendar-status {
-        margin-top: 10px;
-        font-size: 12px;
-    }
-}
-
-// Twitter panel
-.twitter-panel {
-    background: $adm-twitter-panel-background;
-	text-align: center;
-
-    i {
-        color: $adm-twitter-panel-icon-color;
-        margin-top: 40px;
-    }
-
-    p {
-        color: $adm-twitter-panel-color;
-        margin: 10px;
-        font-weight: 500;
-
-        a {
-            color: $adm-twitter-panel-link-color;
-
-            &:hover {
-                color: $adm-twitter-panel-link-hover-color;
-            }
-        }
-    }
-
-    .user {
-        color: $adm-twitter-panel-user-color;
-        font-weight: $adm-twitter-panel-user-weight;
     }
 }
 
@@ -234,46 +186,5 @@
     .profile-bottom {
         font-size: 12px;
         text-transform: uppercase;
-    }
-}
-
-// Stats panel
-
-.stats-panel {
-    text-align: center;
-	background: $adm-stats-panel-background;
-    color: $adm-stats-panel-color;
-
-    .stats-header {
-        padding: 3px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-    h5 {
-        font-weight: 200;
-        margin-top: 10px;
-    }
-
-    .stats-body {
-        i {
-            color: $adm-stats-panel-icon-color;
-        }
-
-        p {
-            color: $adm-stats-panel-body-color;
-        }
-    }
-
-    .stats-footer {
-        h5 {
-            margin-left:10px;
-            margin-right: 10px;
-            font-weight: 700;
-        }
-
-        i {
-            color: $adm-stats-panel-footer-icon-color;
-        }
     }
 }

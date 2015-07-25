@@ -22,7 +22,7 @@
  * Index page styles
  */
 /**
- * Panels
+ * UI Panels
  */
 /**
  * Theme buttons
@@ -41,7 +41,7 @@
  */
 body {
   color: #444;
-  background: #f2f2f2;
+  background: #f8f8f8;
   font-family: 'Ruda', sans-serif;
   padding: 0px !important;
   margin: 0px !important;
@@ -468,7 +468,7 @@ ul.top-bar > li {
   .status-box p {
     text-align: center;
     font-size: 12px;
-    color: #f2f2f2; }
+    color: #f8f8f8; }
   .status-box .status-icon {
     padding: 15px;
     text-align: center;
@@ -530,23 +530,23 @@ ul.top-bar > li {
       margin-left: 10px; }
 
 /**
- * Panels
+ * UI Panels
  */
 .panel-row {
   margin-top: 25px; }
 
-.panel {
+.ui-panel {
   height: 250px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
-  .panel:hover {
+  .ui-panel:hover {
     box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); }
 
 .info-panel {
   text-align: center;
-  background: #fff;
-  color: #555; }
+  background: #444c57;
+  color: #fff; }
   .info-panel .info-panel-header {
-    background: #4588E0;
+    background: #7459E1;
     padding: 3px;
     margin-bottom: 15px;
     color: #fff; }
@@ -558,41 +558,10 @@ ul.top-bar > li {
     margin-left: 15px; }
   .info-panel .small {
     font-size: 10px;
-    color: #555;
+    color: #fff;
     text-transform: uppercase; }
   .info-panel .fa {
     color: #7459E1; }
-
-.calendar-panel {
-  background: url(../img/calendar.jpg) no-repeat center top;
-  text-align: center;
-  background-position: center center;
-  color: #fff;
-  padding-top: 27px; }
-  .calendar-panel p {
-    margin-top: 20px;
-    font-size: 15px; }
-  .calendar-panel .calendar-status {
-    margin-top: 10px;
-    font-size: 12px; }
-
-.twitter-panel {
-  background: #3BB2DB;
-  text-align: center; }
-  .twitter-panel i {
-    color: #fff;
-    margin-top: 40px; }
-  .twitter-panel p {
-    color: #f2f2f2;
-    margin: 10px;
-    font-weight: 500; }
-    .twitter-panel p a {
-      color: #502ed9; }
-      .twitter-panel p a:hover {
-        color: #7459E1; }
-  .twitter-panel .user {
-    color: #fff;
-    font-weight: 900; }
 
 .tasks-panel {
   display: block;
@@ -702,28 +671,6 @@ ul.top-bar > li {
   .profile-panel .profile-bottom {
     font-size: 12px;
     text-transform: uppercase; }
-
-.stats-panel {
-  text-align: center;
-  background: #444c57;
-  color: #fff; }
-  .stats-panel .stats-header {
-    padding: 3px;
-    margin-bottom: 15px;
-    text-transform: uppercase; }
-  .stats-panel h5 {
-    font-weight: 200;
-    margin-top: 10px; }
-  .stats-panel .stats-body i {
-    color: #fff; }
-  .stats-panel .stats-body p {
-    color: #9884e9; }
-  .stats-panel .stats-footer h5 {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: 700; }
-  .stats-panel .stats-footer i {
-    color: #9884e9; }
 
 /**
  * Footer
