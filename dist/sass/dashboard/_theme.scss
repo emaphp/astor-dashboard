@@ -1,0 +1,126 @@
+/**
+ * Theme buttons, backgrounds, colors, etc.
+ */
+
+.btn-theme {
+    color: $adb-btn-theme-color;
+    background-color: $adb-btn-theme-background;
+    border-color: $adb-btn-theme-border-color;
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+    color: $adb-btn-theme-color;
+    background-color: darken($adb-btn-theme-background, $adb-default-darken);
+    border-color: darken($adb-btn-theme-border-color, $adb-default-darken);
+}
+
+.btn-theme-alt {
+    color: $adb-btn-theme-alt-color;
+    background-color: $adb-btn-theme-alt-background;
+    border-color: $adb-btn-theme-alt-border-color;
+}
+
+.btn-theme-alt:hover,
+.btn-theme-alt:focus,
+.btn-theme-alt:active,
+.btn-theme-alt.active,
+.open .dropdown-toggle.btn-theme-alt {
+    color: $adb-btn-theme-alt-color;
+    background-color: darken($adb-btn-theme-alt-background, $adb-default-darken);
+    border-color: darken($adb-btn-theme-alt-border-color, $adb-default-darken);
+}
+
+
+// Backgrounds
+.bg-theme {
+    background: $adb-theme-color;
+}
+
+.bg-theme-alt {
+    background: $adb-theme-color-alt;
+}
+
+// Lighten
+.bg-theme-lighten {
+    background: lighten($adb-theme-color, $adb-default-lighten);
+}
+
+.bg-theme-lighten-alt {
+    background: lighten($adb-theme-color-alt, $adb-default-lighten);
+}
+
+// Darken
+.bg-theme-darken {
+    background: darken($adb-theme-color, $adb-default-darken);
+}
+
+.bg-theme-darken-alt {
+    background: darken($adb-theme-color-alt, $adb-default-darken);
+}
+
+// Saturate
+.bg-theme-saturate {
+    background: saturate($adb-theme-color, $adb-default-saturate);
+}
+
+.bg-theme-saturate-alt {
+    background: saturate($adb-theme-color-alt, $adb-default-saturate);
+}
+
+// Desaturate
+.bg-theme-desaturate {
+    background: desaturate($adb-theme-color, $adb-default-desaturate);
+}
+
+.bg-theme-desaturate-alt {
+    background: desaturate($adb-theme-color-alt, $adb-default-desaturate);
+}
+
+// Colors
+.color-theme {
+    color: $adb-theme-color;
+}
+
+.color-theme-alt {
+    color: $adb-theme-color-alt;
+}
+
+// Lighten
+.color-theme-lighten {
+    color: lighten($adb-theme-color, $adb-default-lighten);
+}
+
+.color-theme-lighten-alt {
+    color: lighten($adb-theme-color-alt, $adb-default-lighten);
+}
+
+// Darken
+.color-theme-darken {
+    color: darken($adb-theme-color, $adb-default-darken);
+}
+
+.color-theme-darken-alt {
+    color: darken($adb-theme-color-alt, $adb-default-darken);
+}
+
+// Saturate
+.color-theme-saturate {
+    color: saturate($adb-theme-color, $adb-default-saturate);
+}
+
+.color-theme-saturate-alt {
+    color: saturate($adb-theme-color-alt, $adb-default-saturate);
+}
+
+// Desaturate
+.color-theme-desaturate {
+    color: desaturate($adb-theme-color, $adb-default-desaturate);
+}
+
+.color-theme-desaturate-alt {
+    color: desaturate($adb-theme-color-alt, $adb-default-desaturate);
+}

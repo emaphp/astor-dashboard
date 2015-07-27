@@ -17,11 +17,11 @@ ul.top-bar > li {
     float: left;
 
     .dropdown-icon {
-        color: $adm-top-bar-icon-color !important;
-        background-color: $adm-top-bar-icon-background !important;
-        border: solid 1px $adm-top-bar-icon-color !important;
-        font-size: $adm-top-bar-icon-size;
-        @include radius($adm-top-bar-icon-border-radius);
+        color: $adb-top-bar-icon-color !important;
+        background-color: $adb-top-bar-icon-background !important;
+        border: solid 1px $adb-top-bar-icon-color !important;
+        font-size: $adb-top-bar-icon-size;
+        @include radius($adb-top-bar-icon-border-radius);
         padding: 2px 6px;
         margin-right: 15px;
 
@@ -31,23 +31,24 @@ ul.top-bar > li {
         }
 
         &:hover {
-            color: $adm-top-bar-icon-hover-color !important;
-            border-color: $adm-top-bar-icon-hover-color !important;
+            color: $adb-top-bar-icon-hover-color !important;
+            border-color: $adb-top-bar-icon-hover-color !important;
         }
     }
 
     .logout {
-        color: $adm-top-bar-logout-color !important;
-        @include radius($adm-top-bar-logout-border-radius);
-        background: $adm-top-bar-logout-background !important;
+        color: $adb-top-bar-logout-color !important;
+        @include radius($adb-top-bar-logout-border-radius);
+        background: $adb-top-bar-logout-background !important;
         margin: 15px 15px 0 0;
-        border: 1px solid $adm-primary-color !important;
+        border: $adb-top-bar-logout-border !important;
         font-size: 12px;
         padding: 5px 15px;
 
         &:hover, &:focus, &:visited, &:active {
-            color: $adm-top-bar-logout-hover-color !important;
-            background: $adm-top-bar-logout-hover-background !important;
+            color: $adb-top-bar-logout-hover-color !important;
+            background: $adb-top-bar-logout-hover-background !important;
+            border: $adb-top-bar-logout-hover-border !important
         }
     }
 }
@@ -72,20 +73,20 @@ ul.top-bar > li {
         right: -10px;
         top: -10px;
         z-index: 100;
-        background: $adm-top-bar-icon-badge-color;
+        background: $adb-top-bar-icon-badge-color;
     }
 }
 
 // Logo
 .logo {
-    font-size: $adm-top-bar-logo-font-size;
-    color: $adm-top-bar-logo-color;
-    font-size: $adm-top-bar-logo-font-family;
+    font-size: $adb-top-bar-logo-font-size;
+    color: $adb-top-bar-logo-color;
+    font-size: $adb-top-bar-logo-font-family;
     float: left;
     margin-top: 15px;
 
     &:hover, &:focus {
-        color: $adm-top-bar-logo-hover-color;
+        color: $adb-top-bar-logo-hover-color;
         text-decoration: none;
         outline: none;
     }
@@ -100,12 +101,12 @@ ul.top-bar > li {
     padding: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
     border: none !important;
-    @include radius($adm-top-bar-dropdown-border-radius);
+    @include radius($adb-top-bar-dropdown-border-radius);
 
     li {
         .dropdown-header {
-            background: $adm-top-bar-dropdown-header-background;
-            color: $adm-top-bar-dropdown-header-color;
+            background: $adb-top-bar-dropdown-header-background;
+            color: $adb-top-bar-dropdown-header-color;
             padding: 10px;
             @include radius(4px 4px 0px 0px);
             margin: 0;
@@ -113,8 +114,8 @@ ul.top-bar > li {
         }
 
         a {
-            color: $adm-top-bar-dropdown-item-color !important;
-            border-bottom: $adm-top-bar-dropdown-item-border !important;
+            color: $adb-top-bar-dropdown-item-color !important;
+            border-bottom: $adb-top-bar-dropdown-item-border !important;
             font-size: 12px;
             list-style: none;
             padding: 15px 10px !important;
@@ -122,9 +123,9 @@ ul.top-bar > li {
             display: inline-block;
 
             &:hover {
-                background: $adm-top-bar-dropdown-item-hover-background !important;
-                color: $adm-top-bar-dropdown-item-hover-color !important;
-                border-bottom: $adm-top-bar-dropdown-item-hover-border !important;
+                background: $adb-top-bar-dropdown-item-hover-background !important;
+                color: $adb-top-bar-dropdown-item-hover-color !important;
+                border-bottom: $adb-top-bar-dropdown-item-hover-border !important;
             }
         }
     }
@@ -149,7 +150,7 @@ ul.top-bar > li {
     z-index: 10;
     margin-top: 10px;
     opacity: 1;
-    border-color: transparent transparent $adm-top-bar-dropdown-header-background;
+    border-color: transparent transparent $adb-top-bar-dropdown-header-background;
 }
 
 // Tasks bar
@@ -175,7 +176,7 @@ ul.top-bar > li {
 // Inbox
 .dropdown-menu.inbox {
     li a {
-        color: $adm-top-bar-inbox-item-color !important;
+        color: $adb-top-bar-inbox-item-color !important;
 
         .message {
             padding: 3px 0;
@@ -183,11 +184,11 @@ ul.top-bar > li {
 
         &:hover {
             .message, .time {
-                color: $adm-top-bar-inbox-item-hover-color !important;
+                color: $adb-top-bar-inbox-item-hover-color !important;
             }
 
             .from {
-                color: $adm-top-bar-inbox-item-from !important;
+                color: $adb-top-bar-inbox-item-from-hover-color !important;
             }
         }
 

@@ -4,7 +4,7 @@
 
 @media (min-width: 1024px) {
     .wrapper {
-        min-height: $adm-wrapper-min-height;
+        min-height: $adb-wrapper-min-height;
     }
 }
 
@@ -74,7 +74,7 @@
         width: 0;
         height: 0;
         top:48px;
-        border-bottom: 15px solid darken($adm-sidebar-background, $adm-default-darken);
+        border-bottom: 15px solid darken($adb-sidebar-background, $adb-default-darken);
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
     }

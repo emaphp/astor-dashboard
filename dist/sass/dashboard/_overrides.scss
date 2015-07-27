@@ -21,9 +21,19 @@
 
 hr {
     margin: 25px 20px;
-    border-top: $adm-hr-border;
+    border-top: $adb-hr-border;
 }
 
 label {
     font-weight: normal;
+}
+
+// Modal dialogs
+.modal-header {
+	background: $adb-modal-header-background;
+}
+
+.modal-title {
+	color: $adb-modal-header-color !important;
+    margin: 0 !important;
 }

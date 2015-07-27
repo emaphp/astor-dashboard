@@ -3,26 +3,26 @@
  */
 
 .login-body {
-    background: url(../img/bg.png) no-repeat center center fixed;
+    background: $adb-login-body-background;
     background-size: cover;
 }
 
 .form-login {
     max-width: 330px;
-    margin: $adm-login-form-margin;
-	background: $adm-login-form-background;
-    @include radius($adm-login-form-border-radius);
+    margin: $adb-login-form-margin;
+	background: $adb-login-form-background;
+    @include radius($adb-login-form-border-radius);
 
     h2.form-login-heading {
-        font-family: $adm-login-heading-font;
+        font-family: $adb-login-heading-font;
         margin: 0;
         padding: 25px 20px;
-        text-align: $adm-login-heading-text-align;
-        background: $adm-login-heading-background;
-        @include radius($adm-login-heading-border-radius);
-        color: $adm-login-heading-color;
-        font-size: $adm-login-heading-font-size;
-        text-transform: $adm-login-heading-text-transform;
+        text-align: $adb-login-heading-text-align;
+        background: $adb-login-heading-background;
+        @include radius($adb-login-heading-border-radius);
+        color: $adb-login-heading-color;
+        font-size: $adb-login-heading-font-size;
+        text-transform: $adb-login-heading-text-transform;
         font-weight: 300;
     }
 }
@@ -46,10 +46,10 @@
 }
 
 .btn-facebook {
-    font-family: $adm-btn-facebook-font;
-    color: $adm-btn-facebook-color;
-    background-color: $adm-btn-facebook-background;
-    border-color: $adm-btn-facebook-border-color;
+    font-family: $adb-btn-facebook-font;
+    color: $adb-btn-facebook-color;
+    background-color: $adb-btn-facebook-background;
+    border-color: $adb-btn-facebook-border-color;
 }
 
 .btn-facebook:hover,
@@ -57,16 +57,16 @@
 .btn-facebook:active,
 .btn-facebook.active,
 .open .dropdown-toggle.btn-facebook {
-    color: $adm-btn-facebook-color;
-    background-color: darken($adm-btn-facebook-background, $adm-default-darken);
-    border-color: $adm-btn-facebook-border-color, $adm-default-darken;
+    color: $adb-btn-facebook-color;
+    background-color: darken($adb-btn-facebook-background, $adb-default-darken);
+    border-color: $adb-btn-facebook-border-color, $adb-default-darken;
 }
 
 .btn-twitter {
-    font-family: $adm-btn-twitter-font;
-    color: $adm-btn-twitter-color;
-    background-color: $adm-btn-twitter-background;
-    border-color: $adm-btn-twitter-border-color;
+    font-family: $adb-btn-twitter-font;
+    color: $adb-btn-twitter-color;
+    background-color: $adb-btn-twitter-background;
+    border-color: $adb-btn-twitter-border-color;
 }
 
 .btn-twitter:hover,
@@ -74,9 +74,9 @@
 .btn-twitter:active,
 .btn-twitter.active,
 .open .dropdown-toggle.btn-twitter {
-    color: $adm-btn-twitter-color;
-    background-color: darken($adm-btn-twitter-background, $adm-default-darken);
-    border-color: $adm-btn-twitter-border-color, $adm-default-darken;
+    color: $adb-btn-twitter-color;
+    background-color: darken($adb-btn-twitter-background, $adb-default-darken);
+    border-color: $adb-btn-twitter-border-color, $adb-default-darken;
 }
 
 @media (max-width:320px) {

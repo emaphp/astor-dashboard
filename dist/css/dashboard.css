@@ -28,7 +28,7 @@
  * UI Panels
  */
 /**
- * Theme buttons
+ * Theme buttons, backgrounds. colors, etc
  */
 /*
  * Login
@@ -107,9 +107,6 @@ hr {
 label {
   font-weight: normal; }
 
-/**
- * Modal dialogs
- */
 .modal-header {
   background: #7459E1; }
 
@@ -278,7 +275,8 @@ ul.top-bar > li {
     padding: 5px 15px; }
     ul.top-bar > li .logout:hover, ul.top-bar > li .logout:focus, ul.top-bar > li .logout:visited, ul.top-bar > li .logout:active {
       color: #fff !important;
-      background: transparent !important; }
+      background: transparent !important;
+      border: 1px solid #7459E1 !important; }
 
 .notify-row {
   float: left;
@@ -409,10 +407,9 @@ ul.top-bar > li {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
- * Theme buttons
+ * Theme buttons, backgrounds, colors, etc.
  */
 .btn-theme {
-  font-family: "Ruda", sans-serif;
   color: #fff;
   background-color: #7459E1;
   border-color: #7459E1; }
@@ -425,6 +422,80 @@ ul.top-bar > li {
   color: #fff;
   background-color: #502ed9;
   border-color: #502ed9; }
+
+.btn-theme-alt {
+  color: #fff;
+  background-color: #4588E0;
+  border-color: #4588E0; }
+
+.btn-theme-alt:hover,
+.btn-theme-alt:focus,
+.btn-theme-alt:active,
+.btn-theme-alt.active,
+.open .dropdown-toggle.btn-theme-alt {
+  color: #fff;
+  background-color: #236dcf;
+  border-color: #236dcf; }
+
+.bg-theme {
+  background: #7459E1; }
+
+.bg-theme-alt {
+  background: #4588E0; }
+
+.bg-theme-lighten {
+  background: #9884e9; }
+
+.bg-theme-lighten-alt {
+  background: #71a4e7; }
+
+.bg-theme-darken {
+  background: #502ed9; }
+
+.bg-theme-darken-alt {
+  background: #236dcf; }
+
+.bg-theme-saturate {
+  background: #6e4feb; }
+
+.bg-theme-saturate-alt {
+  background: #3a87eb; }
+
+.bg-theme-desaturate {
+  background: #7a63d7; }
+
+.bg-theme-desaturate-alt {
+  background: #5089d5; }
+
+.color-theme {
+  color: #7459E1; }
+
+.color-theme-alt {
+  color: #4588E0; }
+
+.color-theme-lighten {
+  color: #9884e9; }
+
+.color-theme-lighten-alt {
+  color: #71a4e7; }
+
+.color-theme-darken {
+  color: #502ed9; }
+
+.color-theme-darken-alt {
+  color: #236dcf; }
+
+.color-theme-saturate {
+  color: #6e4feb; }
+
+.color-theme-saturate-alt {
+  color: #3a87eb; }
+
+.color-theme-desaturate {
+  color: #7a63d7; }
+
+.color-theme-desaturate-alt {
+  color: #5089d5; }
 
 /**
  * General UI
@@ -445,10 +516,7 @@ ul.top-bar > li {
  * Badges types
  */
 .badge.bg-primary {
-  background: #7459E1; }
-
-.badge.bg-secondary {
-  background: #4588E0; }
+  background: #337ab7; }
 
 .badge.bg-success {
   background: #a9d86e; }
@@ -671,7 +739,7 @@ ul.top-bar > li {
     -ms-transition: background-color 0.6s;
     transition: background-color 0.6s; }
     .profile-panel .profile-button a:hover {
-      background: #4588E0;
+      background: #6AAE3C;
       -webkit-transition: background-color 0.6s;
       -moz-transition: background-color 0.6s;
       -o-transition: background-color 0.6s;

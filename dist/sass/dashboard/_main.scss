@@ -3,8 +3,8 @@
  */
 
 body {
-    color: $adm-body-color;
-	background: $adm-body-background;
+    color: $adb-body-color;
+	background: $adb-body-background;
     font-family: 'Ruda', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -39,11 +39,11 @@ a, a:hover, a:focus {
 }
 
 ::selection {
-    background: $adm-selection-background;
-    color: $adm-selection-color;
+    background: $adb-selection-background;
+    color: $adb-selection-color;
 }
 
 ::-moz-selection {
-    background: $adm-selection-background;
-    color: $adm-selection-color;
+    background: $adb-selection-background;
+    color: $adb-selection-color;
 }

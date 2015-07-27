@@ -4,20 +4,20 @@
 
 footer {
     min-height: 30px;
-    background: $adm-footer-background;
-    color: $adm-footer-color;
+    background: $adb-footer-background;
+    color: $adb-footer-color;
     padding: 14px 0 12px 0;
 }
 
 .go-top {
     margin-right: 1%;
     float: right;
-    background: $adm-footer-go-top-background;
-    width: 20px;
-    height: 20px;
+    background: $adb-footer-go-top-background;
+    width: $adb-footer-go-top-size;
+    height: $adb-footer-go-top-size;
     @include radius(50%);
 
     i {
-        color: $adm-footer-go-top-color;
+        color: $adb-footer-go-top-color;
     }
 }

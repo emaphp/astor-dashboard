@@ -3,18 +3,18 @@
  */
 
 .content-box {
-    background: $adm-ui-content-box-background;
-    color: $adm-ui-content-box-color;
+    background: $adb-ui-content-box-background;
+    color: $adb-ui-content-box-color;
 	padding: 8px 15px 15px;
 	margin-bottom: 15px;
 	box-shadow: 0px 3px 2px #aab2bd;
 
     .content-header {
         margin-bottom: 1em;
-        color: $adm-ui-content-header-color;
+        color: $adb-ui-content-header-color;
 
         .fa {
-            color: $adm-ui-content-header-icon-color;
+            color: $adb-ui-content-header-icon-color;
         }
     }
 }

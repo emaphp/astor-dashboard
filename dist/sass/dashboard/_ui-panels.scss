@@ -19,17 +19,17 @@
 // Info panel
 .info-panel {
     text-align: center;
-	background: $adm-info-panel-background;
-	color: $adm-info-panel-color;
+	background: $adb-info-panel-background;
+	color: $adb-info-panel-color;
 
     .info-panel-header {
-        background: $adm-info-panel-header-background;
+        background: $adb-info-panel-header-background;
         padding: 3px;
         margin-bottom: 15px;
-        color: $adm-info-panel-header-color;
+        color: $adb-info-panel-header-color;
 
         h5 {
-            text-transform: $adm-info-panel-header-text-transform;
+            text-transform: $adb-info-panel-header-text-transform;
         }
     }
 
@@ -41,12 +41,12 @@
 
     .small {
         font-size: 10px;
-        color: $adm-info-panel-color;
+        color: $adb-info-panel-color;
         text-transform: uppercase;
     }
 
     .fa {
-        color: $adm-info-panel-icon-color;
+        color: $adb-info-panel-icon-color;
     }
 }
 
@@ -63,14 +63,14 @@
                 text-decoration: line-through;
 
                 &:before {
-                    border: 1px solid $adm-tasks-panel-task-hover-color;
+                    border: 1px solid $adb-tasks-panel-task-hover-color;
                     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNpinHLMhgEHKADia0xQThIQs6JJ9gPxZhYQAcS6QHwDiI8hSYJAC0gBPxDLAvFcIJ6JJJkDxFNBVtgBcQ8Qa6BLghgwN4A4a9ElQYAFSj8C4mwg3o8sCQIAAQYA78QTYqnPZuEAAAAASUVORK5CYII=') no-repeat center center;
                 }
             }
         }
 
         &[type=submit] {
-            background: $adm-tasks-panel-submit-background;
+            background: $adb-tasks-panel-submit-background;
             border: none;
             padding: 0px;
             margin: 0 auto;
@@ -85,19 +85,19 @@
             transition: background 0.5s ease;
 
             &:hover {
-                background: $adm-tasks-panel-submit-hover-background;
+                background: $adb-tasks-panel-submit-hover-background;
             }
         }
     }
 
     label {
-        background: $adm-tasks-panel-task-background;
-        color: $adm-tasks-panel-task-color;
+        background: $adb-tasks-panel-task-background;
+        color: $adb-tasks-panel-task-color;
         height: 65px;
         line-height: 65px;
         width: 100%;
         display: block;
-        border-bottom: $adm-tasks-panel-task-border;
+        border-bottom: $adb-tasks-panel-task-border;
 
         text-transform: uppercase;
         font-weight: 900;
@@ -120,19 +120,19 @@
         }
 
         &:hover {
-            background: $adm-tasks-panel-task-hover-background;
-            color: $adm-tasks-panel-task-hover-color;
+            background: $adb-tasks-panel-task-hover-background;
+            color: $adb-tasks-panel-task-hover-color;
         }
 
         &:hover:before {
-            border: 1px solid $adm-tasks-panel-task-hover-color;
+            border: 1px solid $adb-tasks-panel-task-hover-color;
         }
     }
 }
 
 // Profile panel
 .profile-panel {
-    background: $adm-profile-panel-background;
+    background: $adb-profile-panel-background;
 	padding-top: 15px;
 	padding-bottom: 5px;
     border: 0;
@@ -142,7 +142,7 @@
     }
 
     .profile-details {
-        background: $adm-profile-panel-details-background;
+        background: $adb-profile-panel-details-background;
         margin-top: -15px;
         background-attachment: relative;
         background-position: center center;
@@ -151,14 +151,14 @@
         @include bg-size(cover);
 
         h3 {
-            color: $adm-profile-panel-details-color;
+            color: $adb-profile-panel-details-color;
             padding-top: 50px;
             margin: 0px;
             text-align: center;
         }
 
         h6 {
-            color: $adm-profile-panel-details-color;
+            color: $adb-profile-panel-details-color;
             text-align: center;
             margin-bottom: 0px;
             font-weight: 900;
@@ -168,7 +168,7 @@
     .profile-button {
         a {
             display: block;
-            background: $adm-profile-panel-button-background;
+            background: $adb-profile-panel-button-background;
             height: 50px;
             color: white;
             padding-top: 15px;
@@ -177,7 +177,7 @@
             @include transition(background-color 0.6s);
 
             &:hover {
-                background: $adm-profile-panel-button-hover-background;
+                background: $adb-profile-panel-button-hover-background;
                 @include transition(background-color 0.6s);
             }
         }

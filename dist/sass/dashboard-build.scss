@@ -2,8 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 
-$adm-primary-font: 'Ruda', sans-serif;
-$adm-secondary-font: 'Ruda', sans-serif;
+$adb-primary-font: 'Ruda', sans-serif;
+$adb-secondary-font: 'Ruda', sans-serif;
 
 // Mixins + Variables
 @import "dashboard/mixins";
@@ -15,17 +15,14 @@ $adm-secondary-font: 'Ruda', sans-serif;
 // Bootstrap overrides
 @import "dashboard/overrides";
 
-// Modal dialogs
-@import "dashboard/modal";
-
 // Sidebar
 @import "dashboard/sidebar";
 
 // Top bar
 @import "dashboard/header";
 
-// Theme buttons
-@import "dashboard/buttons";
+// Theme buttons, backgrounds, colors, etc
+@import "dashboard/theme";
 
 // General UI
 @import "dashboard/ui";
