@@ -34,6 +34,24 @@
     border-color: darken($adb-btn-theme-alt-border-color, $adb-default-darken);
 }
 
+// Panel
+.panel-theme {
+    border-color: $adb-panel-theme-border-color;
+
+    > .panel-heading {
+        background: $adb-panel-theme-background;
+        color: $adb-panel-theme-color;
+    }
+}
+
+.panel-theme-alt {
+    border-color: $adb-panel-theme-alt-border-color;
+
+    > .panel-heading {
+        background: $adb-panel-theme-alt-background;
+        color: $adb-panel-theme-alt-color;
+    }
+}
 
 // Backgrounds
 .bg-theme {

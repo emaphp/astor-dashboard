@@ -437,6 +437,18 @@ ul.top-bar > li {
   background-color: #236dcf;
   border-color: #236dcf; }
 
+.panel-theme {
+  border-color: #7459E1; }
+  .panel-theme > .panel-heading {
+    background: #7459E1;
+    color: #fff; }
+
+.panel-theme-alt {
+  border-color: #4588E0; }
+  .panel-theme-alt > .panel-heading {
+    background: #4588E0;
+    color: #fff; }
+
 .bg-theme {
   background: #7459E1; }
 
