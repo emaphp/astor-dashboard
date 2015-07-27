@@ -190,13 +190,13 @@
                                 <hr>
                                 <input type="checkbox" disabled checked>
                                 <hr>
-                                <input type="checkbox" title="Example title">
+                                <input type="checkbox" title="Título ejemplo">
                                 <hr>
-                                <input type="checkbox" data-off-title="No" data-on-title="Yes">
+                                <input type="checkbox" data-off-title="No activar" data-on-title="Activar">
                                 <hr>
                                 <input type="checkbox" data-off-icon-class="glyphicon glyphicon-thumbs-down" data-on-icon-class="glyphicon glyphicon-thumbs-up">
                                 <hr>
-                                <input type="checkbox" checked data-off-class="btn-warning" data-on-class="btn-primary">
+                                <input type="checkbox" checked data-off-class="btn-warning" data-on-class="btn-theme">
                             </div>
                         </div>
                     </div>
@@ -218,7 +218,10 @@
         <script type="text/javascript" src="../bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.min.js"></script>
         <script src="../dist/js/dashboard.js"></script>
         <script type="text/javascript">
-            $(':checkbox').checkboxpicker();
+            $(':checkbox').checkboxpicker({
+                offLabel: 'No',
+                onLabel: 'Sí'
+            });
         </script>
   </body>
 </html>
