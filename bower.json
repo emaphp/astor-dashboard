@@ -13,7 +13,6 @@
   "keywords": [
     "astor",
     "framework",
-    "dashmin",
     "dashboard"
   ],
   "license": "MIT",
@@ -31,6 +30,7 @@
     "jquery.bandoneon": "~1.0.0",
     "select2": "~4.0.0",
     "astor-datatables": "~1.0.2",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "bootstrap-checkbox": "~1.2.8"
   }
 }

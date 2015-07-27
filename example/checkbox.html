@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="keyword" content="">
-        <title>Astor Dashboard - Página en blanco</title>
+        <title>Astor Dashboard - bootstrap-checkbox</title>
         <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <link href="../dist/css/dashmin.css" rel="stylesheet">
@@ -155,23 +155,23 @@
                             </ul>
                         </li>
                         <li class="sub-menu">
-                            <a href="#">
+                            <a class="active" href="#">
                                 <i class="fa fa-cogs"></i>
                                 <span>Plugins</span>
                             </a>
                             <ul class="sub">
                                 <li><a href="datatables.html">Datatables</a></li>
                                 <li><a href="select2.html">Select2</a></li>
-                                <li><a href="checkbox.html">bootstrap-checkbox</a></li>
+                                <li class="active"><a href="checkbox.html">bootstrap-checkbox</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
-                            <a href="#" class="active">
+                            <a href="#">
                                 <i class="fa fa-book"></i>
                                 <span>Extras</span>
                             </a>
                             <ul class="sub">
-                                <li class="active"><a href="blank.html">Página en blanco</a></li>
+                                <li><a href="blank.html">Página en blanco</a></li>
                                 <li><a href="login.html">Login</a></li>
                             </ul>
                         </li>
@@ -180,6 +180,26 @@
             </aside>
             <section id="main-content">
                 <section class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="content-box">
+                                <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>bootstrap-checkbox</h4>
+                                <input type="checkbox">
+                                <hr>
+                                <input type="checkbox" data-reverse>
+                                <hr>
+                                <input type="checkbox" disabled checked>
+                                <hr>
+                                <input type="checkbox" title="Example title">
+                                <hr>
+                                <input type="checkbox" data-off-title="No" data-on-title="Yes">
+                                <hr>
+                                <input type="checkbox" data-off-icon-class="glyphicon glyphicon-thumbs-down" data-on-icon-class="glyphicon glyphicon-thumbs-up">
+                                <hr>
+                                <input type="checkbox" checked data-off-class="btn-warning" data-on-class="btn-primary">
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
             <footer>
@@ -195,6 +215,10 @@
         <script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.bandoneon/dist/jquery.bandoneon.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="../bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.min.js"></script>
         <script src="../dist/js/dashmin.js"></script>
+        <script type="text/javascript">
+            $(':checkbox').checkboxpicker();
+        </script>
   </body>
 </html>
