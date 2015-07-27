@@ -61,14 +61,14 @@ $adb-top-bar-logo-hover-color: #fff !default;
 $adb-top-bar-dropdown-border-radius: 4px !default;
 $adb-top-bar-dropdown-header-background: $adb-theme-color !default;
 $adb-top-bar-dropdown-header-color: #fff !default;
+$adb-top-bar-dropdown-header-font: $adb-secondary-font !default;
 $adb-top-bar-dropdown-item-color: #333 !default;
 $adb-top-bar-dropdown-item-border: 1px solid #ebebeb !default;
 $adb-top-bar-dropdown-item-hover-background: #f0f0f0 !default;
 $adb-top-bar-dropdown-item-hover-color: darken($adb-theme-color, $adb-default-darken) !default;
 $adb-top-bar-dropdown-item-hover-border: 1px solid $adb-theme-color !default;
 
-$adb-top-bar-inbox-item-color: #000 !default;
-$adb-top-bar-inbox-item-hover-color: #222 !default;
+$adb-top-bar-inbox-item-hover-color: #333 !default;
 $adb-top-bar-inbox-item-from-hover-color: darken($adb-theme-color, $adb-default-darken) !default;
 
 /**
@@ -77,6 +77,7 @@ $adb-top-bar-inbox-item-from-hover-color: darken($adb-theme-color, $adb-default-
 
 $adb-sidebar-background: #424a5d !default;
 $adb-sidebar-login-info-color: #f2f2f2 !default;
+$adb-sidebar-font: $adb-secondary-font !default;
 
 // Main link
 $adb-sidebar-link-color: #d0d0d0 !default;
@@ -97,12 +98,14 @@ $adb-sidebar-sub-link-active-background: transparent !default;
  */
 
 $adb-status-box-background: transparent !default;
+$adb-status-box-font: $adb-secondary-font !default;
 $adb-status-box-icon-color: #888 !default;
 $adb-status-box-icon-size: 38px !default;
 $adb-status-box-hover-background: #fff !default;
 $adb-status-box-hover-color: darken($adb-theme-color-alt, $adb-default-darken) !default;
 $adb-status-box-hover-border: 1px solid #999 !default;
 
+$adb-right-aside-font: $adb-secondary-font !default;
 $adb-right-aside-background: #fff !default;
 $adb-right-aside-header-background: $adb-theme-color !default;
 $adb-right-aside-header-color: #fff !default;
@@ -119,6 +122,7 @@ $adb-right-aside-item-badge-color: $adb-theme-color-alt !default;
 
 $adb-ui-content-box-background: #fff !default;
 $adb-ui-content-box-color: $adb-body-color !default;
+$adb-ui-content-header-font: $adb-secondary-font !default;
 $adb-ui-content-header-color: #333 !default;
 $adb-ui-content-header-icon-color: $adb-theme-color !default;
 
@@ -129,12 +133,14 @@ $adb-ui-content-header-icon-color: $adb-theme-color !default;
 // Info panel
 $adb-info-panel-background: #444c57 !default;
 $adb-info-panel-color: #fff !default;
+$adb-info-panel-header-font: $adb-secondary-font !default;
 $adb-info-panel-header-background: $adb-theme-color !default;
 $adb-info-panel-header-color: #fff !default;
 $adb-info-panel-header-text-transform: uppercase !default;
 $adb-info-panel-icon-color: $adb-theme-color !default;
 
 // Tasks panel
+$adb-tasks-panel-font: $adb-secondary-font !default;
 $adb-tasks-panel-task-background: #393D40 !default;
 $adb-tasks-panel-task-color: #888 !default;
 $adb-tasks-panel-task-hover-background: #222 !default;
@@ -187,12 +193,10 @@ $adb-login-heading-color: #fff !default;
 $adb-login-heading-background: $adb-theme-color !default;
 $adb-login-heading-border-radius: 5px 5px 0 0 !default;
 
-$adb-btn-facebook-font: $adb-secondary-font !default;
 $adb-btn-facebook-color: #fff !default;
 $adb-btn-facebook-background: #5193ea !default;
 $adb-btn-facebook-border-color: $adb-btn-facebook-background !default;
 
-$adb-btn-twitter-font: $adb-secondary-font !default;
 $adb-btn-twitter-color: #fff !default;
 $adb-btn-twitter-background: #44ccfe !default;
 $adb-btn-twitter-border-color: $adb-btn-twitter-background !default;
@@ -211,6 +215,7 @@ $adb-badge-info-background: #41cac0 !default;
  * Footer
  */
 
+$adb-footer-font: $adb-secondary-font !default;
 $adb-footer-color: #fff !default;
 $adb-footer-background: $adb-theme-color-alt !default;
 $adb-footer-go-top-color: #fff !default;

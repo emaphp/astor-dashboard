@@ -28,6 +28,17 @@ label {
     font-weight: normal;
 }
 
+.label-default,
+.label-primary,
+.label-success,
+.label-info,
+.label-warning,
+.label-danger,
+.label-theme,
+.label-theme-alt {
+    font-family: $adb-secondary-font;
+}
+
 // Modal dialogs
 .modal-header {
 	background: $adb-modal-header-background;

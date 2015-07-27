@@ -81,7 +81,7 @@ ul.top-bar > li {
 .logo {
     font-size: $adb-top-bar-logo-font-size;
     color: $adb-top-bar-logo-color;
-    font-size: $adb-top-bar-logo-font-family;
+    font-family: $adb-top-bar-logo-font-family;
     float: left;
     margin-top: 15px;
 
@@ -107,6 +107,7 @@ ul.top-bar > li {
         .dropdown-header {
             background: $adb-top-bar-dropdown-header-background;
             color: $adb-top-bar-dropdown-header-color;
+            font-family: $adb-top-bar-dropdown-header-font;
             padding: 10px;
             @include radius(4px 4px 0px 0px);
             margin: 0;
@@ -118,7 +119,7 @@ ul.top-bar > li {
             border-bottom: $adb-top-bar-dropdown-item-border !important;
             font-size: 12px;
             list-style: none;
-            padding: 15px 10px !important;
+            padding: 13px 10px !important;
             width: 100%;
             display: inline-block;
 
@@ -166,7 +167,6 @@ ul.top-bar > li {
             display: inline-block;
             float: right;
             font-size: 13px;
-            font-weight: 600;
             padding-left: 10px;
             margin-top: -4px;
         }
@@ -176,8 +176,6 @@ ul.top-bar > li {
 // Inbox
 .dropdown-menu.inbox {
     li a {
-        color: $adb-top-bar-inbox-item-color !important;
-
         .message {
             padding: 3px 0;
         }
@@ -196,7 +194,7 @@ ul.top-bar > li {
             @include radius(2px);
             float: left;
             height: 40px;
-            margin-right: 4px;
+            margin-right: 6px;
             width: 40px;
         }
 
@@ -204,14 +202,12 @@ ul.top-bar > li {
             display: block;
 
             .from {
-                font-size: 12px;
                 font-weight: 600;
             }
 
             .time {
                 font-size: 11px;
                 font-style: italic;
-                font-weight: bold;
                 position: absolute;
                 right: 5px;
             }

@@ -5,6 +5,7 @@
 // status box
 .status-box {
     background: $adb-status-box-background;
+    font-family: $adb-status-box-font;
 
     &:hover {
         background: $adb-status-box-hover-background;
@@ -49,6 +50,7 @@
     h3 {
         background: $adb-right-aside-header-background;
         color: $adb-right-aside-header-color;
+        font-family: $adb-right-aside-font;
         font-size: 16px;
         padding: 0 10px;
         line-height: 60px;
@@ -66,7 +68,7 @@
     .item {
         border-bottom: $adb-right-aside-item-border;
         display: inline-block;
-        padding: 15px 0 10px;
+        padding: 12px 0 8px;
         width: 100%;
         background: $adb-right-aside-item-background;
 
@@ -76,7 +78,7 @@
 
         .item-thumb {
             width: 30px;
-            margin: 0 8px 0 16px;
+            margin: 0 8px 0 12px;
             display: block;
             float: left;
 
@@ -86,7 +88,7 @@
         }
 
         .item-details {
-            width: 170px;
+            width: 80%;
             float: left;
 
             p {
@@ -104,14 +106,14 @@
         }
 
         .item-link {
-            padding: 5px 0;
+            padding: 3px 0;
             margin-bottom: 5px;
             text-align: center;
         }
     }
 
     .contact {
-        padding: 20px 0 15px;
+        padding: 16px 0 10px;
 
         .item-details {
             margin-left: 10px;

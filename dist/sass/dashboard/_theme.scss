@@ -54,11 +54,11 @@
 }
 
 // Backgrounds
-.bg-theme {
+.bg-theme,.label-theme {
     background: $adb-theme-color;
 }
 
-.bg-theme-alt {
+.bg-theme-alt,.label-theme-alt {
     background: $adb-theme-color-alt;
 }
 
@@ -141,4 +141,13 @@
 
 .color-theme-desaturate-alt {
     color: desaturate($adb-theme-color-alt, $adb-default-desaturate);
+}
+
+// Fonts
+.theme-font {
+    font-family: $adb-primary-font !important;
+}
+
+.theme-font-alt {
+    font-family: $adb-secondary-font !important;
 }
