@@ -33,7 +33,7 @@ $(function() {
         $('#sidebar-toggle').addClass('closed');
     }
 
-    $('.fa-bars').click(function () {
+    $('#sidebar-toggle').click(function () {
         if (sidevarVisible) {
             $('#main-content').css('margin-left', '0px');
             $('#sidebar').css('margin-left', '-210px');
@@ -51,20 +51,10 @@ $(function() {
         }
     });
 
-    // Menu slides
-    $('.panel .tools .fa-chevron-down').click(function () {
-        var el = $(this).parents('.panel').children('.panel-body');
-        if ($(this).hasClass('fa-chevron-down')) {
-            $(this).removeClass('fa-chevron-down').addClass('fa-chevron-up');
-            el.slideUp(150);
-        } else {
-            $(this).removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            el.slideDown(150);
-        }
-    });
-
-    $('.panel .tools .fa-times').click(function () {
-        $(this).parents(".panel").parent().remove();
+    // Go-Top button
+    $('footer .go-top').click(function (e) {
+        e.preventDefault();
+        $(window).scrollTo(0);
     });
 
     // Tooltips
