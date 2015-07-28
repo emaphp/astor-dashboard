@@ -42,23 +42,23 @@
         }
 
         .todo-success {
-            border-left: $adb-todo-item-border-width solid $adb-badge-success-background;
+            border-left: $adb-todo-item-border-width solid $adb-success-color;
         }
 
         .todo-primary {
-            border-left: $adb-todo-item-border-width solid $adb-badge-primary-background;
+            border-left: $adb-todo-item-border-width solid $adb-primary-color;
         }
 
         .todo-info {
-            border-left: $adb-todo-item-border-width solid $adb-badge-info-background;
+            border-left: $adb-todo-item-border-width solid $adb-info-color;
         }
 
         .todo-warning {
-            border-left: $adb-todo-item-border-width solid $adb-badge-warning-background;
+            border-left: $adb-todo-item-border-width solid $adb-warning-color;
         }
 
         .todo-error {
-            border-left: $adb-todo-item-border-width solid $adb-badge-error-background;
+            border-left: $adb-todo-item-border-width solid $adb-error-color;
         }
 
         .todo-theme {

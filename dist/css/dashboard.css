@@ -37,9 +37,6 @@
  * Login
  */
 /**
- * Badges
- */
-/**
  * Footer
  */
 /**
@@ -188,7 +185,7 @@ label {
           color: #fff;
           background: transparent; }
       #sidebar-menu ul.sub li.active a {
-        color: #a897f0;
+        color: #ac9dea;
         background: transparent;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;

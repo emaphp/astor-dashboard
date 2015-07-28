@@ -11,6 +11,12 @@ $adb-default-darken: 10% !default;
 $adb-theme-font: sans-serif, !default;
 $adb-theme-font-alt: sans-serif, !default;
 
+$adb-primary-color: #337ab7 !default;
+$adb-success-color: #a9d86e !default;
+$adb-info-color: #41cac0 !default;
+$adb-warning-color: #fcb322 !default;
+$adb-error-color: #ff6c60 !default;
+
 /**
  * Common styles
  */
@@ -89,7 +95,7 @@ $adb-sidebar-sub-link-color: #d0d0d0 !default;
 $adb-sidebar-sub-link-background: transparent !default;
 $adb-sidebar-sub-link-hover-color: #fff !default;
 $adb-sidebar-sub-link-hover-background: transparent !default;
-$adb-sidebar-sub-link-active-color: lighten(saturate($adb-theme-color, 5%), 15%) !default;
+$adb-sidebar-sub-link-active-color: lighten(desaturate($adb-theme-color, 5%), 15%) !default;
 $adb-sidebar-sub-link-active-background: transparent !default;
 
 $adb-sidebar-toggle-closed-color: $adb-theme-color !default;
@@ -211,16 +217,6 @@ $adb-btn-facebook-border-color: $adb-btn-facebook-background !default;
 $adb-btn-twitter-color: #fff !default;
 $adb-btn-twitter-background: #44ccfe !default;
 $adb-btn-twitter-border-color: $adb-btn-twitter-background !default;
-
-/**
- * Badges
- */
-
-$adb-badge-primary-background: #337ab7 !default;
-$adb-badge-success-background: #a9d86e !default;
-$adb-badge-warning-background: #fcb322 !default;
-$adb-badge-error-background: #ff6c60 !default;
-$adb-badge-info-background: #41cac0 !default;
 
 /**
  * Footer
