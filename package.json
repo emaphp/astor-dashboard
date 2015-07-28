@@ -27,6 +27,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-ruby-sass": "^1.0.5"
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sync": "^0.1.4"
   }
 }

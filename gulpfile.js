@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');
+var gulpsync = require('gulp-sync')(gulp);
 
 // Dashboard task
 gulp.task('dashboard:build', function() {
@@ -29,4 +30,4 @@ gulp.task('datatables', ['datatables:build'], function () {
 });
 
 // Default task
-gulp.task('default', ['dashboard:build', 'datatables:build']);
+gulp.task('default', gulpsync.sync(['dashboard:build', 'datatables:build']));
