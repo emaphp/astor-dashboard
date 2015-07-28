@@ -45,6 +45,7 @@ $adb-top-bar-icon-size: 16px !default;
 $adb-top-bar-icon-border-radius: 4px !default;
 $adb-top-bar-icon-badge-color: $adb-theme-color-alt !default;
 
+$adb-top-bar-logout-font: $adb-secondary-font !default;
 $adb-top-bar-logout-color: #fff !default;
 $adb-top-bar-logout-background: $adb-theme-color !default;
 $adb-top-bar-logout-border: 1px solid $adb-theme-color !default;
@@ -112,7 +113,6 @@ $adb-right-aside-header-color: #fff !default;
 $adb-right-aside-item-background: #fff !default;
 $adb-right-aside-item-color: #444 !default;
 $adb-right-aside-item-link-color: darken($adb-theme-color-alt, $adb-default-darken) !default;
-$adb-right-aside-item-hover-background: #f2f2f2 !default;
 $adb-right-aside-item-border: 1px solid #eaeaea !default;
 $adb-right-aside-item-badge-color: $adb-theme-color-alt !default;
 
@@ -169,13 +169,13 @@ $adb-btn-theme-alt-color: #fff !default;
 $adb-btn-theme-alt-background: $adb-theme-color-alt !default;
 $adb-btn-theme-alt-border-color: $adb-theme-color-alt !default;
 
-$adb-panel-theme-color: #fff !default;
-$adb-panel-theme-background: $adb-theme-color !default;
-$adb-panel-theme-border-color: $adb-theme-color !default;
+$adb-panel-theme-color: darken(desaturate($adb-theme-color, $adb-default-desaturate), 20%) !default;
+$adb-panel-theme-background: lighten($adb-theme-color, $adb-default-lighten) !default;
+$adb-panel-theme-border-color: lighten($adb-theme-color, $adb-default-lighten) !default;
 
-$adb-panel-theme-alt-color: #fff !default;
-$adb-panel-theme-alt-background: $adb-theme-color-alt !default;
-$adb-panel-theme-alt-border-color: $adb-theme-color-alt !default;
+$adb-panel-theme-alt-color: darken(desaturate($adb-theme-color-alt, $adb-default-desaturate), 20%) !default;
+$adb-panel-theme-alt-background: lighten($adb-theme-color-alt, $adb-default-lighten) !default;
+$adb-panel-theme-alt-border-color: lighten($adb-theme-color-alt, $adb-default-lighten) !default;
 
 /*
  * Login

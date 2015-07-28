@@ -72,19 +72,11 @@
         width: 100%;
         background: $adb-right-aside-item-background;
 
-        &:hover {
-            background: $adb-right-aside-item-hover-background;
-        }
-
         .item-thumb {
             width: 30px;
             margin: 0 8px 0 12px;
             display: block;
             float: left;
-
-            .badge {
-                background: $adb-right-aside-item-badge-color;
-            }
         }
 
         .item-details {

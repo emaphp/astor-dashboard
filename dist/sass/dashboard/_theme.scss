@@ -55,92 +55,92 @@
 
 // Backgrounds
 .bg-theme,.label-theme {
-    background: $adb-theme-color;
+    background: $adb-theme-color !important;
 }
 
 .bg-theme-alt,.label-theme-alt {
-    background: $adb-theme-color-alt;
+    background: $adb-theme-color-alt !important;
 }
 
 // Lighten
 .bg-theme-lighten {
-    background: lighten($adb-theme-color, $adb-default-lighten);
+    background: lighten($adb-theme-color, $adb-default-lighten) !important;
 }
 
 .bg-theme-lighten-alt {
-    background: lighten($adb-theme-color-alt, $adb-default-lighten);
+    background: lighten($adb-theme-color-alt, $adb-default-lighten) !important;
 }
 
 // Darken
 .bg-theme-darken {
-    background: darken($adb-theme-color, $adb-default-darken);
+    background: darken($adb-theme-color, $adb-default-darken) !important;
 }
 
 .bg-theme-darken-alt {
-    background: darken($adb-theme-color-alt, $adb-default-darken);
+    background: darken($adb-theme-color-alt, $adb-default-darken) !important;
 }
 
 // Saturate
 .bg-theme-saturate {
-    background: saturate($adb-theme-color, $adb-default-saturate);
+    background: saturate($adb-theme-color, $adb-default-saturate) !important;
 }
 
 .bg-theme-saturate-alt {
-    background: saturate($adb-theme-color-alt, $adb-default-saturate);
+    background: saturate($adb-theme-color-alt, $adb-default-saturate) !important;
 }
 
 // Desaturate
 .bg-theme-desaturate {
-    background: desaturate($adb-theme-color, $adb-default-desaturate);
+    background: desaturate($adb-theme-color, $adb-default-desaturate) !important;
 }
 
 .bg-theme-desaturate-alt {
-    background: desaturate($adb-theme-color-alt, $adb-default-desaturate);
+    background: desaturate($adb-theme-color-alt, $adb-default-desaturate) !important;
 }
 
 // Colors
 .color-theme {
-    color: $adb-theme-color;
+    color: $adb-theme-color !important;
 }
 
 .color-theme-alt {
-    color: $adb-theme-color-alt;
+    color: $adb-theme-color-alt !important;
 }
 
 // Lighten
 .color-theme-lighten {
-    color: lighten($adb-theme-color, $adb-default-lighten);
+    color: lighten($adb-theme-color, $adb-default-lighten) !important;
 }
 
 .color-theme-lighten-alt {
-    color: lighten($adb-theme-color-alt, $adb-default-lighten);
+    color: lighten($adb-theme-color-alt, $adb-default-lighten) !important;
 }
 
 // Darken
 .color-theme-darken {
-    color: darken($adb-theme-color, $adb-default-darken);
+    color: darken($adb-theme-color, $adb-default-darken) !important;
 }
 
 .color-theme-darken-alt {
-    color: darken($adb-theme-color-alt, $adb-default-darken);
+    color: darken($adb-theme-color-alt, $adb-default-darken) !important;
 }
 
 // Saturate
 .color-theme-saturate {
-    color: saturate($adb-theme-color, $adb-default-saturate);
+    color: saturate($adb-theme-color, $adb-default-saturate) !important;
 }
 
 .color-theme-saturate-alt {
-    color: saturate($adb-theme-color-alt, $adb-default-saturate);
+    color: saturate($adb-theme-color-alt, $adb-default-saturate) !important;
 }
 
 // Desaturate
 .color-theme-desaturate {
-    color: desaturate($adb-theme-color, $adb-default-desaturate);
+    color: desaturate($adb-theme-color, $adb-default-desaturate) !important;
 }
 
 .color-theme-desaturate-alt {
-    color: desaturate($adb-theme-color-alt, $adb-default-desaturate);
+    color: desaturate($adb-theme-color-alt, $adb-default-desaturate) !important;
 }
 
 // Fonts

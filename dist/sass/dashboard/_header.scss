@@ -37,6 +37,7 @@ ul.top-bar > li {
     }
 
     .logout {
+        font-family: $adb-top-bar-logout-font;
         color: $adb-top-bar-logout-color !important;
         @include radius($adb-top-bar-logout-border-radius);
         background: $adb-top-bar-logout-background !important;
