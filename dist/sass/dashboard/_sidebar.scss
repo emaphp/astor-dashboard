@@ -125,7 +125,7 @@
 }
 
 // Sidebar toggle
-.sidebar-toggle-box {
+#sidebar-toggle {
     float: left;
     padding-right: 15px;
     margin-top: 20px;
@@ -135,6 +135,10 @@
         display: inline-block;
         font-size: 20px;
     }
+}
+
+#sidebar-toggle.closed {
+    color: $adb-sidebar-toggle-closed-color;
 }
 
 .sidebar-closed > #sidebar > ul {

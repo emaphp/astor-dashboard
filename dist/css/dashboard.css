@@ -230,14 +230,17 @@ label {
   #sidebar-menu li.sub-menu {
     line-height: 15px; }
 
-.sidebar-toggle-box {
+#sidebar-toggle {
   float: left;
   padding-right: 15px;
   margin-top: 20px; }
-  .sidebar-toggle-box .fa-bars {
+  #sidebar-toggle .fa-bars {
     cursor: pointer;
     display: inline-block;
     font-size: 20px; }
+
+#sidebar-toggle.closed {
+  color: #7459E1; }
 
 .sidebar-closed > #sidebar > ul {
   display: none; }
@@ -452,15 +455,15 @@ ul.top-bar > li {
   border-color: #236dcf; }
 
 .panel-theme {
-  border-color: #aa9aed; }
+  border-color: #bcaff1; }
   .panel-theme > .panel-heading {
-    background: #aa9aed;
+    background: #bcaff1;
     color: #3f2b90; }
 
 .panel-theme-alt {
-  border-color: #87b2eb; }
+  border-color: #9cc0ef; }
   .panel-theme-alt > .panel-heading {
-    background: #87b2eb;
+    background: #9cc0ef;
     color: #244c81; }
 
 .bg-theme, .label-theme {

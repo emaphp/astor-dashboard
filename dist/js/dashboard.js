@@ -29,18 +29,24 @@ $(function() {
     // Toggle navigation icon
     var sidevarVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
 
+    if (!sidevarVisible) {
+        $('#sidebar-toggle').addClass('closed');
+    }
+
     $('.fa-bars').click(function () {
         if (sidevarVisible) {
             $('#main-content').css('margin-left', '0px');
             $('#sidebar').css('margin-left', '-210px');
             $('#sidebar > ul').hide();
             $('#container').addClass('sidebar-closed');
+            $('#sidebar-toggle').addClass('closed');
             sidevarVisible = false;
         } else {
             $('#main-content').css('margin-left', '210px');
             $('#sidebar > ul').show();
             $('#sidebar').css('margin-left', '0');
             $('#container').removeClass('sidebar-closed');
+            $('#sidebar-toggle').removeClass('closed');
             sidevarVisible = true;
         }
     });

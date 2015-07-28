@@ -92,6 +92,8 @@ $adb-sidebar-sub-link-hover-background: transparent !default;
 $adb-sidebar-sub-link-active-color: lighten(saturate($adb-theme-color, 5%), 15%) !default;
 $adb-sidebar-sub-link-active-background: transparent !default;
 
+$adb-sidebar-toggle-closed-color: $adb-theme-color !default;
+
 /**
  * Index page styles
  */
@@ -168,12 +170,12 @@ $adb-btn-theme-alt-background: $adb-theme-color-alt !default;
 $adb-btn-theme-alt-border-color: $adb-theme-color-alt !default;
 
 $adb-panel-theme-color: darken(desaturate($adb-theme-color, 15%), 25%) !default;
-$adb-panel-theme-background: lighten($adb-theme-color, 15%) !default;
-$adb-panel-theme-border-color: lighten($adb-theme-color, 15%) !default;
+$adb-panel-theme-background: lighten($adb-theme-color, 20%) !default;
+$adb-panel-theme-border-color: lighten($adb-theme-color, 20%) !default;
 
 $adb-panel-theme-alt-color: darken(desaturate($adb-theme-color-alt, 15%), 25%) !default;
-$adb-panel-theme-alt-background: lighten($adb-theme-color-alt, 15%) !default;
-$adb-panel-theme-alt-border-color: lighten($adb-theme-color-alt, 15%) !default;
+$adb-panel-theme-alt-background: lighten($adb-theme-color-alt, 20%) !default;
+$adb-panel-theme-alt-border-color: lighten($adb-theme-color-alt, 20%) !default;
 
 /**
  * Components
