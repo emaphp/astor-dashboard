@@ -1,12 +1,12 @@
 {
-  "name": "astor-dashmin",
+  "name": "astor-dashboard",
   "version": "1.0.0",
-  "homepage": "https://github.com/emaphp/astor-dashmin",
+  "homepage": "https://github.com/emaphp/astor-dashboard",
   "authors": [
-    "emaphp <emmanuel.antico@gmail.com>"
+    "Emmanuel Antico <emmanuel.antico@gmail.com>"
   ],
-  "description": "Dashboard components for Astor Framework",
-  "main": "dist/css/dashmin.css",
+  "description": "A responsive dashboard made with Sass",
+  "main": ["dist/css/dashboard.css", "dist/js/dashboard.js"],
   "moduleType": [
     "globals"
   ],

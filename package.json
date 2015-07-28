@@ -1,8 +1,8 @@
 {
-  "name": "astor-dashmin",
+  "name": "astor-dashboard",
   "version": "1.0.0",
-  "description": "Dashboard components for Astor Framework",
-  "main": "dist/css/dashmin.css",
+  "description": "A responsive dashboard made with Sass",
+  "main": ["dist/css/dashmin.css", "dist/js/dashboard.js"],
   "directories": {
     "example": "examples"
   },
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emaphp/astor-dashmin.git"
+    "url": "git+https://github.com/emaphp/astor-dashboard.git"
   },
   "keywords": [
     "astor",
@@ -21,9 +21,9 @@
   "author": "Emmanuel Antico <emmanuel.antico@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/emaphp/astor-dashmin/issues"
+    "url": "https://github.com/emaphp/astor-dashboard/issues"
   },
-  "homepage": "https://github.com/emaphp/astor-dashmin#readme",
+  "homepage": "https://github.com/emaphp/astor-dashboard#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
