@@ -9,6 +9,25 @@
 }
 
 @media (max-width: 768px) {
+    .status-box {
+        p {
+            color: $adb-status-box-hover-color;
+        }
+
+        .status-icon {
+            border: none;
+        }
+
+        &:hover {
+            background: $adb-status-box-background;
+        }
+    }
+
+    .ui-panel {
+        height: auto;
+        margin-bottom: 5px;
+    }
+
     .header {
         position: absolute;
     }
@@ -74,7 +93,7 @@
         width: 0;
         height: 0;
         top:48px;
-        border-bottom: 15px solid darken($adb-sidebar-background, $adb-default-darken);
+        border-bottom: 15px solid darken($adb-sidebar-background, 10%);
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
     }

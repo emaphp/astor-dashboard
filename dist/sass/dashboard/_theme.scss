@@ -80,24 +80,6 @@
     background: darken($adb-theme-color-alt, $adb-default-darken) !important;
 }
 
-// Saturate
-.bg-theme-saturate {
-    background: saturate($adb-theme-color, $adb-default-saturate) !important;
-}
-
-.bg-theme-saturate-alt {
-    background: saturate($adb-theme-color-alt, $adb-default-saturate) !important;
-}
-
-// Desaturate
-.bg-theme-desaturate {
-    background: desaturate($adb-theme-color, $adb-default-desaturate) !important;
-}
-
-.bg-theme-desaturate-alt {
-    background: desaturate($adb-theme-color-alt, $adb-default-desaturate) !important;
-}
-
 // Colors
 .color-theme {
     color: $adb-theme-color !important;
@@ -123,24 +105,6 @@
 
 .color-theme-darken-alt {
     color: darken($adb-theme-color-alt, $adb-default-darken) !important;
-}
-
-// Saturate
-.color-theme-saturate {
-    color: saturate($adb-theme-color, $adb-default-saturate) !important;
-}
-
-.color-theme-saturate-alt {
-    color: saturate($adb-theme-color-alt, $adb-default-saturate) !important;
-}
-
-// Desaturate
-.color-theme-desaturate {
-    color: desaturate($adb-theme-color, $adb-default-desaturate) !important;
-}
-
-.color-theme-desaturate-alt {
-    color: desaturate($adb-theme-color-alt, $adb-default-desaturate) !important;
 }
 
 // Fonts
