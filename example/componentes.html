@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="keyword" content="">
-        <title>Astor Dashboard - Formularios</title>
+        <title>Astor Dashboard - Componentes</title>
         <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <link href="../dist/css/dashboard.css" rel="stylesheet">
@@ -143,16 +143,16 @@
                             </a>
                         </li>
                         <li class="sub-menu">
-                            <a class="active" href="#">
+                            <a href="#" class="active">
                                 <i class="fa fa-desktop"></i>
                                 <span>Interfaz</span>
                             </a>
                             <ul class="sub">
                                 <li><a href="general.html">General</a></li>
                                 <li><a href="botones.html">Botones</a></li>
-                                <li class="active"><a href="formularios.html">Formularios</a></li>
+                                <li><a href="formularios.html">Formularios</a></li>
                                 <li><a href="tablas.html">Tablas</a></li>
-                                <li><a href="componentes.html">Componentes</a></li>
+                                <li class="active"><a href="componentes.html">Componentes</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
@@ -182,144 +182,103 @@
             <section id="main-content">
                 <section class="wrapper">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-6 col-sm-12">
                             <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Formulario</h4>
-                                <form class="form-horizontal" method="get">
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Default</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control">
-                                        </div>
+                                <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Todo List</h4>
+                                <div class="todo-list">
+                                    <div class="todo-list-content">
+                                        <ul>
+                                            <li class="todo-success finished">
+                                                <div class="todo-checkbox">
+                                                    <input type="checkbox" value="" checked>
+                                                </div>
+                                                <div class="todo-description">
+                                                    <span class="todo-name">Escribir documentación</span>
+                                                    <span class="badge bg-success">Terminada</span>
+                                                    <div class="pull-right">
+                                                        <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
+                                                        <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="todo-primary">
+                                                <div class="todo-checkbox">
+                                                    <input type="checkbox" value="">
+                                                </div>
+                                                <div class="todo-description">
+                                                    <span class="todo-name">Agregar estilos</span>
+                                                    <span class="badge bg-primary">En proceso</span>
+                                                    <div class="pull-right">
+                                                        <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
+                                                        <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="todo-error">
+                                                <div class="todo-checkbox">
+                                                    <input type="checkbox" value="">
+                                                </div>
+                                                <div class="todo-description">
+                                                    <span class="todo-name">Pactar presupuesto</span>
+                                                    <span class="badge bg-error">Cancelada</span>
+                                                    <div class="pull-right">
+                                                        <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
+                                                        <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="todo-warning">
+                                                <div class="todo-checkbox">
+                                                    <input type="checkbox" value="">
+                                                </div>
+                                                <div class="todo-description">
+                                                    <span class="todo-name">Analizar funcionalidad</span>
+                                                    <span class="badge bg-warning">Reasignada</span>
+                                                    <div class="pull-right">
+                                                        <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
+                                                        <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="todo-theme">
+                                                <div class="todo-checkbox">
+                                                    <input type="checkbox" value="">
+                                                </div>
+                                                <div class="todo-description">
+                                                    <span class="todo-name">Implementar solución</span>
+                                                    <span class="badge bg-theme">No asignada</span>
+                                                    <div class="pull-right">
+                                                        <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
+                                                        <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="todo-theme-alt">
+                                                <div class="todo-checkbox">
+                                                    <input type="checkbox" value="">
+                                                </div>
+                                                <div class="todo-description">
+                                                    <span class="todo-name">Publicar boletín</span>
+                                                    <span class="badge bg-theme-alt">Con demora</span>
+                                                    <div class="pull-right">
+                                                        <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
+                                                        <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Texto ayuda</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control">
-                                            <span class="help-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
-                                        </div>
+                                    <div class="todo-list-footer">
+                                        <a class="btn btn-success btn-sm pull-left" href="#"><i class="fa fa-plus">&nbsp;</i>Agregar tarea</a>
+                                        <a class="btn btn-default btn-sm pull-right" href="#"><i class="fa fa-bars">&nbsp;</i>Ver todas</a>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Deshabilitado</label>
-                                        <div class="col-sm-10">
-                                            <input class="form-control" type="text" disabled>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Placeholder</label>
-                                        <div class="col-sm-10">
-                                            <input type="text"  class="form-control" placeholder="Input + Placeholder">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Contraseña</label>
-                                        <div class="col-sm-10">
-                                            <input type="password"  class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-sm-2 control-label">Estático</label>
-                                        <div class="col-lg-10">
-                                            <p class="form-control-static">email@example.com</p>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Inline</h4>
-                                <form class="form-inline" role="form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputEmail2">Dirección de e-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Ingresar e-mail">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputPassword2">Contraseña</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Ingresar password">
-                                    </div>
-                                    <button type="submit" class="btn btn-theme">Login</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Input + Alerts</h4>
-                                <form class="form-horizontal tasi-form" method="get">
-                                    <div class="form-group has-success">
-                                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Input + Success</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="inputSuccess">
-                                        </div>
-                                    </div>
-                                    <div class="form-group has-warning">
-                                        <label class="col-sm-2 control-label col-lg-2" for="inputWarning">Input + Warning</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="inputWarning">
-                                        </div>
-                                    </div>
-                                    <div class="form-group has-error">
-                                        <label class="col-sm-2 control-label col-lg-2" for="inputError">Input + Error</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="inputError">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Checkboxes, Radios &amp; Selects</h4>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                                    </label>
                                 </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    </label>
-                                </div>
-                                <hr>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-                                </label>
-                                <hr>
-                                <select class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                                <br>
-                                <select multiple class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
                             </div>
                         </div>
                     </div>

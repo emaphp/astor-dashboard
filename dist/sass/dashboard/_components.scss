@@ -1,0 +1,77 @@
+/**
+ * Components
+ */
+
+.todo-list {
+    padding: 5px;
+
+    .todo-list-content {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                padding: 15px 0 15px 20px;
+                position: relative;
+                background: $adb-todo-item-background;
+                margin-bottom: 4px;
+                border-left: 3px solid $adb-todo-item-border-default-background;
+
+                .todo-checkbox {
+                    float: left;
+                    width: 30px;
+                }
+
+                .todo-description {
+                    overflow: hidden;
+                    margin-right: 10px;
+
+                    .todo-name {
+                        color: $adb-todo-description-color;
+                        margin-right: 8px;
+                    }
+                }
+
+                &.finished {
+                    .todo-name {
+                        text-decoration: $adb-todo-name-finished-decoration;
+                    }
+                }
+            }
+        }
+
+        .todo-success {
+            border-left: $adb-todo-item-border-width solid #a9d86e;
+        }
+
+        .todo-primary {
+            border-left: $adb-todo-item-border-width solid #337ab7;
+        }
+
+        .todo-info {
+            border-left: $adb-todo-item-border-width solid #41cac0;
+        }
+
+        .todo-warning {
+            border-left: $adb-todo-item-border-width solid #fcb322;
+        }
+
+        .todo-error {
+            border-left: $adb-todo-item-border-width solid #ff6c60;
+        }
+
+        .todo-theme {
+            border-left: $adb-todo-item-border-width solid $adb-theme-color;
+        }
+
+        .todo-theme-alt {
+            border-left: $adb-todo-item-border-width solid $adb-theme-color-alt;
+        }
+    }
+
+    .todo-list-footer {
+        margin-top: 15px;
+        overflow: hidden;
+    }
+}

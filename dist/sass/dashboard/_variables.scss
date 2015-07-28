@@ -175,6 +175,17 @@ $adb-panel-theme-alt-color: darken(desaturate($adb-theme-color-alt, 15%), 25%) !
 $adb-panel-theme-alt-background: lighten($adb-theme-color-alt, 15%) !default;
 $adb-panel-theme-alt-border-color: lighten($adb-theme-color-alt, 15%) !default;
 
+/**
+ * Components
+ */
+
+// Todo List
+$adb-todo-item-border-width: 3px;
+$adb-todo-item-background: #f5f5f5;
+$adb-todo-item-border-default-background: #777;
+$adb-todo-description-color: #555;
+$adb-todo-name-finished-decoration: line-through;
+
 /*
  * Login
  */

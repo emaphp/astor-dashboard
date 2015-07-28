@@ -30,6 +30,9 @@
 /**
  * Theme buttons, backgrounds. colors, etc
  */
+/**
+ * Components
+ */
 /*
  * Login
  */
@@ -751,6 +754,50 @@ ul.top-bar > li {
       -o-transition: background-color 0.6s;
       -ms-transition: background-color 0.6s;
       transition: background-color 0.6s; }
+
+/**
+ * Components
+ */
+.todo-list {
+  padding: 5px; }
+  .todo-list .todo-list-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .todo-list .todo-list-content ul li {
+      padding: 15px 0 15px 20px;
+      position: relative;
+      background: #f5f5f5;
+      margin-bottom: 4px;
+      border-left: 3px solid #777; }
+      .todo-list .todo-list-content ul li .todo-checkbox {
+        float: left;
+        width: 30px; }
+      .todo-list .todo-list-content ul li .todo-description {
+        overflow: hidden;
+        margin-right: 10px; }
+        .todo-list .todo-list-content ul li .todo-description .todo-name {
+          color: #555;
+          margin-right: 8px; }
+      .todo-list .todo-list-content ul li.finished .todo-name {
+        text-decoration: line-through; }
+  .todo-list .todo-list-content .todo-success {
+    border-left: 3px solid #a9d86e; }
+  .todo-list .todo-list-content .todo-primary {
+    border-left: 3px solid #337ab7; }
+  .todo-list .todo-list-content .todo-info {
+    border-left: 3px solid #41cac0; }
+  .todo-list .todo-list-content .todo-warning {
+    border-left: 3px solid #fcb322; }
+  .todo-list .todo-list-content .todo-error {
+    border-left: 3px solid #ff6c60; }
+  .todo-list .todo-list-content .todo-theme {
+    border-left: 3px solid #7459E1; }
+  .todo-list .todo-list-content .todo-theme-alt {
+    border-left: 3px solid #4588E0; }
+  .todo-list .todo-list-footer {
+    margin-top: 15px;
+    overflow: hidden; }
 
 /**
  * Footer
