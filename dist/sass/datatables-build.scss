@@ -1,1 +1,25 @@
-@import "astor-datatables";
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: datatables-build.scss
+ * Author: @emaphp
+ */
+
+// Mixins + Variables
+@import "datatables/mixins";
+@import "datatables/variables";
+
+// Main styles
+@import "datatables/main";
+
+// Table Tools
+@import "datatables/tabletools";
+
+// Fixed Columns
+@import "datatables/fixedcolumns";
+
+// Responsive Styles
+@import "datatables/responsive";

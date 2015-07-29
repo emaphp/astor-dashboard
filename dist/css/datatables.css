@@ -1,19 +1,82 @@
 /**
- * Astor DataTables - Version 1.0.2
- * DataTables for Astor Framework
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
  *
- * File: astor-datatables.scss
+ * File: datatables-build.scss
  * Author: @emaphp
  */
 /**
- * Astor DataTables - Version 1.0.2
- * DataTables for Astor Framework
+ * Astor DataTables - Version 1.1.0
+ * DataTables for Astor Dashboard
  * Copyright Emmanuel Antico 2015
  *
  * File: _mixins.scss
  * Author: @emaphp
  */
+/**
+ * Astor DataTables - Version 1.1.0
+ * DataTables for Astor Dashboard
+ * Copyright Emmanuel Antico 2015
+ *
+ * File: _variables.scss
+ * Author: @emaphp
+ */
+/**
+ * Astor DataTables - Version 1.1.0
+ * DataTables for Astor Dashboard
+ * Copyright Emmanuel Antico 2015
+ *
+ * File: _main.scss
+ * Author: @emaphp
+ */
+table.table thead th.sorting:after,
+table.table thead th.sorting_asc:after,
+table.table thead th.sorting_desc:after {
+  top: 8px; }
+
+table.dataTable {
+  clear: both;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  max-width: none !important; }
+  table.dataTable td, table.dataTable th {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box; }
+  table.dataTable th:active {
+    outline: none; }
+  table.dataTable thead th {
+    position: relative;
+    background-image: none !important; }
+  table.dataTable thead .sorting,
+  table.dataTable thead .sorting_asc,
+  table.dataTable thead .sorting_desc,
+  table.dataTable thead .sorting_asc_disabled,
+  table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer; }
+  table.dataTable thead th.sorting:after,
+  table.dataTable thead th.sorting_asc:after,
+  table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: 'FontAwesome'; }
+  table.dataTable thead th.sorting:after {
+    content: "\f0dc";
+    color: #ddd;
+    font-size: 0.8em;
+    padding-top: 0.12em; }
+  table.dataTable thead th.sorting_asc:after {
+    content: "\f0de"; }
+  table.dataTable thead th.sorting_desc:after {
+    content: "\f0dd"; }
+  table.dataTable thead > tr > th {
+    padding-left: 18px;
+    padding-right: 18px; }
+
 div.dataTables_length label {
   font-weight: normal;
   text-align: left;
@@ -54,13 +117,13 @@ div.dataTables_paginate {
     top: 6px;
     left: 10px;
     display: block;
-    font-family: FontAwesome; }
+    font-family: 'FontAwesome'; }
   div.dataTables_paginate li.next a:after, div.dataTables_paginate li.last a:after {
     position: absolute;
     top: 6px;
     right: 10px;
     display: block;
-    font-family: FontAwesome; }
+    font-family: 'FontAwesome'; }
   div.dataTables_paginate li.first a:before {
     content: "\f100"; }
   div.dataTables_paginate li.previous a:before {
@@ -70,62 +133,10 @@ div.dataTables_paginate {
   div.dataTables_paginate li.last a:after {
     content: "\f101"; }
 
-@media screen and (max-width: 767px) {
-  div.dataTables_length,
-  div.dataTables_filter,
-  div.dataTables_info,
-  div.dataTables_paginate {
-    text-align: center; } }
-table.dataTable {
-  clear: both;
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
-  max-width: none !important; }
-  table.dataTable td, table.dataTable th {
-    box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box; }
-  table.dataTable th:active {
-    outline: none; }
-  table.dataTable thead th {
-    position: relative;
-    background-image: none !important; }
-  table.dataTable thead .sorting,
-  table.dataTable thead .sorting_asc,
-  table.dataTable thead .sorting_desc,
-  table.dataTable thead .sorting_asc_disabled,
-  table.dataTable thead .sorting_desc_disabled {
-    cursor: pointer; }
-  table.dataTable thead th.sorting:after,
-  table.dataTable thead th.sorting_asc:after,
-  table.dataTable thead th.sorting_desc:after {
-    position: absolute;
-    top: 12px;
-    right: 8px;
-    display: block;
-    font-family: FontAwesome; }
-  table.dataTable thead th.sorting:after {
-    content: "\f0dc";
-    color: #ddd;
-    font-size: 0.8em;
-    padding-top: 0.12em; }
-  table.dataTable thead th.sorting_asc:after {
-    content: "\f0de"; }
-  table.dataTable thead th.sorting_desc:after {
-    content: "\f0dd"; }
-  table.dataTable thead > tr > th {
-    padding-left: 18px;
-    padding-right: 18px; }
-
 div.dataTables_scrollBody table.dataTable thead th.sorting:after,
 div.dataTables_scrollBody table.dataTable thead th.sorting_asc:after,
 div.dataTables_scrollBody table.dataTable thead th.sorting_desc:after {
   content: ""; }
-
-table.table thead th.sorting:after,
-table.table thead th.sorting_asc:after,
-table.table thead th.sorting_desc:after {
-  top: 8px; }
 
 div.dataTables_scrollHead table {
   margin-bottom: 0 !important;
@@ -148,6 +159,9 @@ div.dataTables_scrollFoot table {
   margin-top: 0 !important;
   border-top: none; }
 
+div.dataTables_scrollHead table.table-bordered {
+  border-bottom-width: 0; }
+
 table.table-bordered .dataTable {
   border-collapse: separate !important; }
 table.table-bordered thead th, table.table-bordered thead td {
@@ -159,25 +173,30 @@ table.table-bordered tbody th, table.table-bordered tbody td {
   vertical-align: baseline; }
   table.table-bordered tbody th .btn-sm, table.table-bordered tbody td .btn-sm {
     padding: 4px 8px; }
-    table.table-bordered tbody th .btn-sm span.glyphicon, table.table-bordered tbody td .btn-sm span.glyphicon {
+    table.table-bordered tbody th .btn-sm .glyphicon, table.table-bordered tbody th .btn-sm .fa, table.table-bordered tbody td .btn-sm .glyphicon, table.table-bordered tbody td .btn-sm .fa {
       width: 12px;
       margin-right: 4px; }
 table.table-bordered th:last-child, table.table-bordered td:last-child {
   border-right-width: 0; }
 
-div.dataTables_scrollHead table.table-bordered {
-  border-bottom-width: 0; }
-
+/**
+ * Astor DataTables - Version 1.1.0
+ * DataTables for Astor Dashboard
+ * Copyright Emmanuel Antico 2015
+ *
+ * File: _tabletools.scss
+ * Author: @emaphp
+ */
 .table.dataTable tbody tr.active td,
 .table.dataTable tbody tr.active th {
   background-color: #08C;
-  color: white; }
+  color: #fff; }
 .table.dataTable tbody tr.active:hover td,
 .table.dataTable tbody tr.active:hover th {
   background-color: #0075b0 !important; }
 .table.dataTable tbody tr.active th > a,
 .table.dataTable tbody tr.active td > a {
-  color: white; }
+  color: #fff; }
 
 .table-striped.dataTable tbody tr.active:nth-child(odd) td, .table-striped.dataTable tbody tr.active:nth-child(odd) th {
   background-color: #017ebc; }
@@ -196,7 +215,7 @@ ul.DTTT_dropdown.dropdown-menu {
     position: relative; }
     ul.DTTT_dropdown.dropdown-menu li:hover a {
       background-color: #0088cc;
-      color: white !important; }
+      color: #fff !important; }
 
 div.DTTT_collection_background {
   z-index: 2002; }
@@ -210,14 +229,17 @@ div.DTTT_print_info {
   margin-left: -200px;
   margin-top: -75px;
   text-align: center;
+  background-color: #fff;
   color: #333;
   padding: 10px 30px;
   opacity: 0.95;
-  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5); }
   div.DTTT_print_info h6 {
     font-weight: normal;
     font-size: 28px;
@@ -247,6 +269,14 @@ div.dataTables_processing {
   background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%); }
 
+/**
+ * Astor DataTables - Version 1.1.0
+ * DataTables for Astor Dashboard
+ * Copyright Emmanuel Antico 2015
+ *
+ * File: _fixedcolumns.scss
+ * Author: @emaphp
+ */
 div.DTFC_LeftHeadWrapper table,
 div.DTFC_LeftFootWrapper table,
 div.DTFC_RightHeadWrapper table,
@@ -288,3 +318,18 @@ div.DTFC_LeftFootWrapper table {
 
 div.FixedHeader_Cloned table {
   margin: 0 !important; }
+
+/**
+ * Astor DataTables - Version 1.1.0
+ * DataTables for Astor Dashboard
+ * Copyright Emmanuel Antico 2015
+ *
+ * File: _responsive.scss
+ * Author: @emaphp
+ */
+@media screen and (max-width: 767px) {
+  div.dataTables_length,
+  div.dataTables_filter,
+  div.dataTables_info,
+  div.dataTables_paginate {
+    text-align: center; } }

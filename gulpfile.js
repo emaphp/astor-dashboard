@@ -1,3 +1,13 @@
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: gulpfile.js
+ * Author: @emaphp
+ */
+
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');

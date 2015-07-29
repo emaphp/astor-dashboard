@@ -1,11 +1,11 @@
-# astor-dashmin
+# astor-dashboard
 A responsive dashboard made with Sass
 
 <br>
 ###About
 
 <br>
-Astor Dashboard is a Bootstrap-based dashboard made with [Sass](htt://sass-lang.com ""). It was originally based in [Dashgum](http://www.blacktie.co/demo/dashgumfree/ ""), made by [BlackTie](http://www.blacktie.co/ "").
+Astor Dashboard is a Bootstrap-based dashboard made with [Sass](htt://sass-lang.com ""). It was originally based on [Dashgum](http://www.blacktie.co/demo/dashgumfree/ ""), made by [BlackTie](http://www.blacktie.co/ "").
 
 <br>
 ![Dashboard](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQdXpvcGtmTWZyREE "")
@@ -29,19 +29,19 @@ bower install astor-dashboard
 ###Dependencies
 
 <br>
- * jQuery
- * Bootstrap 3.4
- * Font-Awesome 4.3
+ * [jQuery](http://jquery.com/ "")
+ * [Bootstrap 3.4](http://getbootstrap.com/ "")
+ * [Font-Awesome 4.3](http://fortawesome.github.io/Font-Awesome/ "")
 
 <br>
 ### Additional plugins
 
 <br>
- * jquery.scrollTo
- * jquery.bandoneon
- * Datatables
- * Select2
- * boostrap-checkbox
+ * [jquery.scrollTo](https://github.com/flesler/jquery.scrollTo "")
+ * [jquery.bandoneon](https://github.com/emaphp/jquery.bandoneon "")
+ * [DataTables](https://github.com/DataTables/DataTables "")
+ * [Select2](https://github.com/select2/select2 "")
+ * [bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox "")
 
 <br>
 ###Customization

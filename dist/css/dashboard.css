@@ -1,7 +1,34 @@
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: dashboard-build.scss
+ * Author: @emaphp
+ */
 @import url(http://fonts.googleapis.com/css?family=Telex);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _mixins.scss
+ * Author: @emaphp
+ */
+/**
  * Mixins
+ */
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _variables.scss
+ * Author: @emaphp
  */
 /**
  * General
@@ -38,6 +65,15 @@
  */
 /**
  * Footer
+ */
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _main.scss
+ * Author: @emaphp
  */
 /**
  * Common styles
@@ -79,6 +115,15 @@ a, a:hover, a:focus {
   background: #4524c9;
   color: #fff; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _overrides.scss
+ * Author: @emaphp
+ */
 /**
  * Bootstrap overrides
  */
@@ -127,6 +172,15 @@ label {
   color: #fff !important;
   margin: 0 !important; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _sidebar.scss
+ * Author: @emaphp
+ */
 /**
  * Sidebar
  */
@@ -248,6 +302,15 @@ label {
 .sidebar-closed #sidebar {
   margin-left: -180px; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _header.scss
+ * Author: @emaphp
+ */
 /**
  * Header styles
  */
@@ -421,6 +484,15 @@ ul.top-bar > li {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _theme.scss
+ * Author: @emaphp
+ */
+/**
  * Theme buttons, backgrounds, colors, etc.
  */
 .btn-theme {
@@ -506,6 +578,15 @@ ul.top-bar > li {
   font-family: "Ruda", sans-serif !important; }
 
 /**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _ui.scss
+ * Author: @emaphp
+ */
+/**
  * General UI
  */
 .content-box {
@@ -521,6 +602,15 @@ ul.top-bar > li {
     .content-box .content-header .fa {
       color: #7459E1; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _badges.scss
+ * Author: @emaphp
+ */
 /**
  * Badges types
  */
@@ -539,6 +629,15 @@ ul.top-bar > li {
 .badge.bg-info {
   background: #41cac0; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _index.scss
+ * Author: @emaphp
+ */
 /**
  * Index page styles
  */
@@ -613,6 +712,15 @@ ul.top-bar > li {
     #right-aside .contact .item-details {
       margin-left: 10px; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _ui-panels.scss
+ * Author: @emaphp
+ */
 /**
  * UI Panels
  */
@@ -756,6 +864,15 @@ ul.top-bar > li {
       transition: background-color 0.6s; }
 
 /**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _components.scss
+ * Author: @emaphp
+ */
+/**
  * Components
  */
 .todo-list {
@@ -800,6 +917,15 @@ ul.top-bar > li {
     overflow: hidden; }
 
 /**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _footer.scss
+ * Author: @emaphp
+ */
+/**
  * Footer
  */
 footer {
@@ -822,6 +948,15 @@ footer {
   .go-top i {
     color: #fff; }
 
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _login.scss
+ * Author: @emaphp
+ */
 /**
  * Login page styles
  */
@@ -895,6 +1030,15 @@ footer {
 @media (max-width: 320px) {
   .login-social-link a {
     padding: 15px 17px !important; } }
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _responsive.scss
+ * Author: @emaphp
+ */
 /**
  * Responsive styles
  */

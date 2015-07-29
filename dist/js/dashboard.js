@@ -1,3 +1,13 @@
+/**
+ * Astor Dashboard - Version 1.0.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: dashboard.js
+ * Author: @emaphp
+ */
+
 // Initializes jQuery plugins
 $(function() {
     // Initialize sidebar
@@ -20,6 +30,8 @@ $(function() {
         if (wSize <= 768) {
             $('#container').addClass('sidebar-close');
             $('#sidebar > ul').hide();
+            $('#sidebar-toggle').addClass('closed');
+            sidevarVisible = false;
         } else if (wSize > 768) {
             $('#container').removeClass('sidebar-close');
             $('#sidebar > ul').show();
@@ -40,15 +52,15 @@ $(function() {
             $('#sidebar > ul').hide();
             $('#container').addClass('sidebar-closed');
             $('#sidebar-toggle').addClass('closed');
-            sidevarVisible = false;
         } else {
             $('#main-content').css('margin-left', '210px');
             $('#sidebar > ul').show();
             $('#sidebar').css('margin-left', '0');
             $('#container').removeClass('sidebar-closed');
             $('#sidebar-toggle').removeClass('closed');
-            sidevarVisible = true;
         }
+
+        sidevarVisible = !sidevarVisible;
     });
 
     // Go-Top button
@@ -59,7 +71,4 @@ $(function() {
 
     // Tooltips
     $('.tooltips').tooltip();
-
-    // Popovers
-    $('.popovers').popover();
 });
