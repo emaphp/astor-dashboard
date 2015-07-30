@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -12,6 +12,7 @@
  * Components
  */
 
+// Todo list
 .todo-list {
     padding: 5px;
 
@@ -38,14 +39,14 @@
                     margin-right: 10px;
 
                     .todo-name {
-                        color: $adb-todo-description-color;
+                        color: $adb-todo-item-description-color;
                         margin-right: 8px;
                     }
                 }
 
                 &.finished {
                     .todo-name {
-                        text-decoration: $adb-todo-name-finished-decoration;
+                        text-decoration: $adb-todo-item-finished-decoration;
                     }
                 }
             }

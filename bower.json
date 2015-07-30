@@ -6,7 +6,10 @@
     "Emmanuel Antico <emmanuel.antico@gmail.com>"
   ],
   "description": "A responsive dashboard made with Sass",
-  "main": ["dist/css/dashboard.css", "dist/js/dashboard.js"],
+  "main": [
+    "dist/css/dashboard.css",
+    "dist/js/dashboard.js"
+  ],
   "moduleType": [
     "globals"
   ],

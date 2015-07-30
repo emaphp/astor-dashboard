@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Telex);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -22,7 +22,7 @@
  * Mixins
  */
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -34,19 +34,16 @@
  * General
  */
 /**
- * Common styles
+ * Overrides
  */
 /**
- * Modal dialogs
+ * Common styles
  */
 /**
  * Header
  */
 /**
  * Sidebar
- */
-/**
- * Index page styles
  */
 /**
  * General UI
@@ -67,7 +64,61 @@
  * Footer
  */
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: _overrides.scss
+ * Author: @emaphp
+ */
+/**
+ * Bootstrap overrides
+ */
+.btn-round {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+
+hr {
+  margin: 25px 20px;
+  border-top: solid 1px #cec5f5; }
+
+label {
+  font-weight: normal; }
+
+.label-default,
+.label-primary,
+.label-success,
+.label-info,
+.label-warning,
+.label-danger,
+.label-theme,
+.label-theme-alt {
+  font-family: "Ruda", sans-serif; }
+
+.badge {
+  font-family: "Ruda", sans-serif; }
+
+.breadcrumb {
+  background: #eaeaea; }
+
+.modal-header {
+  background: #7459E1;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.modal-title {
+  color: #fff !important;
+  margin: 0 !important; }
+
+/**
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -116,64 +167,7 @@ a, a:hover, a:focus {
   color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.0.0
- * A responsive dashboard made with Sass
- * Copyright Emmanuel Antico 2015
- * Released under the MIT License
- *
- * File: _overrides.scss
- * Author: @emaphp
- */
-/**
- * Bootstrap overrides
- */
-.btn-round {
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  border-radius: 12px; }
-
-.accordion-heading .accordion-toggle {
-  display: block;
-  cursor: pointer;
-  border-top: 1px solid #f5f5f5;
-  padding: 5px 0px;
-  line-height: 28.75px;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  background-color: #fff;
-  outline: none !important;
-  text-decoration: none; }
-
-hr {
-  margin: 25px 20px;
-  border-top: solid 1px #cec5f5; }
-
-label {
-  font-weight: normal; }
-
-.label-default,
-.label-primary,
-.label-success,
-.label-info,
-.label-warning,
-.label-danger,
-.label-theme,
-.label-theme-alt {
-  font-family: "Ruda", sans-serif; }
-
-.badge {
-  font-family: "Ruda", sans-serif; }
-
-.modal-header {
-  background: #7459E1; }
-
-.modal-title {
-  color: #fff !important;
-  margin: 0 !important; }
-
-/**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -303,7 +297,7 @@ label {
   margin-left: -180px; }
 
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -373,6 +367,7 @@ ul.top-bar > li {
     right: -10px;
     top: -10px;
     z-index: 100;
+    color: #fff;
     background: #4588E0; }
 
 .logo {
@@ -398,6 +393,21 @@ ul.top-bar > li {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px; }
+  .dropdown-menu.extended .notify-arrow {
+    border-style: solid;
+    border-width: 0 9px 9px;
+    height: 0;
+    margin-top: 0;
+    opacity: 0;
+    position: absolute;
+    left: 7px;
+    top: -18px;
+    transition: all 0.25s ease 0s;
+    width: 0;
+    z-index: 10;
+    margin-top: 10px;
+    opacity: 1;
+    border-color: transparent transparent #7459E1; }
   .dropdown-menu.extended li .dropdown-header {
     background: #7459E1;
     color: #fff;
@@ -418,28 +428,9 @@ ul.top-bar > li {
     width: 100%;
     display: inline-block; }
     .dropdown-menu.extended li a:hover {
-      background: #f0f0f0 !important;
+      background: #f2f2f2 !important;
       color: #502ed9 !important;
       border-bottom: 1px solid #7459E1 !important; }
-  .dropdown-menu.extended .progress {
-    margin-bottom: 0 !important;
-    height: 10px; }
-
-.notify-arrow {
-  border-style: solid;
-  border-width: 0 9px 9px;
-  height: 0;
-  margin-top: 0;
-  opacity: 0;
-  position: absolute;
-  left: 7px;
-  top: -18px;
-  transition: all 0.25s ease 0s;
-  width: 0;
-  z-index: 10;
-  margin-top: 10px;
-  opacity: 1;
-  border-color: transparent transparent #7459E1; }
 
 .dropdown-menu.tasks-bar .task-info .description {
   font-size: 13px;
@@ -451,13 +442,14 @@ ul.top-bar > li {
   font-size: 13px;
   padding-left: 10px;
   margin-top: -4px; }
+.dropdown-menu.tasks-bar .progress {
+  margin-bottom: 0 !important;
+  height: 10px; }
 
 .dropdown-menu.inbox li a .message {
   padding: 3px 0; }
 .dropdown-menu.inbox li a:hover .message, .dropdown-menu.inbox li a:hover .time {
   color: #333 !important; }
-.dropdown-menu.inbox li a:hover .from {
-  color: #502ed9 !important; }
 .dropdown-menu.inbox li a .photo img {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -484,7 +476,7 @@ ul.top-bar > li {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -578,7 +570,7 @@ ul.top-bar > li {
   font-family: "Ruda", sans-serif !important; }
 
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -589,6 +581,9 @@ ul.top-bar > li {
 /**
  * General UI
  */
+.panel-row {
+  margin-top: 25px; }
+
 .content-box {
   background: #fff;
   color: #444;
@@ -602,8 +597,79 @@ ul.top-bar > li {
     .content-box .content-header .fa {
       color: #7459E1; }
 
+.status-box {
+  background: transparent;
+  font-family: "Ruda", sans-serif; }
+  .status-box:hover {
+    background: #fff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
+    .status-box:hover p {
+      color: #236dcf; }
+    .status-box:hover .status-icon {
+      border-bottom: 1px solid #fff; }
+  .status-box p {
+    text-align: center;
+    font-size: 12px;
+    color: #f6f6f6; }
+  .status-box .status-icon {
+    padding: 15px;
+    text-align: center;
+    color: #888;
+    border-bottom: 1px solid #999; }
+    .status-box .status-icon span {
+      font-size: 38px; }
+    .status-box .status-icon h3 {
+      text-align: center; }
+
+.content-aside {
+  background: #fff;
+  padding-top: 20px; }
+  .content-aside h3 {
+    background: #7459E1;
+    color: #fff;
+    font-family: "Ruda", sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 60px;
+    height: 60px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .content-aside i {
+    font-size: 12px;
+    line-height: 16px; }
+  .content-aside .item {
+    border-bottom: 1px solid #eaeaea;
+    display: inline-block;
+    padding: 12px 0 8px;
+    width: 100%;
+    background: #fff; }
+    .content-aside .item .item-thumb {
+      width: 30px;
+      margin: 0 8px 0 12px;
+      display: block;
+      float: left; }
+    .content-aside .item .item-details {
+      width: 80%;
+      float: left; }
+      .content-aside .item .item-details p {
+        color: #444; }
+        .content-aside .item .item-details p muted {
+          font-size: 10px;
+          font-style: italic; }
+        .content-aside .item .item-details p a {
+          color: #236dcf; }
+    .content-aside .item .item-link {
+      padding: 3px 0;
+      margin-bottom: 5px;
+      text-align: center; }
+  .content-aside .contact {
+    padding: 16px 0 10px; }
+    .content-aside .contact .item-details {
+      margin-left: 10px; }
+
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -630,90 +696,7 @@ ul.top-bar > li {
   background: #41cac0; }
 
 /**
- * Astor Dashboard - Version 1.0.0
- * A responsive dashboard made with Sass
- * Copyright Emmanuel Antico 2015
- * Released under the MIT License
- *
- * File: _index.scss
- * Author: @emaphp
- */
-/**
- * Index page styles
- */
-.status-box {
-  background: transparent;
-  font-family: "Ruda", sans-serif; }
-  .status-box:hover {
-    background: #fff;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
-    .status-box:hover p {
-      color: #236dcf; }
-    .status-box:hover .status-icon {
-      border-bottom: 1px solid #fff; }
-  .status-box p {
-    text-align: center;
-    font-size: 12px;
-    color: #f6f6f6; }
-  .status-box .status-icon {
-    padding: 15px;
-    text-align: center;
-    color: #888;
-    border-bottom: 1px solid #999; }
-    .status-box .status-icon span {
-      font-size: 38px; }
-    .status-box .status-icon h3 {
-      text-align: center; }
-
-#right-aside {
-  background: #fff;
-  padding-top: 20px; }
-  #right-aside h3 {
-    background: #7459E1;
-    color: #fff;
-    font-family: "Ruda", sans-serif;
-    font-size: 16px;
-    padding: 0 10px;
-    line-height: 60px;
-    height: 60px;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase; }
-  #right-aside i {
-    font-size: 12px;
-    line-height: 16px; }
-  #right-aside .item {
-    border-bottom: 1px solid #eaeaea;
-    display: inline-block;
-    padding: 12px 0 8px;
-    width: 100%;
-    background: #fff; }
-    #right-aside .item .item-thumb {
-      width: 30px;
-      margin: 0 8px 0 12px;
-      display: block;
-      float: left; }
-    #right-aside .item .item-details {
-      width: 80%;
-      float: left; }
-      #right-aside .item .item-details p {
-        color: #444; }
-        #right-aside .item .item-details p muted {
-          font-size: 10px;
-          font-style: italic; }
-        #right-aside .item .item-details p a {
-          color: #236dcf; }
-    #right-aside .item .item-link {
-      padding: 3px 0;
-      margin-bottom: 5px;
-      text-align: center; }
-  #right-aside .contact {
-    padding: 16px 0 10px; }
-    #right-aside .contact .item-details {
-      margin-left: 10px; }
-
-/**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -724,9 +707,6 @@ ul.top-bar > li {
 /**
  * UI Panels
  */
-.panel-row {
-  margin-top: 25px; }
-
 .ui-panel {
   height: 250px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
@@ -864,7 +844,7 @@ ul.top-bar > li {
       transition: background-color 0.6s; }
 
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -917,7 +897,7 @@ ul.top-bar > li {
     overflow: hidden; }
 
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -949,7 +929,7 @@ footer {
     color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -1027,11 +1007,8 @@ footer {
   background-color: #11befe;
   border-color: #44ccfe, 10%; }
 
-@media (max-width: 320px) {
-  .login-social-link a {
-    padding: 15px 17px !important; } }
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -1134,3 +1111,6 @@ footer {
 
   .hidden-phone {
     display: none !important; } }
+@media (max-width: 320px) {
+  .login-social-link a {
+    padding: 15px 17px !important; } }

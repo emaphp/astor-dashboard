@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -19,11 +19,11 @@ $adb-theme-font-alt: 'Ruda', sans-serif;
 @import "dashboard/mixins";
 @import "dashboard/variables";
 
-// Common styles
-@import "dashboard/main";
-
 // Bootstrap overrides
 @import "dashboard/overrides";
+
+// Common styles
+@import "dashboard/main";
 
 // Sidebar
 @import "dashboard/sidebar";
@@ -39,9 +39,6 @@ $adb-theme-font-alt: 'Ruda', sans-serif;
 
 // Badges
 @import "dashboard/badges";
-
-// Index page styles
-@import "dashboard/index";
 
 // UI Panels
 @import "dashboard/ui-panels";

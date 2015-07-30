@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -28,13 +28,26 @@ $adb-warning-color: #fcb322 !default;
 $adb-error-color: #ff6c60 !default;
 
 /**
+ * Overrides
+ */
+
+$adb-override-btn-round-radius: 12px !default;
+$adb-override-label-font-weight: normal !default;
+$adb-override-themed-label-font: $adb-theme-font-alt !default;
+$adb-override-badge-font: $adb-theme-font-alt !default;
+$adb-override-breadbrumb-background: #eaeaea !default;
+$adb-override-modal-header-radius: 5px !default;
+$adb-override-modal-header-background: $adb-theme-color !default;
+$adb-override-modal-header-color: #fff !default;
+$adb-override-hr-border: solid 1px lighten($adb-theme-color, 25%) !default;
+$adb-override-hr-margin: 25px 20px !default;
+
+/**
  * Common styles
  */
 
 $adb-body-color: #444 !default;
 $adb-body-background: #f6f6f6 !default;
-
-$adb-hr-border: solid 1px lighten($adb-theme-color, 25%);
 
 $adb-selection-color: #fff !default;
 $adb-selection-background: darken($adb-theme-color, 15%) !default;
@@ -42,23 +55,19 @@ $adb-selection-background: darken($adb-theme-color, 15%) !default;
 $adb-wrapper-min-height: 620px !default;
 
 /**
- * Modal dialogs
- */
-
-$adb-modal-header-background: $adb-theme-color !default;
-$adb-modal-header-color: #fff !default;
-
-/**
  * Header
  */
 
 $adb-top-bar-icon-color: $adb-theme-color !default;
+$adb-top-bar-icon-border: solid 1px $adb-top-bar-icon-color !default;
+$adb-top-bar-icon-border-radius: 4px !default;
 $adb-top-bar-icon-background: transparent !default;
 $adb-top-bar-icon-hover-color: lighten($adb-top-bar-icon-color, 15%) !default;
 $adb-top-bar-icon-size: 16px !default;
-$adb-top-bar-icon-border-radius: 4px !default;
-$adb-top-bar-icon-badge-color: $adb-theme-color-alt !default;
+$adb-top-bar-icon-badge-color: #fff !default;
+$adb-top-bar-icon-badge-background: $adb-theme-color-alt !default;
 
+// Logout
 $adb-top-bar-logout-font: $adb-theme-font-alt !default;
 $adb-top-bar-logout-color: #fff !default;
 $adb-top-bar-logout-background: $adb-theme-color !default;
@@ -68,6 +77,7 @@ $adb-top-bar-logout-hover-color: #fff !default;
 $adb-top-bar-logout-hover-background: transparent !default;
 $adb-top-bar-logout-hover-border: 1px solid $adb-theme-color !default;
 
+// Logo
 $adb-top-bar-logo-font-size: 20px !default;
 $adb-top-bar-logo-font-family: $adb-theme-font-alt !default;
 $adb-top-bar-logo-color: #fff !default;
@@ -79,12 +89,9 @@ $adb-top-bar-dropdown-header-color: #fff !default;
 $adb-top-bar-dropdown-header-font: $adb-theme-font-alt !default;
 $adb-top-bar-dropdown-item-color: #333 !default;
 $adb-top-bar-dropdown-item-border: 1px solid #ebebeb !default;
-$adb-top-bar-dropdown-item-hover-background: #f0f0f0 !default;
+$adb-top-bar-dropdown-item-hover-background: #f2f2f2 !default;
 $adb-top-bar-dropdown-item-hover-color: darken($adb-theme-color, 10%) !default;
 $adb-top-bar-dropdown-item-hover-border: 1px solid $adb-theme-color !default;
-
-$adb-top-bar-inbox-item-hover-color: #333 !default;
-$adb-top-bar-inbox-item-from-hover-color: darken($adb-theme-color, 10%) !default;
 
 /**
  * Sidebar
@@ -111,7 +118,7 @@ $adb-sidebar-sub-link-active-background: transparent !default;
 $adb-sidebar-toggle-closed-color: $adb-theme-color !default;
 
 /**
- * Index page styles
+ * General UI
  */
 
 $adb-status-box-background: transparent !default;
@@ -122,25 +129,21 @@ $adb-status-box-hover-background: #fff !default;
 $adb-status-box-hover-color: darken($adb-theme-color-alt, 10%) !default;
 $adb-status-box-hover-border: 1px solid #999 !default;
 
-$adb-right-aside-background: #fff !default;
-$adb-right-aside-header-background: $adb-theme-color !default;
-$adb-right-aside-header-font: $adb-theme-font-alt !default;
-$adb-right-aside-header-color: #fff !default;
-$adb-right-aside-item-background: #fff !default;
-$adb-right-aside-item-color: #444 !default;
-$adb-right-aside-item-link-color: darken($adb-theme-color-alt, 10%) !default;
-$adb-right-aside-item-border: 1px solid #eaeaea !default;
-$adb-right-aside-item-badge-color: $adb-theme-color-alt !default;
+$adb-content-aside-background: #fff !default;
+$adb-content-aside-header-background: $adb-theme-color !default;
+$adb-content-aside-header-font: $adb-theme-font-alt !default;
+$adb-content-aside-header-color: #fff !default;
+$adb-content-aside-item-background: #fff !default;
+$adb-content-aside-item-color: #444 !default;
+$adb-content-aside-item-link-color: darken($adb-theme-color-alt, 10%) !default;
+$adb-content-aside-item-border: 1px solid #eaeaea !default;
+$adb-content-aside-item-badge-color: $adb-theme-color-alt !default;
 
-/**
- * General UI
- */
-
-$adb-ui-content-box-background: #fff !default;
-$adb-ui-content-box-color: $adb-body-color !default;
-$adb-ui-content-header-font: $adb-theme-font-alt !default;
-$adb-ui-content-header-color: #333 !default;
-$adb-ui-content-header-icon-color: $adb-theme-color !default;
+$adb-content-box-background: #fff !default;
+$adb-content-box-color: $adb-body-color !default;
+$adb-content-header-font: $adb-theme-font-alt !default;
+$adb-content-header-color: #333 !default;
+$adb-content-header-icon-color: $adb-theme-color !default;
 
 /**
  * UI Panels
@@ -201,8 +204,8 @@ $adb-panel-theme-alt-border-color: lighten($adb-theme-color-alt, 20%) !default;
 $adb-todo-item-border-width: 3px;
 $adb-todo-item-background: #f5f5f5;
 $adb-todo-item-border-default-background: #777;
-$adb-todo-description-color: #555;
-$adb-todo-name-finished-decoration: line-through;
+$adb-todo-item-description-color: #555;
+$adb-todo-item-finished-decoration: line-through;
 
 /*
  * Login

@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -29,7 +29,7 @@ ul.top-bar > li {
     .dropdown-icon {
         color: $adb-top-bar-icon-color !important;
         background-color: $adb-top-bar-icon-background !important;
-        border: solid 1px $adb-top-bar-icon-color !important;
+        border: $adb-top-bar-icon-border !important;
         font-size: $adb-top-bar-icon-size;
         @include radius($adb-top-bar-icon-border-radius);
         padding: 2px 6px;
@@ -37,7 +37,7 @@ ul.top-bar > li {
 
         &:hover, &:focus, &:visited, &:active {
             text-decoration: none;
-            background-color: transparent !important;
+            background-color: $adb-top-bar-icon-background !important;
         }
 
         &:hover {
@@ -84,7 +84,8 @@ ul.top-bar > li {
         right: -10px;
         top: -10px;
         z-index: 100;
-        background: $adb-top-bar-icon-badge-color;
+        color: $adb-top-bar-icon-badge-color;
+        background: $adb-top-bar-icon-badge-background;
     }
 }
 
@@ -114,6 +115,23 @@ ul.top-bar > li {
     border: none !important;
     @include radius($adb-top-bar-dropdown-border-radius);
 
+    .notify-arrow {
+        border-style: solid;
+        border-width: 0 9px 9px;
+        height: 0;
+        margin-top: 0;
+        opacity: 0;
+        position: absolute;
+        left: 7px;
+        top: -18px;
+        transition: all 0.25s ease 0s;
+        width: 0;
+        z-index: 10;
+        margin-top: 10px;
+        opacity: 1;
+        border-color: transparent transparent $adb-top-bar-dropdown-header-background;
+    }
+
     li {
         .dropdown-header {
             background: $adb-top-bar-dropdown-header-background;
@@ -141,28 +159,6 @@ ul.top-bar > li {
             }
         }
     }
-
-    .progress {
-        margin-bottom: 0 !important;
-        height: 10px;
-    }
-}
-
-.notify-arrow {
-    border-style: solid;
-    border-width: 0 9px 9px;
-    height: 0;
-    margin-top: 0;
-    opacity: 0;
-    position: absolute;
-    left: 7px;
-    top: -18px;
-    transition: all 0.25s ease 0s;
-    width: 0;
-    z-index: 10;
-    margin-top: 10px;
-    opacity: 1;
-    border-color: transparent transparent $adb-top-bar-dropdown-header-background;
 }
 
 // Tasks bar
@@ -182,6 +178,11 @@ ul.top-bar > li {
             margin-top: -4px;
         }
     }
+
+    .progress {
+        margin-bottom: 0 !important;
+        height: 10px;
+    }
 }
 
 // Inbox
@@ -193,11 +194,7 @@ ul.top-bar > li {
 
         &:hover {
             .message, .time {
-                color: $adb-top-bar-inbox-item-hover-color !important;
-            }
-
-            .from {
-                color: $adb-top-bar-inbox-item-from-hover-color !important;
+                color: $adb-top-bar-dropdown-item-color !important;
             }
         }
 

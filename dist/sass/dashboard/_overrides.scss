@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.0.0
+ * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -13,29 +13,16 @@
  */
 
 .btn-round {
-    @include radius(12px);
-}
-
-.accordion-heading .accordion-toggle {
-	display: block;
-	cursor: pointer;
-	border-top: 1px solid #f5f5f5;
-	padding: 5px 0px;
-	line-height: 28.75px;
-	text-transform: uppercase;
-	color: #1a1a1a;
-	background-color: #fff;
-	outline: none !important;
-	text-decoration: none;
+    @include radius($adb-override-btn-round-radius);
 }
 
 hr {
-    margin: 25px 20px;
-    border-top: $adb-hr-border;
+    margin: $adb-override-hr-margin;
+    border-top: $adb-override-hr-border;
 }
 
 label {
-    font-weight: normal;
+    font-weight: $adb-override-label-font-weight;
 }
 
 .label-default,
@@ -46,19 +33,24 @@ label {
 .label-danger,
 .label-theme,
 .label-theme-alt {
-    font-family: $adb-theme-font-alt;
+    font-family: $adb-override-themed-label-font;
 }
 
 .badge {
-    font-family: $adb-theme-font-alt;
+    font-family: $adb-override-badge-font;
+}
+
+.breadcrumb {
+    background: $adb-override-breadbrumb-background;
 }
 
 // Modal dialogs
 .modal-header {
-	background: $adb-modal-header-background;
+	background: $adb-override-modal-header-background;
+    @include top-radius($adb-override-modal-header-radius);
 }
 
 .modal-title {
-	color: $adb-modal-header-color !important;
+	color: $adb-override-modal-header-color !important;
     margin: 0 !important;
 }
