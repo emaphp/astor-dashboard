@@ -41,6 +41,7 @@ $adb-override-modal-header-background: $adb-theme-color !default;
 $adb-override-modal-header-color: #fff !default;
 $adb-override-hr-border: solid 1px lighten($adb-theme-color, 25%) !default;
 $adb-override-hr-margin: 25px 20px !default;
+$adb-override-bootstrap-checkbox-margin: 0 !default;
 
 /**
  * Common styles
@@ -48,6 +49,7 @@ $adb-override-hr-margin: 25px 20px !default;
 
 $adb-body-color: #444 !default;
 $adb-body-background: #f6f6f6 !default;
+$adb-body-font-size: 14px !default;
 
 $adb-selection-color: #fff !default;
 $adb-selection-background: darken($adb-theme-color, 15%) !default;
@@ -83,6 +85,7 @@ $adb-top-bar-logo-font-family: $adb-theme-font-alt !default;
 $adb-top-bar-logo-color: #fff !default;
 $adb-top-bar-logo-hover-color: #fff !default;
 
+$adb-top-bar-notification-row-margin: 15px 0 0 60px !default;
 $adb-top-bar-dropdown-border-radius: 4px !default;
 $adb-top-bar-dropdown-header-background: $adb-theme-color !default;
 $adb-top-bar-dropdown-header-color: #fff !default;

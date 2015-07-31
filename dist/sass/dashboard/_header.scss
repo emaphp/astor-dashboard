@@ -67,8 +67,7 @@ ul.top-bar > li {
 // Notification row
 .notify-row {
     float: left;
-    margin-top: 15px;
-    margin-left: 92px;
+    margin: $adb-top-bar-notification-row-margin;
 
     .notification {
         span.label {

@@ -6,10 +6,11 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="keyword" content="">
-        <title>Astor Dashboard - Formularios</title>
+        <title>Astor Dashboard - bootstrap-datetimepicker</title>
         <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <link href="../dist/css/dashboard.css" rel="stylesheet">
+        <link href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     </head>
     <body>
         <section id="container" >
@@ -138,20 +139,19 @@
                             </a>
                         </li>
                         <li class="sub-menu">
-                            <a class="active" href="#">
+                            <a href="#">
                                 <i class="fa fa-desktop"></i>
                                 <span>Interfaz</span>
                             </a>
                             <ul class="sub">
                                 <li><a href="general.html">General</a></li>
                                 <li><a href="botones.html">Botones</a></li>
-                                <li class="active"><a href="formularios.html">Formularios</a></li>
+                                <li><a href="formularios.html">Formularios</a></li>
                                 <li><a href="tablas.html">Tablas</a></li>
-                                <li><a href="componentes.html">Componentes</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
-                            <a href="#">
+                            <a class="active" href="#">
                                 <i class="fa fa-cogs"></i>
                                 <span>Plugins</span>
                             </a>
@@ -159,7 +159,7 @@
                                 <li><a href="datatables.html">Datatables</a></li>
                                 <li><a href="select2.html">Select2</a></li>
                                 <li><a href="checkbox.html">bootstrap-checkbox</a></li>
-                                <li><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
+                                <li class="active"><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
@@ -180,146 +180,78 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <ol class="breadcrumb">
-                                <li><a href="#">Interfaz</a></li>
-                                <li class="active">Formularios</li>
+                                <li><a href="#">Plugins</a></li>
+                                <li class="active">bootstrap-checkbox</li>
                             </ol>
                             <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Formulario</h4>
-                                <form class="form-horizontal" method="get">
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Default</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control">
+                                <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>bootstrap-checkbox</h4>
+                                <div class="row">
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <label for="datetimepicker1">Locale + Formato</label>
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Texto ayuda</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control">
-                                            <span class="help-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <label for="datetimepicker2">Sin Icono</label>
+                                            <input type='text' class="form-control" id='datetimepicker2'/>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Deshabilitado</label>
-                                        <div class="col-sm-10">
-                                            <input class="form-control" type="text" disabled>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Placeholder</label>
-                                        <div class="col-sm-10">
-                                            <input type="text"  class="form-control" placeholder="Input + Placeholder">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Contraseña</label>
-                                        <div class="col-sm-10">
-                                            <input type="password"  class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-sm-2 control-label">Estático</label>
-                                        <div class="col-lg-10">
-                                            <p class="form-control-static">email@example.com</p>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Inline</h4>
-                                <form class="form-inline" role="form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputEmail2">Dirección de e-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Ingresar e-mail">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="exampleInputPassword2">Contraseña</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Ingresar password">
-                                    </div>
-                                    <button type="submit" class="btn btn-theme">Login</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Input + Alerts</h4>
-                                <form class="form-horizontal tasi-form" method="get">
-                                    <div class="form-group has-success">
-                                        <label class="col-sm-2 control-label col-lg-2" for="inputSuccess">Input + Success</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="inputSuccess">
-                                        </div>
-                                    </div>
-                                    <div class="form-group has-warning">
-                                        <label class="col-sm-2 control-label col-lg-2" for="inputWarning">Input + Warning</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="inputWarning">
-                                        </div>
-                                    </div>
-                                    <div class="form-group has-error">
-                                        <label class="col-sm-2 control-label col-lg-2" for="inputError">Input + Error</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="inputError">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right"></i> Checkboxes, Radios &amp; Selects</h4>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                                    </label>
                                 </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    </label>
+                                <div class="row">
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <label for="datetimepicker3">Deshabilitar fechas</label>
+                                            <div class='input-group date' id='datetimepicker3'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <label for="datetimepicker4">Icono customizado</label>
+                                            <div class='input-group date' id='datetimepicker4'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    </label>
+                                <div class="row">
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <label for="datetimepicker5">View Mode</label>
+                                            <div class='input-group date' id='datetimepicker5'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-6'>
+                                        <div class="form-group">
+                                            <label for="datetimepicker6">Deshabilitar por día de semana</label>
+                                            <div class='input-group date' id='datetimepicker6'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <hr>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-                                </label>
-                                <hr>
-                                <select class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                                <br>
-                                <select multiple class="form-control">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
                             </div>
                         </div>
                     </div>
@@ -338,6 +270,55 @@
         <script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.bandoneon/dist/jquery.bandoneon.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="../bower_components/moment/locale/es.js"></script>
         <script src="../dist/js/dashboard.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                    locale: 'es',
+                    format: 'DD/MM/YYYY HH:mm'
+                });
+
+                $('#datetimepicker2').datetimepicker({
+                    locale: 'es',
+                    format: 'DD/MM/YYYY HH:mm'
+                });
+
+                $('#datetimepicker3').datetimepicker({
+                    locale: 'es',
+                    format: 'DD/MM/YYYY',
+                    defaultDate: moment("31/07/2015", 'DD/MM/YYYY'),
+                    disabledDates: [
+                        moment("05/07/2015", 'DD/MM/YYYY'),
+                        moment("09/07/2015", 'DD/MM/YYYY'),
+                    ]
+                });
+
+                $('#datetimepicker4').datetimepicker({
+                    locale: 'es',
+                    format: 'DD/MM/YYYY',
+                    icons: {
+                        time: "fa fa-clock-o",
+                        date: "fa fa-calendar",
+                        up: "fa fa-arrow-up",
+                        down: "fa fa-arrow-down"
+                    }
+                });
+
+                $('#datetimepicker5').datetimepicker({
+                    locale: 'es',
+                    format: 'DD/MM/YYYY',
+                    viewMode: 'years'
+                });
+
+                $('#datetimepicker6').datetimepicker({
+                    locale: 'es',
+                    format: 'DD/MM/YYYY',
+                    daysOfWeekDisabled: [0, 6]
+                });
+            });
+        </script>
   </body>
 </html>

@@ -16,9 +16,9 @@ body {
     color: $adb-body-color;
 	background: $adb-body-background;
     font-family: $adb-theme-font;
+    font-size: $adb-body-font-size;
     padding: 0px !important;
     margin: 0px !important;
-    font-size: 13px;
 }
 
 a, a:hover, a:focus {
@@ -43,7 +43,7 @@ a, a:hover, a:focus {
     padding-bottom: 15px;
     width: 100%;
 
-    > .row {
+    .row:first-child {
         margin-top: 25px;
     }
 }

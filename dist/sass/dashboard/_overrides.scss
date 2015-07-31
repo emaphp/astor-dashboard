@@ -54,3 +54,8 @@ label {
 	color: $adb-override-modal-header-color !important;
     margin: 0 !important;
 }
+
+// Used along with bootstrap-checkbox plugin
+input[type=checkbox] + .btn-group {
+    margin: $adb-override-bootstrap-checkbox-margin;
+}

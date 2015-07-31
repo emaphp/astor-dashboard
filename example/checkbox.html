@@ -158,6 +158,7 @@
                                 <li><a href="datatables.html">Datatables</a></li>
                                 <li><a href="select2.html">Select2</a></li>
                                 <li class="active"><a href="checkbox.html">bootstrap-checkbox</a></li>
+                                <li><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
@@ -183,19 +184,47 @@
                             </ol>
                             <div class="content-box">
                                 <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>bootstrap-checkbox</h4>
-                                <input type="checkbox">
+                                <div class="row">
+                                    <div class='col-sm-4'>
+                                        <div class="form-group">
+                                            <label for="checkbox1">Default</label>
+                                            <input type="checkbox" id="checkbox1">
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-4'>
+                                        <div class="form-group">
+                                            <label for="checkbox2">Deshabilitado + Checked</label>
+                                            <input type="checkbox" id="checkbox2" disabled checked>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-4'>
+                                        <div class="form-group">
+                                            <label for="checkbox3">Título</label>
+                                            <input type="checkbox" id="checkbox3" title="Título ejemplo">
+                                        </div>
+                                    </div>
+                                </div>
                                 <hr>
-                                <input type="checkbox" data-reverse>
-                                <hr>
-                                <input type="checkbox" disabled checked>
-                                <hr>
-                                <input type="checkbox" title="Título ejemplo">
-                                <hr>
-                                <input type="checkbox" data-off-title="No activar" data-on-title="Activar">
-                                <hr>
-                                <input type="checkbox" data-off-icon-class="glyphicon glyphicon-thumbs-down" data-on-icon-class="glyphicon glyphicon-thumbs-up">
-                                <hr>
-                                <input type="checkbox" checked data-off-class="btn-warning" data-on-class="btn-theme">
+                                <div class="row">
+                                    <div class='col-sm-4'>
+                                        <div class="form-group">
+                                            <label for="checkbox4">Data-Off-Title + Data-On-Title</label>
+                                            <input type="checkbox" id="checkbox4" data-off-title="No activar" data-on-title="Activar">
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-4'>
+                                        <div class="form-group">
+                                            <label for="checkbox5">Iconos</label>
+                                            <input type="checkbox" id="checkbox5" data-off-icon-class="glyphicon glyphicon-thumbs-down" data-on-icon-class="glyphicon glyphicon-thumbs-up">
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-4'>
+                                        <div class="form-group">
+                                            <label for="checkbox6">Clases CSS</label>
+                                            <input type="checkbox" id="checkbox6" checked data-off-class="btn-warning" data-on-class="btn-theme">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

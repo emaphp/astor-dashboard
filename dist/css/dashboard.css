@@ -7,7 +7,7 @@
  * File: dashboard-build.scss
  * Author: @emaphp
  */
-@import url(http://fonts.googleapis.com/css?family=Telex);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
  * Astor Dashboard - Version 1.1.0
@@ -117,6 +117,9 @@ label {
   color: #fff !important;
   margin: 0 !important; }
 
+input[type=checkbox] + .btn-group {
+  margin: 0; }
+
 /**
  * Astor Dashboard - Version 1.1.0
  * A responsive dashboard made with Sass
@@ -132,10 +135,10 @@ label {
 body {
   color: #444;
   background: #f6f6f6;
-  font-family: "Telex", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
   padding: 0px !important;
-  margin: 0px !important;
-  font-size: 13px; }
+  margin: 0px !important; }
 
 a, a:hover, a:focus {
   text-decoration: none;
@@ -155,7 +158,7 @@ a, a:hover, a:focus {
   padding-right: 15px;
   padding-bottom: 15px;
   width: 100%; }
-  .wrapper > .row {
+  .wrapper .row:first-child {
     margin-top: 25px; }
 
 ::selection {
@@ -355,8 +358,7 @@ ul.top-bar > li {
 
 .notify-row {
   float: left;
-  margin-top: 15px;
-  margin-left: 92px; }
+  margin: 15px 0 0 60px; }
   .notify-row .notification span.label {
     display: inline-block;
     height: 18px;
@@ -564,7 +566,7 @@ ul.top-bar > li {
   color: #236dcf !important; }
 
 .theme-font {
-  font-family: "Telex", sans-serif !important; }
+  font-family: "Lato", sans-serif !important; }
 
 .theme-font-alt {
   font-family: "Ruda", sans-serif !important; }
@@ -592,7 +594,7 @@ ul.top-bar > li {
   box-shadow: 0px 3px 2px #aab2bd; }
   .content-box .content-header {
     font-family: "Ruda", sans-serif;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     color: #333; }
     .content-box .content-header .fa {
       color: #7459E1; }

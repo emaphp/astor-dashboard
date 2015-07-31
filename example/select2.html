@@ -160,6 +160,7 @@
                                 <li><a href="datatables.html">Datatables</a></li>
                                 <li class="active"><a href="select2.html">Select2</a></li>
                                 <li><a href="checkbox.html">bootstrap-checkbox</a></li>
+                                <li><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
@@ -189,7 +190,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="content-box">
                                 <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Agrupamiento</h4>
-                                <select class="js-example-basic-single form-control">
+                                <label for="select1">Elegir provincia</label>
+                                <select class="js-example-basic-single form-control" id="select1">
                                     <optgroup label="Centro">
                                         <option value="buenos_aires">Buenos Aires</option>
                                         <option value="cordoba">Córdoba</option>
@@ -208,7 +210,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="content-box">
                                 <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Múltiple</h4>
-                                <select class="js-example-basic-single form-control" multiple="multiple">
+                                <label for="select2">Elegir provincias</label>
+                                <select class="js-example-basic-single form-control" multiple="multiple" id="select2">
                                     <optgroup label="Centro">
                                         <option value="buenos_aires">Buenos Aires</option>
                                         <option value="cordoba">Córdoba</option>
@@ -229,7 +232,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="content-box">
                                 <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Placeholder</h4>
-                                <select class="js-example-placeholder-single form-control">
+                                <select class="js-example-placeholder-single form-control" id="select3">
                                     <optgroup label="Centro">
                                         <option value="buenos_aires">Buenos Aires</option>
                                         <option value="cordoba">Córdoba</option>
@@ -244,7 +247,7 @@
                                     </optgroup>
                                 </select>
                                 <hr>
-                                <select class="js-example-placeholder-multiple form-control" multiple="multiple">
+                                <select class="js-example-placeholder-multiple form-control" multiple="multiple" id="select4">
                                     <optgroup label="Centro">
                                         <option value="buenos_aires">Buenos Aires</option>
                                         <option value="cordoba">Córdoba</option>
@@ -263,7 +266,8 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="content-box">
                                 <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Tagging</h4>
-                                <select class="js-example-tags form-control" multiple="multiple">
+                                <label for="select5">Agregar tags</label>
+                                <select class="js-example-tags form-control" multiple id="select5">
                                     <option value="deportes">deportes</option>
                                     <option value="politica">politica</option>
                                     <option value="actualidad">actualidad</option>
