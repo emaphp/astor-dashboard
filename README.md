@@ -42,6 +42,7 @@ bower install astor-dashboard
  * [DataTables](https://github.com/DataTables/DataTables "")
  * [Select2](https://github.com/select2/select2 "")
  * [bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox "")
+ * [bootstrap-datetimepicker](https://github.com/Eonasdan/bootstrap-datetimepicker "")
 
 <br>
 ###Customization
