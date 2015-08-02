@@ -1,0 +1,24 @@
+/**
+ * Astor Dashboard - Version 1.2.0
+ * A responsive dashboard made with Sass
+ * Copyright Emmanuel Antico 2015
+ * Released under the MIT License
+ *
+ * File: datetimepicker-build.scss
+ * Author: @emaphp
+ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Import Bootstrap variables
+@import "bootstrap/variables";
+@import "_bootstrap-datetimepicker";

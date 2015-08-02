@@ -41,5 +41,36 @@ gulp.task('datatables', ['datatables:build'], function () {
     gulp.watch('dist/sass/datatables-build.scss', ['datatables:build']);
 });
 
+// Select2 task
+gulp.task('select2:build', function () {
+    return sass('dist/sass/select2-build.scss', {
+        loadPath: './bower_components/select2/src/scss'
+    })
+      .on('error', function (err) {console.error('Error!', err.message);})
+      .pipe(concat('select2.css'))
+      .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('select2', ['select2:build'], function () {
+    gulp.watch('dist/sass/select2-build.scss', ['select2:build']);
+});
+
+// bootstrap-datetimepicker task
+gulp.task('datetimepicker:build', function () {
+    return sass('dist/sass/datetimepicker-build.scss', {
+        loadPath: [
+            './bower_components/eonasdan-bootstrap-datetimepicker/src/sass',
+            './node_modules/bootstrap-sass/assets/stylesheets'
+        ]
+    })
+      .on('error', function (err) {console.error('Error!', err.message);})
+      .pipe(concat('datetimepicker.css'))
+      .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('datetimepicker', ['datetimepicker:build'], function () {
+    gulp.watch('dist/sass/datetimepicker-build.scss', ['datetimepicker:build']);
+});
+
 // Default task
-gulp.task('default', gulpsync.sync(['dashboard:build', 'datatables:build']));
+gulp.task('default', gulpsync.sync(['dashboard:build', 'datatables:build', 'select2:build', 'datetimepicker:build']));
