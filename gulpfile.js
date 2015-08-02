@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -15,7 +15,9 @@ var gulpsync = require('gulp-sync')(gulp);
 
 // Dashboard task
 gulp.task('dashboard:build', function() {
-  return sass('dist/sass/dashboard-build.scss')
+  return sass('dist/sass/dashboard-build.scss', {
+        loadPath: './node_modules/bootstrap-sass/assets/stylesheets'
+      })
       .on('error', function (err) {console.error('Error!', err.message);})
       .pipe(concat('dashboard.css'))
       .pipe(gulp.dest('dist/css'));

@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -22,7 +22,7 @@
  * Mixins
  */
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -64,7 +64,7 @@
  * Footer
  */
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -115,13 +115,14 @@ label {
 
 .modal-title {
   color: #fff !important;
-  margin: 0 !important; }
+  margin: 0 !important;
+  font-family: "Ruda", sans-serif; }
 
 input[type=checkbox] + .btn-group {
   margin: 0; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -170,7 +171,7 @@ a, a:hover, a:focus {
   color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -300,7 +301,7 @@ a, a:hover, a:focus {
   margin-left: -180px; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -478,7 +479,7 @@ ul.top-bar > li {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -572,7 +573,7 @@ ul.top-bar > li {
   font-family: "Ruda", sans-serif !important; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -671,7 +672,7 @@ ul.top-bar > li {
       margin-left: 10px; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -686,19 +687,19 @@ ul.top-bar > li {
   background: #337ab7; }
 
 .badge.bg-success {
-  background: #a9d86e; }
+  background: #5cb85c; }
 
 .badge.bg-warning {
-  background: #fcb322; }
+  background: #f0ad4e; }
 
 .badge.bg-error {
-  background: #ff6c60; }
+  background: #d9534f; }
 
 .badge.bg-info {
-  background: #41cac0; }
+  background: #5bc0de; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -846,7 +847,7 @@ ul.top-bar > li {
       transition: background-color 0.6s; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -881,15 +882,15 @@ ul.top-bar > li {
       .todo-list .todo-list-content ul li.finished .todo-name {
         text-decoration: line-through; }
   .todo-list .todo-list-content .todo-success {
-    border-left: 3px solid #a9d86e; }
+    border-left: 3px solid #5cb85c; }
   .todo-list .todo-list-content .todo-primary {
     border-left: 3px solid #337ab7; }
   .todo-list .todo-list-content .todo-info {
-    border-left: 3px solid #41cac0; }
+    border-left: 3px solid #5bc0de; }
   .todo-list .todo-list-content .todo-warning {
-    border-left: 3px solid #fcb322; }
+    border-left: 3px solid #f0ad4e; }
   .todo-list .todo-list-content .todo-error {
-    border-left: 3px solid #ff6c60; }
+    border-left: 3px solid #d9534f; }
   .todo-list .todo-list-content .todo-theme {
     border-left: 3px solid #7459E1; }
   .todo-list .todo-list-content .todo-theme-alt {
@@ -899,7 +900,7 @@ ul.top-bar > li {
     overflow: hidden; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -931,7 +932,7 @@ footer {
     color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -943,7 +944,7 @@ footer {
  * Login page styles
  */
 .login-body {
-  background: url(../img/bg.png) no-repeat center center fixed;
+  background: url(../img/login.png) no-repeat center center fixed;
   background-size: cover; }
 
 .form-login {
@@ -1010,7 +1011,7 @@ footer {
   border-color: #44ccfe, 10%; }
 
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License

@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -14,6 +14,9 @@
 
 $adb-theme-font: 'Lato', sans-serif;
 $adb-theme-font-alt: 'Ruda', sans-serif;
+
+// Import Bootstrap vars
+@import "bootstrap/variables";
 
 // Mixins + Variables
 @import "dashboard/mixins";

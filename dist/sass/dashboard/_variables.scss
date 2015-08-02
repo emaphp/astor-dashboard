@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.1.0
+ * Astor Dashboard - Version 1.2.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -21,11 +21,11 @@ $adb-default-darken: 10% !default;
 $adb-theme-font: sans-serif, !default;
 $adb-theme-font-alt: sans-serif, !default;
 
-$adb-primary-color: #337ab7 !default;
-$adb-success-color: #a9d86e !default;
-$adb-info-color: #41cac0 !default;
-$adb-warning-color: #fcb322 !default;
-$adb-error-color: #ff6c60 !default;
+$adb-primary-color: $brand-primary !default;
+$adb-success-color: $brand-success !default;
+$adb-info-color: $brand-info !default;
+$adb-warning-color: $brand-warning !default;
+$adb-error-color: $brand-danger !default;
 
 /**
  * Overrides
@@ -39,6 +39,7 @@ $adb-override-breadbrumb-background: #eaeaea !default;
 $adb-override-modal-header-radius: 5px !default;
 $adb-override-modal-header-background: $adb-theme-color !default;
 $adb-override-modal-header-color: #fff !default;
+$adb-override-modal-header-font: $adb-theme-font-alt !default;
 $adb-override-hr-border: solid 1px lighten($adb-theme-color, 25%) !default;
 $adb-override-hr-margin: 25px 20px !default;
 $adb-override-bootstrap-checkbox-margin: 0 !default;
@@ -214,7 +215,7 @@ $adb-todo-item-finished-decoration: line-through;
  * Login
  */
 
-$adb-login-body-background: url(../img/bg.png) no-repeat center center fixed !default;
+$adb-login-body-background: url(../img/login.png) no-repeat center center fixed !default;
 $adb-login-form-margin: 100px auto 0 !default;
 $adb-login-form-border-radius: 5px !default;
 $adb-login-form-background: #fff !default;
