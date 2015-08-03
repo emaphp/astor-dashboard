@@ -4,45 +4,48 @@
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
  *
- * File: _login.scss
+ * File: _guest.scss
  * Author: @emaphp
  */
 
-.account-form {
-    margin: $adb-login-form-margin;
-	background: $adb-login-form-background;
-    @include radius($adb-login-form-border-radius);
-}
+/**
+ * Guest pages styles
+ */
 
 .form-wrap {
     padding: 20px;
 }
 
-/**
- * Login page styles
- */
-
-.login-body {
-    background: $adb-login-body-background;
+.guest-body {
+    background: $adb-guest-body-background;
     background-size: cover;
 }
 
-.form-login {
-    @extend .account-form;
-    max-width: 330px;
+.guest-form {
+    margin: $adb-guest-form-margin;
+	background: $adb-guest-form-background;
+    @include radius($adb-guest-form-border-radius);
 }
 
-.form-login-heading {
-    font-family: $adb-login-heading-font;
+.guest-form-header {
+    font-family: $adb-guest-form-header-font;
     margin: 0;
-    padding: 20px 15px;
-    text-align: $adb-login-heading-text-align;
-    background: $adb-login-heading-background;
-    @include radius($adb-login-heading-border-radius);
-    color: $adb-login-heading-color;
-    font-size: $adb-login-heading-font-size;
-    text-transform: $adb-login-heading-text-transform;
-    font-weight: 300;
+    padding: $adb-guest-form-header-padding;
+    text-align: $adb-guest-form-header-text-align;
+    background: $adb-guest-form-header-background;
+    @include radius($adb-guest-form-header-border-radius);
+    color: $adb-guest-form-header-color;
+    font-size: $adb-guest-form-header-font-size;
+    text-transform: $adb-guest-form-header-text-transform;
+}
+
+/**
+ * Login page
+ */
+
+.login-form {
+    @extend .guest-form;
+    max-width: $adb-login-form-width;
 }
 
 .login-social-link {
@@ -84,10 +87,19 @@
 }
 
 /**
- * Password recovery
+ * Password recovery page
  */
 
-.form-password {
-    @extend .account-form;
-    max-width: 600px;
+.password-form {
+    @extend .guest-form;
+    max-width: $adb-password-form-width;
+}
+
+/**
+ * New account page
+ */
+
+.account-form {
+    @extend .guest-form;
+    max-width: $adb-account-form-width;
 }

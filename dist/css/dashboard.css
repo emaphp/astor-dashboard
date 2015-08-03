@@ -58,7 +58,7 @@
  * Components
  */
 /*
- * Login
+ * Guest pages
  */
 /**
  * Footer
@@ -937,10 +937,20 @@ footer {
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
  *
- * File: _login.scss
+ * File: _guest.scss
  * Author: @emaphp
  */
-.account-form, .form-login, .form-password {
+/**
+ * Guest pages styles
+ */
+.form-wrap {
+  padding: 20px; }
+
+.guest-body {
+  background: url(../img/guest.png) no-repeat center center fixed;
+  background-size: cover; }
+
+.guest-form, .login-form, .password-form, .account-form {
   margin: 100px auto 0;
   background: #fff;
   -webkit-border-radius: 5px;
@@ -948,20 +958,7 @@ footer {
   -ms-border-radius: 5px;
   border-radius: 5px; }
 
-.form-wrap {
-  padding: 20px; }
-
-/**
- * Login page styles
- */
-.login-body {
-  background: url(../img/login.png) no-repeat center center fixed;
-  background-size: cover; }
-
-.form-login {
-  max-width: 330px; }
-
-.form-login-heading {
+.guest-form-header {
   font-family: "Ruda", sans-serif;
   margin: 0;
   padding: 20px 15px;
@@ -973,8 +970,13 @@ footer {
   border-radius: 5px 5px 0 0;
   color: #fff;
   font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 300; }
+  text-transform: uppercase; }
+
+/**
+ * Login page
+ */
+.login-form {
+  max-width: 330px; }
 
 .login-social-link {
   display: block;
@@ -1010,10 +1012,16 @@ footer {
   border-color: #44ccfe, 10%; }
 
 /**
- * Password recovery
+ * Password recovery page
  */
-.form-password {
+.password-form {
   max-width: 600px; }
+
+/**
+ * New account page
+ */
+.account-form {
+  max-width: 650px; }
 
 /**
  * Astor Dashboard - Version 1.2.0

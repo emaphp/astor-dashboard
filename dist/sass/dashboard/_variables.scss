@@ -212,28 +212,39 @@ $adb-todo-item-description-color: #555;
 $adb-todo-item-finished-decoration: line-through;
 
 /*
- * Login
+ * Guest pages
  */
 
-$adb-login-body-background: url(../img/login.png) no-repeat center center fixed !default;
-$adb-login-form-margin: 100px auto 0 !default;
-$adb-login-form-border-radius: 5px !default;
-$adb-login-form-background: #fff !default;
-$adb-login-heading-font: $adb-theme-font-alt !default;
-$adb-login-heading-font-size: 20px !default;
-$adb-login-heading-text-align: center !default;
-$adb-login-heading-text-transform: uppercase !default;
-$adb-login-heading-color: #fff !default;
-$adb-login-heading-background: $adb-theme-color !default;
-$adb-login-heading-border-radius: 5px 5px 0 0 !default;
+$adb-guest-body-background: url(../img/guest.png) no-repeat center center fixed !default;
+
+$adb-guest-form-margin: 100px auto 0 !default;
+$adb-guest-form-border-radius: 5px !default;
+$adb-guest-form-background: #fff !default;
+
+$adb-guest-form-header-font: $adb-theme-font-alt !default;
+$adb-guest-form-header-font-size: 20px !default;
+$adb-guest-form-header-text-align: center !default;
+$adb-guest-form-header-text-transform: uppercase !default;
+$adb-guest-form-header-color: #fff !default;
+$adb-guest-form-header-background: $adb-theme-color !default;
+$adb-guest-form-header-border-radius: 5px 5px 0 0 !default;
+$adb-guest-form-header-padding: 20px 15px !default;
+
+// Login form
+$adb-login-form-width: 330px !default;
 
 $adb-btn-facebook-color: #fff !default;
 $adb-btn-facebook-background: #5193ea !default;
 $adb-btn-facebook-border-color: $adb-btn-facebook-background !default;
-
 $adb-btn-twitter-color: #fff !default;
 $adb-btn-twitter-background: #44ccfe !default;
 $adb-btn-twitter-border-color: $adb-btn-twitter-background !default;
+
+// Recover password form
+$adb-password-form-width: 600px !default;
+
+// New account form
+$adb-account-form-width: 650px !default;
 
 /**
  * Footer
