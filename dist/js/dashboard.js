@@ -24,44 +24,49 @@ $(function() {
         }
     });
 
+    var hideSidebar = function () {
+        $('#main-content').css('margin-left', '0px');
+        $('#sidebar').css('margin-left', '-210px');
+        $('#sidebar > ul').hide();
+        $('#container').addClass('sidebar-closed');
+        $('#sidebar-toggle').addClass('closed');
+    };
+
+    var showSidebar = function () {
+        $('#main-content').css('margin-left', '210px');
+        $('#sidebar > ul').show();
+        $('#sidebar').css('margin-left', '0');
+        $('#container').removeClass('sidebar-closed');
+        $('#sidebar-toggle').removeClass('closed');
+    };
+
     // Toggle navigation icon
     var sidevarVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
 
-    if (!sidevarVisible) {
-        $('#sidebar-toggle').addClass('closed');
-    }
+    // Sidebar toggle
+    $('#sidebar-toggle').click(function () {
+        if (sidevarVisible) {
+            hideSidebar();
+        } else {
+            showSidebar();
+        }
+
+        sidevarVisible = !sidevarVisible;
+    });
 
     // Sidebar toggle on resize
     $(window).on('load resize', function () {
         var wSize = $(window).width();
         if (wSize <= 768) {
-            $('#container').addClass('sidebar-close');
-            $('#sidebar > ul').hide();
-            $('#sidebar-toggle').addClass('closed');
+            hideSidebar();
             sidevarVisible = false;
         } else if (wSize > 768) {
-            $('#container').removeClass('sidebar-close');
-            $('#sidebar > ul').show();
-            sidevarVisible = !$('#sidebar-toggle').hasClass('closed');
+            if (sidevarVisible) {
+                showSidebar();
+            } else {
+                hideSidebar();
+            }
         }
-    });
-
-    $('#sidebar-toggle').click(function () {
-        if (sidevarVisible) {
-            $('#main-content').css('margin-left', '0px');
-            $('#sidebar').css('margin-left', '-210px');
-            $('#sidebar > ul').hide();
-            $('#container').addClass('sidebar-closed');
-            $('#sidebar-toggle').addClass('closed');
-        } else {
-            $('#main-content').css('margin-left', '210px');
-            $('#sidebar > ul').show();
-            $('#sidebar').css('margin-left', '0');
-            $('#container').removeClass('sidebar-closed');
-            $('#sidebar-toggle').removeClass('closed');
-        }
-
-        sidevarVisible = !sidevarVisible;
     });
 
     // Go-Top button
