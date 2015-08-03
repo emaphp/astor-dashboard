@@ -64,7 +64,7 @@ gulp
 ```
 
 <br>
-Sass files are located in the *dist/sass/* folder. The file *dashboard-build.scss* builds the dashboard while *datatables-build.scss* builds the Datatables styles. Configuration values are located in *dist/sass/dashboard/_variables.scss*.
+Sass files are located in the *dist/sass/* folder. The project uses its own files for building Select2, bootstrap-datetimepicker and DataTables. Configuration values are located in *dist/sass/dashboard/_variables.scss*.
 
 <br>
 ###License
