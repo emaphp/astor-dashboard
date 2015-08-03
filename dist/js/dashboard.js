@@ -24,6 +24,13 @@ $(function() {
         }
     });
 
+    // Toggle navigation icon
+    var sidevarVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
+
+    if (!sidevarVisible) {
+        $('#sidebar-toggle').addClass('closed');
+    }
+
     // Sidebar toggle on resize
     $(window).on('load resize', function () {
         var wSize = $(window).width();
@@ -35,15 +42,9 @@ $(function() {
         } else if (wSize > 768) {
             $('#container').removeClass('sidebar-close');
             $('#sidebar > ul').show();
+            sidevarVisible = !$('#sidebar-toggle').hasClass('closed');
         }
     });
-
-    // Toggle navigation icon
-    var sidevarVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
-
-    if (!sidevarVisible) {
-        $('#sidebar-toggle').addClass('closed');
-    }
 
     $('#sidebar-toggle').click(function () {
         if (sidevarVisible) {
