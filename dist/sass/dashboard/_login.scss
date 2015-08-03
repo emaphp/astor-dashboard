@@ -8,6 +8,16 @@
  * Author: @emaphp
  */
 
+.account-form {
+    margin: $adb-login-form-margin;
+	background: $adb-login-form-background;
+    @include radius($adb-login-form-border-radius);
+}
+
+.form-wrap {
+    padding: 20px;
+}
+
 /**
  * Login page styles
  */
@@ -18,35 +28,21 @@
 }
 
 .form-login {
+    @extend .account-form;
     max-width: 330px;
-    margin: $adb-login-form-margin;
-	background: $adb-login-form-background;
-    @include radius($adb-login-form-border-radius);
-
-    h2.form-login-heading {
-        font-family: $adb-login-heading-font;
-        margin: 0;
-        padding: 25px 20px;
-        text-align: $adb-login-heading-text-align;
-        background: $adb-login-heading-background;
-        @include radius($adb-login-heading-border-radius);
-        color: $adb-login-heading-color;
-        font-size: $adb-login-heading-font-size;
-        text-transform: $adb-login-heading-text-transform;
-        font-weight: 300;
-    }
 }
 
-.login-wrap {
-    padding: 20px;
-
-    .registration {
-        text-align: center;
-    }
-
-    label {
-        font-weight: 400;
-    }
+.form-login-heading {
+    font-family: $adb-login-heading-font;
+    margin: 0;
+    padding: 20px 15px;
+    text-align: $adb-login-heading-text-align;
+    background: $adb-login-heading-background;
+    @include radius($adb-login-heading-border-radius);
+    color: $adb-login-heading-color;
+    font-size: $adb-login-heading-font-size;
+    text-transform: $adb-login-heading-text-transform;
+    font-weight: 300;
 }
 
 .login-social-link {
@@ -85,4 +81,13 @@
     color: $adb-btn-twitter-color;
     background-color: darken($adb-btn-twitter-background, $adb-default-darken);
     border-color: $adb-btn-twitter-border-color, $adb-default-darken;
+}
+
+/**
+ * Password recovery
+ */
+
+.form-password {
+    @extend .account-form;
+    max-width: 600px;
 }

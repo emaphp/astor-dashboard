@@ -940,6 +940,17 @@ footer {
  * File: _login.scss
  * Author: @emaphp
  */
+.account-form, .form-login, .form-password {
+  margin: 100px auto 0;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.form-wrap {
+  padding: 20px; }
+
 /**
  * Login page styles
  */
@@ -948,34 +959,22 @@ footer {
   background-size: cover; }
 
 .form-login {
-  max-width: 330px;
-  margin: 100px auto 0;
-  background: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px; }
-  .form-login h2.form-login-heading {
-    font-family: "Ruda", sans-serif;
-    margin: 0;
-    padding: 25px 20px;
-    text-align: center;
-    background: #7459E1;
-    -webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -ms-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 300; }
+  max-width: 330px; }
 
-.login-wrap {
-  padding: 20px; }
-  .login-wrap .registration {
-    text-align: center; }
-  .login-wrap label {
-    font-weight: 400; }
+.form-login-heading {
+  font-family: "Ruda", sans-serif;
+  margin: 0;
+  padding: 20px 15px;
+  text-align: center;
+  background: #7459E1;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300; }
 
 .login-social-link {
   display: block;
@@ -1009,6 +1008,12 @@ footer {
   color: #fff;
   background-color: #11befe;
   border-color: #44ccfe, 10%; }
+
+/**
+ * Password recovery
+ */
+.form-password {
+  max-width: 600px; }
 
 /**
  * Astor Dashboard - Version 1.2.0
