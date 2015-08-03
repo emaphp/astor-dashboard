@@ -56,6 +56,12 @@ label {
     font-family:  $adb-override-modal-header-font;
 }
 
+// Navbar brand
+.navbar-brand {
+    font-family: $adb-override-navbar-brand-font;
+    color: $adb-override-navbar-brand-color !important;
+}
+
 // Used along with bootstrap-checkbox plugin
 input[type=checkbox] + .btn-group {
     margin: $adb-override-bootstrap-checkbox-margin;

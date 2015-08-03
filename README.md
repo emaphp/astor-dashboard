@@ -5,7 +5,7 @@ A responsive dashboard made with Sass
 ###About
 
 <br>
-Astor Dashboard is a Bootstrap-based dashboard made with [Sass](htt://sass-lang.com ""). It was originally based on [Dashgum](http://www.blacktie.co/demo/dashgumfree/ ""), made by [BlackTie](http://www.blacktie.co/ "").
+Astor Dashboard is a Bootstrap-based dashboard made with [Sass](http://sass-lang.com ""). It was originally based on [Dashgum](http://www.blacktie.co/demo/dashgumfree/ ""), made by [BlackTie](http://www.blacktie.co/ ""). Astor Dashboard is focused on providing a starting design for applications made with [Laravel](htt://laravel.com "").
 
 <br>
 ![Dashboard](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQdXpvcGtmTWZyREE "")

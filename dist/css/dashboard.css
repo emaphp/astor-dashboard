@@ -118,6 +118,10 @@ label {
   margin: 0 !important;
   font-family: "Ruda", sans-serif; }
 
+.navbar-brand {
+  font-family: "Ruda", sans-serif;
+  color: #efefef !important; }
+
 input[type=checkbox] + .btn-group {
   margin: 0; }
 
