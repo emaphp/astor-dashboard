@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -22,7 +22,7 @@
  * Mixins
  */
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -64,7 +64,7 @@
  * Footer
  */
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -126,7 +126,7 @@ input[type=checkbox] + .btn-group {
   margin: 0; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -175,7 +175,7 @@ a, a:hover, a:focus {
   color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -305,7 +305,7 @@ a, a:hover, a:focus {
   margin-left: -180px; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -483,7 +483,7 @@ ul.top-bar > li {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -577,7 +577,7 @@ ul.top-bar > li {
   font-family: "Ruda", sans-serif !important; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -676,7 +676,7 @@ ul.top-bar > li {
       margin-left: 10px; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -703,7 +703,7 @@ ul.top-bar > li {
   background: #5bc0de; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -851,7 +851,7 @@ ul.top-bar > li {
       transition: background-color 0.6s; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -904,7 +904,7 @@ ul.top-bar > li {
     overflow: hidden; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -936,7 +936,7 @@ footer {
     color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -954,7 +954,7 @@ footer {
   background: url(../img/guest.png) no-repeat center center fixed;
   background-size: cover; }
 
-.guest-form, .login-form, .password-form, .account-form {
+.guest-form, .login-form, .password-form, .register-form, .reset-form {
   margin: 100px auto 0;
   background: #fff;
   -webkit-border-radius: 5px;
@@ -1022,13 +1022,19 @@ footer {
   max-width: 600px; }
 
 /**
- * New account page
+ * Register page
  */
-.account-form {
+.register-form {
   max-width: 650px; }
 
 /**
- * Astor Dashboard - Version 1.2.0
+ * Reset password form
+ */
+.reset-form {
+  max-width: 600px; }
+
+/**
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License

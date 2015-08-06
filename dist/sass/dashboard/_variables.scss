@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.2.0
+ * Astor Dashboard - Version 1.2.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -245,8 +245,11 @@ $adb-btn-twitter-border-color: $adb-btn-twitter-background !default;
 // Recover password form
 $adb-password-form-width: 600px !default;
 
-// New account form
-$adb-account-form-width: 650px !default;
+// Register form
+$adb-register-form-width: 650px !default;
+
+// Reset password form
+$adb-reset-form-width: 600px !default;
 
 /**
  * Footer
