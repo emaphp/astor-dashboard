@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.2.1
+ * Astor Dashboard - Version 1.3.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -72,5 +72,21 @@ gulp.task('datetimepicker', ['datetimepicker:build'], function () {
     gulp.watch('dist/sass/datetimepicker-build.scss', ['datetimepicker:build']);
 });
 
+// boostrap-slider task
+gulp.task('slider:build', function () {
+    return sass('dist/sass/slider-build.scss', {
+        loadPath: [
+            './node_modules/bootstrap-sass/assets/stylesheets'
+        ]
+    })
+      .on('error', function (err) {console.error('Error!', err.message);})
+      .pipe(concat('slider.css'))
+      .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('slider', ['slider:build'], function () {
+    gulp.watch('dist/sass/slider-build.scss', ['slider:build']);
+});
+
 // Default task
-gulp.task('default', gulpsync.sync(['dashboard:build', 'datatables:build', 'select2:build', 'datetimepicker:build']));
+gulp.task('default', gulpsync.sync(['dashboard:build', 'datatables:build', 'select2:build', 'datetimepicker:build', 'slider:build']));

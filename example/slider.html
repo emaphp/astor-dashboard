@@ -6,10 +6,11 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="keyword" content="">
-        <title>Astor Dashboard - Página en blanco</title>
+        <title>Astor Dashboard - bootstrap-slider</title>
         <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <link href="../dist/css/dashboard.css" rel="stylesheet">
+        <link href="../dist/css/slider.css" rel="stylesheet">
     </head>
     <body>
         <section id="container" >
@@ -147,11 +148,10 @@
                                 <li><a href="botones.html">Botones</a></li>
                                 <li><a href="formularios.html">Formularios</a></li>
                                 <li><a href="tablas.html">Tablas</a></li>
-                                <li><a href="componentes.html">Componentes</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
-                            <a href="#">
+                            <a class="active" href="#">
                                 <i class="fa fa-cogs"></i>
                                 <span>Plugins</span>
                             </a>
@@ -160,17 +160,17 @@
                                 <li><a href="select2.html">Select2</a></li>
                                 <li><a href="checkbox.html">bootstrap-checkbox</a></li>
                                 <li><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
-                                <li><a href="slider.html">bootstrap-slider</a></li>
+                                <li class="active"><a href="slider.html">bootstrap-slider</a></li>
                                 <li><a href="typeahead.html">typeahead.js</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
-                            <a href="#" class="active">
+                            <a href="#">
                                 <i class="fa fa-book"></i>
                                 <span>Extras</span>
                             </a>
                             <ul class="sub">
-                                <li class="active"><a href="blank.html">Página en blanco</a></li>
+                                <li><a href="blank.html">Página en blanco</a></li>
                                 <li><a href="login.html">Login</a></li>
                                 <li><a href="register.html">Nueva cuenta</a></li>
                                 <li><a href="recover.html">Recuperar contraseña</a></li>
@@ -182,6 +182,73 @@
             </aside>
             <section id="main-content">
                 <section class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb">
+                                <li><a href="#">Plugins</a></li>
+                                <li class="active">bootstrap-slider</li>
+                            </ol>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Slider simple</h4>
+                                        <div class="form-group">
+                                            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Rango</h4>
+                                        <div class="form-group">
+                                            Definir precio: <b>$ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>$ 1000</b>
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Eventos</h4>
+                                        <div class="form-group">
+                                            <p>
+<b>R</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" id="R" data-slider-tooltip="hide" data-slider-handle="square" />
+</p>
+<p>
+<b>G</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="GC" id="G" data-slider-tooltip="hide" data-slider-handle="round" />
+</p>
+<p>
+<b>B</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="BC" id="B" data-slider-tooltip="hide" data-slider-handle="triangle" />
+</p>
+<div id="RGB"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Vertical</h4>
+                                        <div class="form-group">
+                                            <input id="ex4" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="-3" data-slider-orientation="vertical"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                     <div class="content-box">
+                                         <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Value</h4>
+                                         <div class="form-group">
+                                             <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+<span id="ex6CurrentSliderValLabel">Valor actual: <span id="ex6SliderVal">3</span></span>
+                                         </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Habilitar / Deshabilitar</h4>
+                                        <div class="form-group">
+                                            <input id="ex7" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="5" data-slider-enabled="false"/>
+<input id="ex7-enabled" type="checkbox"/> Habilitar
+                                        </div>
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Markers</h4>
+                                        <div class="form-group">
+                                            <input id="ex13" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]'/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
             <footer>
@@ -198,5 +265,90 @@
         <script type="text/javascript" src="../bower_components/jquery.bandoneon/dist/jquery.bandoneon.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
         <script src="../dist/js/dashboard.js"></script>
+        <script src="../bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+        <script>
+            $('#ex1').slider({
+                formatter: function(value) {
+                    return 'Valor actual: ' + value;
+                }
+            });
+
+            $("#ex2").slider({});
+
+            var RGBChange = function() {
+                $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
+            };
+
+            var r = $('#R').slider()
+                    .on('slide', RGBChange)
+                    .data('slider');
+            var g = $('#G').slider()
+                    .on('slide', RGBChange)
+                    .data('slider');
+            var b = $('#B').slider()
+                    .on('slide', RGBChange)
+                    .data('slider');
+
+            $("#ex4").slider({
+                reversed : true
+            });
+
+            $("#ex6").slider();
+                $("#ex6").on("slide", function(slideEvt) {
+                    $("#ex6SliderVal").text(slideEvt.value);
+                });
+
+            $("#ex7").slider();
+            $("#ex7-enabled").click(function() {
+                if(this.checked) {
+                    // With JQuery
+                    $("#ex7").slider("enable");
+
+                    // Without JQuery
+                    slider.enable();
+                }
+                else {
+                    // With JQuery
+                    $("#ex7").slider("disable");
+
+                    // Without JQuery
+                    slider.disable();
+                }
+            });
+
+            $("#ex13").slider({
+    ticks: [0, 100, 200, 300, 400],
+    ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
+    ticks_snap_bounds: 30
+});
+
+        </script>
+        <style>
+            #RGB {
+                height: 20px;
+                background: rgb(128, 128, 128);
+            }
+            #RC .slider-selection {
+                background: #FF8282;
+            }
+            #RC .slider-handle {
+                background: red;
+            }
+            #GC .slider-selection {
+                background: #428041;
+            }
+            #GC .slider-handle {
+                background: green;
+            }
+            #BC .slider-selection {
+                background: #8283FF;
+            }
+            #BC .slider-handle {
+                border-bottom-color: blue;
+            }
+            #R, #G, #B {
+                width: 300px;
+            }
+        </style>
   </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "name": "astor-dashboard",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "homepage": "https://github.com/emaphp/astor-dashboard",
   "authors": [
     "Emmanuel Antico <emmanuel.antico@gmail.com>"
@@ -35,6 +35,7 @@
     "astor-datatables": "~1.1.0",
     "font-awesome": "~4.3.0",
     "bootstrap-checkbox": "~1.2.8",
-    "eonasdan-bootstrap-datetimepicker": "~4.15.35"
+    "eonasdan-bootstrap-datetimepicker": "~4.15.35",
+    "seiyria-bootstrap-slider": "~5.0.11"
   }
 }
