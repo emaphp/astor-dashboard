@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keyword" content="">
+        <title>Astor Dashboard - typeahead.js</title>
+        <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../dist/css/dashboard.css" rel="stylesheet">
+    </head>
+    <body>
+        <section id="container" >
+            <header>
+                <div id="sidebar-toggle">
+                    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Mostrar/Ocultar navegación"></div>
+                </div>
+                <a href="#" class="logo">Astor Dashboard</a>
+                <div class="nav notify-row">
+                    <ul class="nav top-bar">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-icon" href="#">
+                                <i class="fa fa-tasks"></i><span class="badge">2</span>
+                            </a>
+                            <ul class="dropdown-menu extended tasks-bar">
+                                <div class="notify-arrow"></div>
+                                <li>
+                                    <p class="dropdown-header">2 tareas pendientes</p>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="task-info">
+                                            <div class="description">Administración de sitio</div>
+                                            <div class="percent">40%</div>
+                                        </div>
+                                        <div class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% completado</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="task-info">
+                                            <div class="description">Actualización de base de datos</div>
+                                            <div class="percent">60%</div>
+                                        </div>
+                                        <div class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="sr-only">60% completado</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Ver tareas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-icon" href="index.html#">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge">3</span>
+                            </a>
+                            <ul class="dropdown-menu extended inbox">
+                                <div class="notify-arrow"></div>
+                                <li>
+                                    <p class="dropdown-header">3 mensajes nuevos</p>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo"><img alt="avatar" src="../dist/img/contacts/contact-1.png"></span>
+                                        <span class="subject">
+                                            <span class="from">Felicitas Duarte</span>
+                                            <span class="time">1 minuto</span>
+                                        </span>
+                                        <span class="message">
+                                            Sed ut perspiciatis unde.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo"><img alt="avatar" src="../dist/img/contacts/contact-2.png"></span>
+                                        <span class="subject">
+                                            <span class="from">Jacinta Martinez</span>
+                                            <span class="time">40 min.</span>
+                                        </span>
+                                        <span class="message">
+                                         Ut enim ad minima veniam.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="photo">
+                                            <img alt="avatar" src="../dist/img/contacts/contact-3.png">
+                                        </span>
+                                        <span class="subject">
+                                            <span class="from">Josefa Orozco</span>
+                                            <span class="time">2 hrs.</span>
+                                        </span>
+                                        <span class="message">
+                                            Et harum quidem rerum facilis.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right">&nbsp;</i>Ver mensajes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="nav pull-right top-bar">
+                        <li><a class="logout" href="login.html"><i class="fa fa-power-off">&nbsp;</i>Logout</a></li>
+                    </ul>
+                </div>
+            </header>
+            <aside>
+                <div id="sidebar" class="nav-collapse">
+                    <ul id="sidebar-menu">
+                        <div class="login-info text-center">
+                            <a href="#">
+                                <i class="fa fa-user fa-3"></i>
+                                <h5 class="text-center">Emmanuel Antico</h5>
+                            </a>
+                            <small>Administrador</small>
+                        </div>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">
+                                <i class="fa fa-desktop"></i>
+                                <span>Interfaz</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="general.html">General</a></li>
+                                <li><a href="botones.html">Botones</a></li>
+                                <li><a href="formularios.html">Formularios</a></li>
+                                <li><a href="tablas.html">Tablas</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a class="active" href="#">
+                                <i class="fa fa-cogs"></i>
+                                <span>Plugins</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="datatables.html">Datatables</a></li>
+                                <li><a href="select2.html">Select2</a></li>
+                                <li><a href="checkbox.html">bootstrap-checkbox</a></li>
+                                <li><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
+                                <li><a href="slider.html">bootstrap-slider</a></li>
+                                <li class="active"><a href="typeahead.html">typeahead.js</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Extras</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="blank.html">Página en blanco</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Nueva cuenta</a></li>
+                                <li><a href="recover.html">Recuperar contraseña</a></li>
+                                <li><a href="reset.html">Resetear contraseña</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section id="main-content">
+                <section class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb">
+                                <li><a href="#">Plugins</a></li>
+                                <li class="active">typeahead.js</li>
+                            </ol>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Autocompletado</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Provincias de Argentina</label>
+                                                <input type="text" class="form-control" id="provincias">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content-box">
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Bloodhound</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Barrios porteños</label>
+                                                <input type="text" class="form-control" id="barrios">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <footer>
+                <div class="text-center">
+                    Copyright 2015 Emmanuel Antico
+                    <a href="#" class="go-top">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+            </footer>
+        </section>
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../bower_components/jquery.bandoneon/dist/jquery.bandoneon.min.js"></script>
+        <script type="text/javascript" src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+        <script src="../dist/js/dashboard.js"></script>
+
+        <script src="../bower_components/bootstrap3-typeahead/bootstrap3-typeahead.js"></script>
+        <script type="text/javascript" src="../bower_components/typeahead.js/dist/bloodhound.js"></script>
+        <script type="application/javascript">
+            var substringMatcher = function(strs) {
+                return function findMatches(q, cb) {
+                    var matches, substringRegex;
+
+                    matches = [];
+                    substrRegex = new RegExp(q, 'i');
+
+                    $.each(strs, function(i, str) {
+                        if (substrRegex.test(str)) {
+                            matches.push(str);
+                        }
+                    });
+                    cb(matches);
+                };
+            };
+
+            var provincias = ['Buenos Aires', 'Cordoba', 'Mendoza', 'Salta', 'Santa Fe', 'San Juan',
+                             'La Pampa', 'Entre Rios', 'Misiones', 'Corrientes', 'Santa Cruz',
+                             'Tierra del Fuego', 'Chubut', 'Neuquen', 'Rio Negro', 'La Rioja',
+                             'Catamarca', 'Santiago del Estero', 'Catamarca', 'Chaco', 'Jujuy',
+                             'Tucuman', 'Formosa', 'San Luis'];
+
+            $('#provincias').typeahead({
+                name: 'provincias',
+                source: substringMatcher(provincias)
+            });
+
+            var barrios = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.whitespace,
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                local:  ['Agronomia', 'Almagro', 'Belgrano', 'Caballito', 'Colegiales', 'Floresta',
+                         'Mataderos', 'Nuñez', 'Liniers', 'Palermo', 'Parque Patricios', 'Retiro']
+            });
+
+            barrios.initialize();
+
+            $('#barrios').typeahead({
+                items: 4,
+                source: barrios.ttAdapter()
+            });
+        </script>
+  </body>
+</html>
