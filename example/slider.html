@@ -199,29 +199,32 @@
                                     <div class="content-box">
                                         <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Rango</h4>
                                         <div class="form-group">
-                                            Definir precio: <b>$ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>$ 1000</b>
+                                            Precio: <b>$ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>$ 1000</b>
                                         </div>
                                     </div>
                                     <div class="content-box">
                                         <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Eventos</h4>
                                         <div class="form-group">
                                             <p>
-<b>R</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" id="R" data-slider-tooltip="hide" data-slider-handle="square" />
-</p>
-<p>
-<b>G</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="GC" id="G" data-slider-tooltip="hide" data-slider-handle="round" />
-</p>
-<p>
-<b>B</b> <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="BC" id="B" data-slider-tooltip="hide" data-slider-handle="triangle" />
-</p>
-<div id="RGB"></div>
+                                                <strong>R</strong>
+                                                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="RC" id="R" data-slider-tooltip="hide" data-slider-handle="square" />
+                                            </p>
+                                            <p>
+                                                <strong>G</strong>
+                                                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="GC" id="G" data-slider-tooltip="hide" data-slider-handle="round" />
+                                            </p>
+                                            <p>
+                                                <strong>B</strong>
+                                                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="128" data-slider-id="BC" id="B" data-slider-tooltip="hide" data-slider-handle="triangle" />
+                                            </p>
+                                            <div id="RGB"></div>
                                         </div>
                                     </div>
                                     <div class="content-box">
                                          <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Value</h4>
                                          <div class="form-group">
-                                             <input id="ex6" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
-<span id="ex6CurrentSliderValLabel">Valor actual: <span id="ex6SliderVal">3</span></span>
+                                             <input id="ex4" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+                                             <span>Valor actual: <span id="ex4_value">3</span></span>
                                          </div>
                                     </div>
                                 </div>
@@ -229,21 +232,21 @@
                                     <div class="content-box">
                                         <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Vertical</h4>
                                         <div class="form-group">
-                                            <input id="ex4" type="text" data-slider-min="-5" data-slider-max="20" data-slider-step="1" data-slider-value="-3" data-slider-orientation="vertical"/>
+                                            <input id="ex5" type="text" data-slider-min="1" data-slider-max="10" data-slider-orientation="vertical"/>
                                         </div>
                                     </div>
 
                                     <div class="content-box">
                                         <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Habilitar / Deshabilitar</h4>
                                         <div class="form-group">
-                                            <input id="ex7" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="5" data-slider-enabled="false"/>
-<input id="ex7-enabled" type="checkbox"/> Habilitar
+                                            <input id="ex6" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="5" data-slider-enabled="false"/>
+                                            <input id="ex6-enabled" type="checkbox"/> Habilitar
                                         </div>
                                     </div>
                                     <div class="content-box">
-                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Markers</h4>
+                                        <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Ticks</h4>
                                         <div class="form-group">
-                                            <input id="ex13" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]'/>
+                                            <input id="ex7" type="text" data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["$0", "$100", "$200", "$300", "$400"]'/>
                                         </div>
                                     </div>
                                 </div>
@@ -268,14 +271,17 @@
         <script src="../dist/js/dashboard.js"></script>
         <script src="../bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
         <script>
+            // Example 1
             $('#ex1').slider({
                 formatter: function(value) {
                     return 'Valor actual: ' + value;
                 }
             });
 
+            // Example 2 (Range)
             $("#ex2").slider({});
 
+            // Example 3 (RGB Slider)
             var RGBChange = function() {
                 $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
             };
@@ -290,39 +296,35 @@
                     .on('slide', RGBChange)
                     .data('slider');
 
-            $("#ex4").slider({
-                reversed : true
+            // Example 4 (Event value)
+            $("#ex4").slider();
+            $("#ex4").on("slide", function(slideEvt) {
+                $("#ex4_value").text(slideEvt.value);
             });
 
+            // Example 5 (Vertical slider)
+            $("#ex5").slider({
+                reversed: false
+            });
+
+            // Example 6 (Enable/Disable)
             $("#ex6").slider();
-                $("#ex6").on("slide", function(slideEvt) {
-                    $("#ex6SliderVal").text(slideEvt.value);
-                });
-
-            $("#ex7").slider();
-            $("#ex7-enabled").click(function() {
-                if(this.checked) {
+            $("#ex6-enabled").click(function() {
+                if (this.checked) {
                     // With JQuery
-                    $("#ex7").slider("enable");
-
-                    // Without JQuery
-                    slider.enable();
-                }
-                else {
+                    $("#ex6").slider("enable");
+                } else {
                     // With JQuery
-                    $("#ex7").slider("disable");
-
-                    // Without JQuery
-                    slider.disable();
+                    $("#ex6").slider("disable");
                 }
             });
 
-            $("#ex13").slider({
-    ticks: [0, 100, 200, 300, 400],
-    ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
-    ticks_snap_bounds: 30
-});
-
+            // Example 7 (Ticks)
+            $("#ex7").slider({
+                ticks: [0, 100, 200, 300, 400],
+                ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
+                ticks_snap_bounds: 30
+            });
         </script>
         <style>
             #RGB {

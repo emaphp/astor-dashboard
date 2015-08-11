@@ -43,6 +43,9 @@ bower install astor-dashboard
  * [Select2](https://github.com/select2/select2 "")
  * [bootstrap-checkbox](https://github.com/vsn4ik/bootstrap-checkbox "")
  * [bootstrap-datetimepicker](https://github.com/Eonasdan/bootstrap-datetimepicker "")
+ * [bootstrap-slider](https://github.com/seiyria/bootstrap-slider "")
+ * [typeahead.js](http://twitter.github.io/typeahead.js/ "")
+ * [bootstrap3-typeahead](https://github.com/bassjobsen/Bootstrap-3-Typeahead "")
 
 <br>
 ###Customization
@@ -64,7 +67,7 @@ gulp
 ```
 
 <br>
-Sass files are located in the *dist/sass/* folder. The project uses its own files for building Select2, bootstrap-datetimepicker and DataTables. Configuration values are located in *dist/sass/dashboard/_variables.scss*.
+Sass files are located in the *dist/sass/* folder. The project uses its own files for building Select2, bootstrap-datetimepicker, bootstrap-slider and DataTables. Configuration values are located in *dist/sass/dashboard/_variables.scss*.
 
 <br>
 ###License
