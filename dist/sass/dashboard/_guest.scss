@@ -46,6 +46,16 @@
 .login-form {
     @extend .guest-form;
     max-width: $adb-login-form-width;
+
+    .remember {
+        text-align: $adb-login-form-remember-text-align;
+        margin: $adb-login-form-remember-margin;
+    }
+
+    .recover-password {
+        text-align: $adb-login-form-recover-text-align;
+        margin: $adb-login-form-recover-margin;
+    }
 }
 
 .login-social-link {

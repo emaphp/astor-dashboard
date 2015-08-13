@@ -981,6 +981,12 @@ footer {
  */
 .login-form {
   max-width: 330px; }
+  .login-form .remember {
+    text-align: left;
+    margin: 1.2em 0; }
+  .login-form .recover-password {
+    text-align: right;
+    margin: 0.6em 0; }
 
 .login-social-link {
   display: block;
