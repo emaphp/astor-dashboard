@@ -46,6 +46,7 @@ bower install astor-dashboard
  * [bootstrap-slider](https://github.com/seiyria/bootstrap-slider "")
  * [typeahead.js](http://twitter.github.io/typeahead.js/ "")
  * [bootstrap3-typeahead](https://github.com/bassjobsen/Bootstrap-3-Typeahead "")
+ * [dragula](https://github.com/bevacqua/dragula "")
 
 <br>
 ###Customization

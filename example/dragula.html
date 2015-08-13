@@ -6,11 +6,11 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="keyword" content="">
-        <title>Astor Dashboard - bootstrap-datetimepicker</title>
+        <title>Astor Dashboard - dragula</title>
         <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <link href="../dist/css/dashboard.css" rel="stylesheet">
-        <link href="../dist/css/datetimepicker.css" rel="stylesheet">
+        <link href="../bower_components/dragula.js/dist/dragula.css" rel="stylesheet" />
     </head>
     <body>
         <section id="container" >
@@ -159,10 +159,10 @@
                                 <li><a href="datatables.html">Datatables</a></li>
                                 <li><a href="select2.html">Select2</a></li>
                                 <li><a href="checkbox.html">bootstrap-checkbox</a></li>
-                                <li class="active"><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
+                                <li><a href="datetimepicker.html">bootstrap-datetimepicker</a></li>
                                 <li><a href="slider.html">bootstrap-slider</a></li>
                                 <li><a href="typeahead.html">typeahead.js</a></li>
-                                <li><a href="dragula.html">dragula</a></li>
+                                <li class="active"><a href="dragula.html">dragula</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
@@ -187,73 +187,38 @@
                         <div class="col-lg-12">
                             <ol class="breadcrumb">
                                 <li><a href="#">Plugins</a></li>
-                                <li class="active">bootstrap-datetimepicker</li>
+                                <li class="active">dragula</li>
                             </ol>
-                            <div class="content-box">
-                                <h4 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>bootstrap-datetimepicker</h4>
-                                <div class="row">
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <label for="datetimepicker1">Locale + Formato</label>
-                                            <div class='input-group date' id='datetimepicker1'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <label for="datetimepicker2">Sin Icono</label>
-                                            <input type='text' class="form-control" id='datetimepicker2'/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <label for="datetimepicker3">Deshabilitar fechas</label>
-                                            <div class='input-group date' id='datetimepicker3'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <label for="datetimepicker4">Icono customizado</label>
-                                            <div class='input-group date' id='datetimepicker4'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="fa fa-calendar"></span>
-                                                </span>
-                                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="content-box">
+                                        <h3 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Drag &amp; Drop</h3>
+                                        <div class="drag-wrapper">
+                                            <div id="left1" class="drag-container">
+                                                <div>You can move these elements between these two containers</div>
+                                                <div>Moving them anywhere else isn't quite possible</div>
+                                                <div>Anything can be moved around. That includes images, <a href='https://github.com/bevacqua/dragula'>links</a>, or any other nested elements.</div>
+                                              </div>
+                                              <div id="right1" class="drag-container">
+                                                <div>There's also the possibility of moving elements around in the same container, changing their position</div>
+                                                <div>This is the default use case. You only need to specify the containers you want to use</div>
+                                                <div>More interactive use cases lie ahead</div>
+                                                <div>Make sure to check out the <a href='https://github.com/bevacqua/dragula#readme'>documentation on GitHub!</a></div>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <label for="datetimepicker5">View Mode</label>
-                                            <div class='input-group date' id='datetimepicker5'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <label for="datetimepicker6">Deshabilitar por día de semana</label>
-                                            <div class='input-group date' id='datetimepicker6'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
+                                <div class="col-lg-6">
+                                    <div class="content-box">
+                                        <h3 class="content-header"><i class="fa fa-angle-right">&nbsp;</i>Drag simple</h3>
+                                        <div class="drag-wrapper">
+                                            <div id="single" class="drag-container">
+                                                <div>Clicking on these elements triggers a regular <code>click</code> event you can listen to.</div>
+                                                <div>Try dragging or clicking on this element.</div>
+                                                <div>Note how you can click normally?</div>
+                                                <div>Drags don't trigger click events.</div>
+                                                <div>Clicks don't end up in a drag, either.</div>
+                                                <div>This is useful if you have elements that can be both clicked or dragged.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -276,55 +241,46 @@
         <script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.bandoneon/dist/jquery.bandoneon.min.js"></script>
         <script type="text/javascript" src="../bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
-        <script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
-        <script type="text/javascript" src="../bower_components/moment/locale/es.js"></script>
         <script src="../dist/js/dashboard.js"></script>
-        <script type="text/javascript">
+        <script src="../bower_components/dragula.js/dist/dragula.js"></script>
+        <script>
             $(function () {
-                $('#datetimepicker1').datetimepicker({
-                    locale: 'es',
-                    format: 'DD/MM/YYYY HH:mm'
-                });
-
-                $('#datetimepicker2').datetimepicker({
-                    locale: 'es',
-                    format: 'DD/MM/YYYY HH:mm'
-                });
-
-                $('#datetimepicker3').datetimepicker({
-                    locale: 'es',
-                    format: 'DD/MM/YYYY',
-                    defaultDate: moment("31/07/2015", 'DD/MM/YYYY'),
-                    disabledDates: [
-                        moment("05/07/2015", 'DD/MM/YYYY'),
-                        moment("09/07/2015", 'DD/MM/YYYY'),
-                    ]
-                });
-
-                $('#datetimepicker4').datetimepicker({
-                    locale: 'es',
-                    format: 'DD/MM/YYYY',
-                    icons: {
-                        time: "fa fa-clock-o",
-                        date: "fa fa-calendar",
-                        up: "fa fa-arrow-up",
-                        down: "fa fa-arrow-down"
-                    }
-                });
-
-                $('#datetimepicker5').datetimepicker({
-                    locale: 'es',
-                    format: 'DD/MM/YYYY',
-                    viewMode: 'years'
-                });
-
-                $('#datetimepicker6').datetimepicker({
-                    locale: 'es',
-                    format: 'DD/MM/YYYY',
-                    daysOfWeekDisabled: [0, 6]
-                });
+                dragula([document.getElementById('left1'), document.getElementById('right1')]);
+                dragula([document.getElementById('single')]);
             });
         </script>
+        <style>
+            .drag-wrapper {
+                display: table;
+            }
+            .drag-container {
+              display: table-cell;
+              background-color: rgba(8, 118, 216, 0.7);
+              width: 50%;
+            }
+            .drag-container:nth-child(odd) {
+              background-color: rgba(139, 43, 255, 0.7);
+            }
+            .drag-container > div,
+            .gu-mirror {
+              margin: 10px;
+              padding: 10px;
+              background-color: rgba(0, 0, 0, 0.2);
+              transition: opacity 0.4s ease-in-out;
+            }
+            .drag-container > div {
+              cursor: move;
+              cursor: grab;
+              cursor: -moz-grab;
+              cursor: -webkit-grab;
+              background-color: #343434;
+              color: #e4e4e4;
+            }
+            .gu-mirror {
+              cursor: grabbing;
+              cursor: -moz-grabbing;
+              cursor: -webkit-grabbing;
+            }
+        </style>
   </body>
 </html>
