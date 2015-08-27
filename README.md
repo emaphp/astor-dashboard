@@ -31,7 +31,7 @@ bower install astor-dashboard
 <br>
  * [jQuery](http://jquery.com/ "")
  * [Bootstrap 3.3](http://getbootstrap.com/ "")
- * [Font-Awesome 4.3](http://fortawesome.github.io/Font-Awesome/ "")
+ * [Font-Awesome 4.4](http://fortawesome.github.io/Font-Awesome/ "")
 
 <br>
 ### Additional plugins
