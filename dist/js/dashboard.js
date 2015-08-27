@@ -10,7 +10,7 @@
 
 // Initializes jQuery plugins
 $(function() {
-    // Initialize sidebar
+    // Initialize sidebar menu
     $('#sidebar-menu').bandoneon();
 
     // ScrollTo
@@ -41,31 +41,29 @@ $(function() {
     };
 
     // Toggle navigation icon
-    var sidevarVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
+    var sidevarIsVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
+
+    // Obtain initial status from data attribute
+    var status = $('#sidebar').data('status');
+    if (status === 'hidden' && sidevarIsVisible) {
+        hideSidebar();
+        sidevarIsVisible = false;
+    }
 
     // Sidebar toggle
     $('#sidebar-toggle').click(function () {
-        if (sidevarVisible) {
-            hideSidebar();
-        } else {
-            showSidebar();
-        }
-
-        sidevarVisible = !sidevarVisible;
+        sidevarIsVisible ? hideSidebar() : showSidebar();
+        sidevarIsVisible = !sidevarIsVisible;
     });
 
     // Sidebar toggle on resize
-    $(window).on('load resize', function () {
+    $(window).on('resize', function () {
         var wSize = $(window).width();
         if (wSize <= 768) {
             hideSidebar();
-            sidevarVisible = false;
+            sidevarIsVisible = false;
         } else if (wSize > 768) {
-            if (sidevarVisible) {
-                showSidebar();
-            } else {
-                hideSidebar();
-            }
+            sidevarIsVisible ? showSidebar() : hideSidebar();
         }
     });
 
