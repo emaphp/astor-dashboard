@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.0
+ * Astor Dashboard - Version 1.3.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -56,8 +56,6 @@ $adb-body-font-size: 14px !default;
 
 $adb-selection-color: #fff !default;
 $adb-selection-background: darken($adb-theme-color, 15%) !default;
-
-$adb-wrapper-min-height: 620px !default;
 
 /**
  * Header
@@ -233,14 +231,22 @@ $adb-guest-form-header-border-radius: 5px 5px 0 0 !default;
 $adb-guest-form-header-padding: 20px 15px !default;
 
 // Login form
-$adb-login-form-width: 330px !default;
+$adb-login-form-width: 390px !default;
 
+// Facebook button
 $adb-btn-facebook-color: #fff !default;
 $adb-btn-facebook-background: #5193ea !default;
 $adb-btn-facebook-border-color: $adb-btn-facebook-background !default;
+
+// Twitter button
 $adb-btn-twitter-color: #fff !default;
 $adb-btn-twitter-background: #44ccfe !default;
 $adb-btn-twitter-border-color: $adb-btn-twitter-background !default;
+
+// Google+ button
+$adb-btn-google-color: #fff !default;
+$adb-btn-google-background: #E04230 !default;
+$adb-btn-google-border-color: $adb-btn-google-background !default;
 
 $adb-login-form-remember-text-align: left !default;
 $adb-login-form-remember-margin: 1.2em 0 !default;
@@ -263,6 +269,7 @@ $adb-reset-form-width: 600px !default;
 
 $adb-footer-font: $adb-theme-font-alt !default;
 $adb-footer-color: #fff !default;
+$adb-footer-height: 50px !default;
 $adb-footer-background: $adb-theme-color-alt !default;
 $adb-footer-go-top-color: #fff !default;
 $adb-footer-go-top-background: darken($adb-theme-color, 15%) !default;

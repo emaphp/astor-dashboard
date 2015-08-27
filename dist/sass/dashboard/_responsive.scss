@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.0
+ * Astor Dashboard - Version 1.3.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -11,12 +11,6 @@
 /**
  * Responsive styles
  */
-
-@media (min-width: 1024px) {
-    .wrapper {
-        min-height: $adb-wrapper-min-height;
-    }
-}
 
 @media (max-width: 768px) {
     .status-box {

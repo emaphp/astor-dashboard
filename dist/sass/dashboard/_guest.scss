@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.0
+ * Astor Dashboard - Version 1.3.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -94,6 +94,22 @@
     color: $adb-btn-twitter-color;
     background-color: darken($adb-btn-twitter-background, $adb-default-darken);
     border-color: $adb-btn-twitter-border-color, $adb-default-darken;
+}
+
+.btn-google {
+    color: $adb-btn-google-color;
+    background-color: $adb-btn-google-background;
+    border-color: $adb-btn-google-border-color;
+}
+
+.btn-google:hover,
+.btn-google:focus,
+.btn-google:active,
+.btn-google.active,
+.open .dropdown-toggle.btn-google {
+    color: $adb-btn-google-color;
+    background-color: darken($adb-btn-google-background, $adb-default-darken);
+    border-color: $adb-btn-google-border-color, $adb-default-darken;
 }
 
 /**
