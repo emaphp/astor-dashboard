@@ -8,13 +8,15 @@ A responsive dashboard made with Sass
 Astor Dashboard is a Bootstrap-based dashboard made with [Sass](http://sass-lang.com ""). It was originally based on [Dashgum](http://www.blacktie.co/demo/dashgumfree/ ""), made by [BlackTie](http://www.blacktie.co/ ""). Astor Dashboard is focused on providing a starting design for applications made with [Laravel](http://laravel.com "").
 
 <br>
-![Dashboard](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQdXpvcGtmTWZyREE "")
+![Login](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQWHpMQnZOOW4tdHM "")
 
-![Datatables](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQbjJ4Y0hQbjhrQkE "")
+![Dashboard](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQNWQwQjNjRkZ0ZjQ "")
 
-![Interface](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQNncwRi03cEN4VTg "")
+![Interface](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQQ3lueTFlTWJjcU0 "")
 
-![Login](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQZjZJMHJ2LUJ4RVk "")
+![Datatables](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQT3c0Z3ZwVUVEbzA "")
+
+![Components](http://drive.google.com/uc?export=view&id=0B3PWnBYHw7RQd1FGVXZBWmwyU2s "")
 
 
 <br>
