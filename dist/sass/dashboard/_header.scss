@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -22,82 +22,75 @@ header {
     padding: 0 15px;
 }
 
-// Top bar
-ul.top-bar > li {
-    float: left;
-
-    .dropdown-icon {
-        color: $adb-top-bar-icon-color !important;
-        background-color: $adb-top-bar-icon-background !important;
-        border: $adb-top-bar-icon-border !important;
-        font-size: $adb-top-bar-icon-size;
-        @include radius($adb-top-bar-icon-border-radius);
-        padding: 2px 6px;
-        margin-right: 15px;
-
-        &:hover, &:focus, &:visited, &:active {
-            text-decoration: none;
-            background-color: $adb-top-bar-icon-background !important;
-        }
-
-        &:hover {
-            color: $adb-top-bar-icon-hover-color !important;
-            border-color: $adb-top-bar-icon-hover-color !important;
-        }
-    }
-
-    .logout {
-        font-family: $adb-top-bar-logout-font;
-        color: $adb-top-bar-logout-color !important;
-        @include radius($adb-top-bar-logout-border-radius);
-        background: $adb-top-bar-logout-background !important;
-        margin: 15px 15px 0 0;
-        border: $adb-top-bar-logout-border !important;
-        font-size: 12px;
-        padding: 5px 15px;
-
-        &:hover, &:focus, &:visited, &:active {
-            color: $adb-top-bar-logout-hover-color !important;
-            background: $adb-top-bar-logout-hover-background !important;
-            border: $adb-top-bar-logout-hover-border !important
-        }
-    }
-}
-
 // Notification row
-.notify-row {
+.notification-row {
     float: left;
-    margin: $adb-top-bar-notification-row-margin;
-
-    .notification {
-        span.label {
-            display: inline-block;
-            height: 18px;
-            width: 20px;
-            padding: 5px;
-        }
-    }
+    margin: $adb-header-notification-row-margin;
 
     .badge {
         position: absolute;
         right: -10px;
         top: -10px;
         z-index: 100;
-        color: $adb-top-bar-icon-badge-color;
-        background: $adb-top-bar-icon-badge-background;
+        color: $adb-header-icon-badge-color;
+        background: $adb-header-icon-badge-background;
+    }
+
+    & > ul.nav > li {
+        float: left;
+
+        .dropdown-icon {
+            color: $adb-header-icon-color !important;
+            background-color: $adb-header-icon-background !important;
+            border: $adb-header-icon-border !important;
+            font-size: $adb-header-icon-size;
+            @include radius($adb-header-icon-border-radius);
+            padding: 2px 6px;
+            margin-right: 15px;
+
+            &:hover, &:focus, &:visited, &:active {
+                text-decoration: none;
+                background-color: $adb-header-icon-background !important;
+            }
+
+            &:hover {
+                color: $adb-header-icon-hover-color !important;
+                border-color: $adb-header-icon-hover-color !important;
+            }
+        }
+    }
+}
+
+// Logout
+ul.nav {
+    .logout {
+        font-family: $adb-header-logout-font;
+        color: $adb-header-logout-color !important;
+        @include radius($adb-header-logout-border-radius);
+        background: $adb-header-logout-background !important;
+        margin: 15px 15px 0 0;
+        border: $adb-header-logout-border !important;
+        font-size: 12px;
+        padding: 5px 15px;
+
+        &:hover, &:focus, &:visited, &:active {
+            color: $adb-header-logout-hover-color !important;
+            background: $adb-header-logout-hover-background !important;
+            border: $adb-header-logout-hover-border !important
+        }
     }
 }
 
 // Logo
 .logo {
-    font-size: $adb-top-bar-logo-font-size;
-    color: $adb-top-bar-logo-color;
-    font-family: $adb-top-bar-logo-font-family;
+    font-size: $adb-header-logo-font-size;
+    color: $adb-header-logo-color;
+    font-family: $adb-header-logo-font-family;
     float: left;
     margin-top: 15px;
 
     &:hover, &:focus {
-        color: $adb-top-bar-logo-hover-color;
+        color: $adb-header-logo-hover-color;
         text-decoration: none;
         outline: none;
     }
@@ -105,16 +98,15 @@ ul.top-bar > li {
 
 // Dropdown menu
 .dropdown-menu.extended {
-    max-width: 300px !important;
-    min-width: 160px !important;
-    top: 42px;
-    width: 235px !important;
+    max-width: $adb-header-dropdown-max-width !important;
+    min-width: $adb-header-dropdown-min-width !important;
+    top: 40px;
     padding: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
+    box-shadow: $adb-header-dropdown-box-shadow;
     border: none !important;
-    @include radius($adb-top-bar-dropdown-border-radius);
+    @include radius($adb-header-dropdown-border-radius);
 
-    .notify-arrow {
+    .dropdown-top-arrow {
         border-style: solid;
         border-width: 0 9px 9px;
         height: 0;
@@ -128,84 +120,116 @@ ul.top-bar > li {
         z-index: 10;
         margin-top: 10px;
         opacity: 1;
-        border-color: transparent transparent $adb-top-bar-dropdown-header-background;
+        border-color: transparent transparent $adb-header-dropdown-header-background;
     }
 
     li {
         .dropdown-header {
-            background: $adb-top-bar-dropdown-header-background;
-            color: $adb-top-bar-dropdown-header-color;
-            font-family: $adb-top-bar-dropdown-header-font;
-            padding: 10px;
-            @include radius(4px 4px 0px 0px);
+            background: $adb-header-dropdown-header-background;
+            color: $adb-header-dropdown-header-color;
+            font-family: $adb-header-dropdown-header-font;
+            font-size: $adb-header-dropdown-header-font-size;
+            padding: $adb-header-dropdown-header-padding;
             margin: 0;
-            font-size: 14px;
+            @include radius(4px 4px 0px 0px);
         }
 
         a {
-            color: $adb-top-bar-dropdown-item-color !important;
-            border-bottom: $adb-top-bar-dropdown-item-border !important;
+            color: $adb-header-dropdown-item-color !important;
+            border-bottom: $adb-header-dropdown-item-border !important;
             font-size: 12px;
             list-style: none;
-            padding: 13px 10px !important;
+            padding: 14px 11px !important;
             width: 100%;
             display: inline-block;
 
             &:hover {
-                background: $adb-top-bar-dropdown-item-hover-background !important;
-                color: $adb-top-bar-dropdown-item-hover-color !important;
-                border-bottom: $adb-top-bar-dropdown-item-hover-border !important;
+                background: $adb-header-dropdown-item-hover-background !important;
+                color: $adb-header-dropdown-item-hover-color !important;
+                border-bottom: $adb-header-dropdown-item-hover-border !important;
             }
+
+            &.etc {
+                background: $adb-header-dropdown-item-hover-background;
+            }
+        }
+    }
+}
+
+.dropdown-menu.extended {
+    .notification {
+        padding: 5px 10px !important;
+
+        .row {
+            margin-top: 1em;
+        }
+
+        .ntf-priority {
+            font-size: 1.2em !important;
+            padding: 3px 7px;
+            @include radius(10px);
+
+            .fa {
+                color: #f4f4f4 !important;
+            }
+        }
+
+        time {
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .notification-title {
+            font-size: 1em !important;
         }
     }
 }
 
 // Tasks bar
-.dropdown-menu.tasks-bar {
-    .task-info {
-        .description {
-            font-size: 13px;
-            font-weight: normal;
+.dropdown-menu.extended {
+    .task {
+        .task-info {
+            .description {
+                font-size: 13px;
+                font-weight: normal;
+            }
+
+            .percent {
+                color: #222;
+                display: inline-block;
+                float: right;
+                font-size: 13px;
+                padding-left: 10px;
+                margin-top: 0px;
+            }
         }
 
-        .percent {
-            color: #222;
-            display: inline-block;
-            float: right;
-            font-size: 13px;
-            padding-left: 10px;
-            margin-top: -4px;
+        .progress {
+            margin-bottom: 0 !important;
+            height: 10px;
+            margin-top: 6px;
         }
-    }
-
-    .progress {
-        margin-bottom: 0 !important;
-        height: 10px;
     }
 }
 
 // Inbox
-.dropdown-menu.inbox {
-    li a {
-        .message {
-            padding: 3px 0;
-        }
-
+.dropdown-menu.extended {
+    .message {
         &:hover {
             .message, .time {
-                color: $adb-top-bar-dropdown-item-color !important;
+                color: $adb-header-dropdown-item-color !important;
             }
         }
 
         .photo img {
-            @include radius(2px);
+            @include radius(6px);
             float: left;
             height: 40px;
             margin-right: 6px;
             width: 40px;
         }
 
-        .subject {
+        .message-detail {
             display: block;
 
             .from {
@@ -220,7 +244,7 @@ ul.top-bar > li {
             }
         }
 
-        .message {
+        .message-body {
             display: block !important;
             font-size: 11px;
         }

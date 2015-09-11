@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -52,6 +52,10 @@
             }
         }
 
+        .badge {
+            
+        }
+
         .todo-success {
             border-left: $adb-todo-item-border-width solid $adb-success-color;
         }
@@ -84,5 +88,86 @@
     .todo-list-footer {
         margin-top: 15px;
         overflow: hidden;
+    }
+}
+
+// Tasks panel
+.tasks-panel {
+    display: block;
+    border: 0;
+    font-family: $adb-tasks-panel-font;
+
+    input {
+        &[type=checkbox] {
+            display: none;
+
+            &:checked + label {
+                text-decoration: line-through;
+
+                &:before {
+                    border: 1px solid $adb-tasks-panel-task-hover-color;
+                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNpinHLMhgEHKADia0xQThIQs6JJ9gPxZhYQAcS6QHwDiI8hSYJAC0gBPxDLAvFcIJ6JJJkDxFNBVtgBcQ8Qa6BLghgwN4A4a9ElQYAFSj8C4mwg3o8sCQIAAQYA78QTYqnPZuEAAAAASUVORK5CYII=') no-repeat center center;
+                }
+            }
+        }
+
+        &[type=submit] {
+            background: $adb-tasks-panel-submit-background;
+            border: none;
+            padding: 0px;
+            margin: 0 auto;
+            width: 100%;
+            height: 55px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 11px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.5s ease;
+
+            &:hover {
+                background: $adb-tasks-panel-submit-hover-background;
+            }
+        }
+    }
+
+    label {
+        background: $adb-tasks-panel-task-background;
+        color: $adb-tasks-panel-task-color;
+        height: 65px;
+        line-height: 65px;
+        width: 100%;
+        display: block;
+        border-bottom: $adb-tasks-panel-task-border;
+
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-indent: 52px;
+        cursor: pointer;
+        transition: all 0.7s ease;
+        margin: 0px;
+
+        &:before {
+            content:"";
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: absolute;
+            margin: 26px 0px 0px 18px;
+            border-radius: 100%;
+            transition: border 0.7s ease;
+        }
+
+        &:hover {
+            background: $adb-tasks-panel-task-hover-background;
+            color: $adb-tasks-panel-task-hover-color;
+        }
+
+        &:hover:before {
+            border: 1px solid $adb-tasks-panel-task-hover-color;
+        }
     }
 }
