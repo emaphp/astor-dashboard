@@ -42,11 +42,3 @@
     -o-background-size: $bg-size;
     background-size: $bg-size;
 }
-
-@mixin linear-gradient($startcolor, $endcolor) {
-    background: -webkit-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
-    background:    -moz-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
-    background:     -ms-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
-    background:      -o-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
-    background:         linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
-}
