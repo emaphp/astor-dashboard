@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -119,11 +119,13 @@
     }
 }
 
-@media (max-width: 480px) {
-    .notify-row, .search, .sr-input, .sr-btn {
+@media (max-width: 640px) {
+    .notification-row, {
         display: none;
     }
+}
 
+@media (max-width: 480px) {
     ul.top-menu > li {
         float: right;
     }

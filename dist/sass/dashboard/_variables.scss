@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -61,41 +61,56 @@ $adb-selection-background: darken($adb-theme-color, 15%) !default;
  * Header
  */
 
-$adb-top-bar-icon-color: $adb-theme-color !default;
-$adb-top-bar-icon-border: solid 1px $adb-top-bar-icon-color !default;
-$adb-top-bar-icon-border-radius: 4px !default;
-$adb-top-bar-icon-background: transparent !default;
-$adb-top-bar-icon-hover-color: lighten($adb-top-bar-icon-color, 15%) !default;
-$adb-top-bar-icon-size: 16px !default;
-$adb-top-bar-icon-badge-color: #fff !default;
-$adb-top-bar-icon-badge-background: $adb-theme-color-alt !default;
+// Logo
+$adb-header-logo-font-size: 20px !default;
+$adb-header-logo-font-family: $adb-theme-font-alt !default;
+$adb-header-logo-color: #fff !default;
+$adb-header-logo-hover-color: #fff !default;
+
+// Notification row
+$adb-header-notification-row-margin: 15px 0 0 50px !default;
+
+// Iconos
+$adb-header-icon-color: $adb-theme-color !default;
+$adb-header-icon-border: solid 1px $adb-header-icon-color !default;
+$adb-header-icon-border-radius: 4px !default;
+$adb-header-icon-background: transparent !default;
+$adb-header-icon-hover-color: lighten($adb-header-icon-color, 15%) !default;
+$adb-header-icon-size: 16px !default;
+
+//Badges
+$adb-header-icon-badge-color: #fff !default;
+$adb-header-icon-badge-background: $adb-theme-color-alt !default;
+
+// Dropdowns
+$adb-header-dropdown-border-radius: 4px !default;
+$adb-header-dropdown-min-width: 235px !default;
+$adb-header-dropdown-max-width: 300px !default;
+$adb-header-dropdown-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !default;
+
+// Dropdown header
+$adb-header-dropdown-header-background: $adb-theme-color !default;
+$adb-header-dropdown-header-color: #fff !default;
+$adb-header-dropdown-header-font: $adb-theme-font-alt !default;
+$adb-header-dropdown-header-font-size: 14px !default;
+$adb-header-dropdown-header-padding: 10px !default;
+
+// Dropdown item
+$adb-header-dropdown-item-color: #333 !default;
+$adb-header-dropdown-item-border: 1px solid #ebebeb !default;
+$adb-header-dropdown-item-hover-background: #f2f2f2 !default;
+$adb-header-dropdown-item-hover-color: darken($adb-theme-color, 10%) !default;
+$adb-header-dropdown-item-hover-border: 1px solid $adb-theme-color !default;
 
 // Logout
-$adb-top-bar-logout-font: $adb-theme-font-alt !default;
-$adb-top-bar-logout-color: #fff !default;
-$adb-top-bar-logout-background: $adb-theme-color !default;
-$adb-top-bar-logout-border: 1px solid $adb-theme-color !default;
-$adb-top-bar-logout-border-radius: 4px !default;
-$adb-top-bar-logout-hover-color: #fff !default;
-$adb-top-bar-logout-hover-background: transparent !default;
-$adb-top-bar-logout-hover-border: 1px solid $adb-theme-color !default;
-
-// Logo
-$adb-top-bar-logo-font-size: 20px !default;
-$adb-top-bar-logo-font-family: $adb-theme-font-alt !default;
-$adb-top-bar-logo-color: #fff !default;
-$adb-top-bar-logo-hover-color: #fff !default;
-
-$adb-top-bar-notification-row-margin: 15px 0 0 60px !default;
-$adb-top-bar-dropdown-border-radius: 4px !default;
-$adb-top-bar-dropdown-header-background: $adb-theme-color !default;
-$adb-top-bar-dropdown-header-color: #fff !default;
-$adb-top-bar-dropdown-header-font: $adb-theme-font-alt !default;
-$adb-top-bar-dropdown-item-color: #333 !default;
-$adb-top-bar-dropdown-item-border: 1px solid #ebebeb !default;
-$adb-top-bar-dropdown-item-hover-background: #f2f2f2 !default;
-$adb-top-bar-dropdown-item-hover-color: darken($adb-theme-color, 10%) !default;
-$adb-top-bar-dropdown-item-hover-border: 1px solid $adb-theme-color !default;
+$adb-header-logout-font: $adb-theme-font-alt !default;
+$adb-header-logout-color: #fff !default;
+$adb-header-logout-background: $adb-theme-color !default;
+$adb-header-logout-border: 1px solid $adb-theme-color !default;
+$adb-header-logout-border-radius: 4px !default;
+$adb-header-logout-hover-color: #fff !default;
+$adb-header-logout-hover-background: transparent !default;
+$adb-header-logout-hover-border: 1px solid $adb-theme-color !default;
 
 /**
  * Sidebar
@@ -125,6 +140,7 @@ $adb-sidebar-toggle-closed-color: $adb-theme-color !default;
  * General UI
  */
 
+// Status Box
 $adb-status-box-background: transparent !default;
 $adb-status-box-font: $adb-theme-font-alt !default;
 $adb-status-box-icon-color: #888 !default;
@@ -133,6 +149,7 @@ $adb-status-box-hover-background: #fff !default;
 $adb-status-box-hover-color: darken($adb-theme-color-alt, 10%) !default;
 $adb-status-box-hover-border: 1px solid #999 !default;
 
+// Aside
 $adb-content-aside-background: #fff !default;
 $adb-content-aside-header-background: $adb-theme-color !default;
 $adb-content-aside-header-font: $adb-theme-font-alt !default;
@@ -143,42 +160,33 @@ $adb-content-aside-item-link-color: darken($adb-theme-color-alt, 10%) !default;
 $adb-content-aside-item-border: 1px solid #eaeaea !default;
 $adb-content-aside-item-badge-color: $adb-theme-color-alt !default;
 
-$adb-content-box-background: #fff !default;
-$adb-content-box-color: $adb-body-color !default;
+// Flat panel
+$adb-flat-panel-heading-font: $adb-theme-font-alt !default;
+$adb-flat-panel-heading-color: #fff ;
+$adb-flat-panel-heading-padding: 11px 15px !default;
+$adb-flat-panel-heading-font-size: 1.1em !default;
+$adb-flat-panel-box-shadow: 0px 3px 2px #ababab !default;
+
+// Content panel
+$adb-content-panel-background: #fff !default;
+$adb-content-panel-color: $adb-body-color !default;
+$adb-content-panel-box-shadow: 0px 3px 2px #ababab !default;
+$adb-content-panel-padding: 8px 16px 16px !default;
+$adb-content-panel-footer-border: solid 1px lighten($adb-theme-color, 20%) !default;
+$adb-content-panel-footer-padding: 12px 6px 4px !default;
+$adb-content-panel-footer-margin: 22px 0 0 !default;
+
+// Content header
 $adb-content-header-font: $adb-theme-font-alt !default;
 $adb-content-header-color: #333 !default;
 $adb-content-header-icon-color: $adb-theme-color !default;
+$adb-content-header-margin: 0.5em 0 1.2em !default;
 
-/**
- * UI Panels
- */
-
-// Info panel
-$adb-info-panel-background: #444c57 !default;
-$adb-info-panel-color: #fff !default;
-$adb-info-panel-header-font: $adb-theme-font-alt !default;
-$adb-info-panel-header-background: $adb-theme-color !default;
-$adb-info-panel-header-color: #fff !default;
-$adb-info-panel-header-text-transform: uppercase !default;
-$adb-info-panel-icon-color: $adb-theme-color !default;
-
-// Tasks panel
-$adb-tasks-panel-font: $adb-theme-font-alt !default;
-$adb-tasks-panel-task-background: #393D40 !default;
-$adb-tasks-panel-task-color: #888 !default;
-$adb-tasks-panel-task-hover-background: #222 !default;
-$adb-tasks-panel-task-hover-color: $adb-theme-color-alt !default;
-$adb-tasks-panel-task-border: 1px solid #444 !default;
-$adb-tasks-panel-submit-background: $adb-theme-color !default;
-$adb-tasks-panel-submit-hover-background: #6AAE3C !default;
-
-// Profile panel
-$adb-profile-panel-background: #fff !default;
-$adb-profile-panel-details-background: url(../img/profile.jpg) no-repeat center top !default;
-$adb-profile-panel-details-color: #fff !default;
-$adb-profile-panel-button-color: #fff !default;
-$adb-profile-panel-button-background: $adb-theme-color !default;
-$adb-profile-panel-button-hover-background: #6AAE3C !default;
+// Notification priorities
+$adb-ntf-priority-low-background: #299C34 !default;
+$adb-ntf-priority-normal-background: #ECF32F !default;
+$adb-ntf-priority-high-background: #F9A340 !default;
+$adb-ntf-priority-urgent-background: #F94040 !default;
 
 /**
  * Theme buttons, backgrounds. colors, etc
@@ -210,6 +218,16 @@ $adb-todo-item-background: #f5f5f5;
 $adb-todo-item-border-default-background: #777;
 $adb-todo-item-description-color: #555;
 $adb-todo-item-finished-decoration: line-through;
+
+// Tasks panel
+$adb-tasks-panel-font: $adb-theme-font-alt !default;
+$adb-tasks-panel-task-background: #393D40 !default;
+$adb-tasks-panel-task-color: #888 !default;
+$adb-tasks-panel-task-hover-background: #222 !default;
+$adb-tasks-panel-task-hover-color: $adb-theme-color-alt !default;
+$adb-tasks-panel-task-border: 1px solid #444 !default;
+$adb-tasks-panel-submit-background: $adb-theme-color !default;
+$adb-tasks-panel-submit-hover-background: #6AAE3C !default;
 
 /*
  * Guest pages
@@ -270,7 +288,7 @@ $adb-reset-form-width: 600px !default;
 $adb-footer-font: $adb-theme-font-alt !default;
 $adb-footer-color: #fff !default;
 $adb-footer-height: 50px !default;
-$adb-footer-background: $adb-theme-color-alt !default;
-$adb-footer-go-top-color: #fff !default;
-$adb-footer-go-top-background: darken($adb-theme-color, 15%) !default;
+$adb-footer-background: $adb-theme-color !default;
+$adb-footer-go-top-color: lighten($adb-theme-color-alt, 15%) !default;
+$adb-footer-go-top-background: #313131 !default;
 $adb-footer-go-top-size: 20px !default;

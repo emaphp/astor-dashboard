@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -41,4 +41,12 @@
     -moz-background-size: $bg-size;
     -o-background-size: $bg-size;
     background-size: $bg-size;
+}
+
+@mixin linear-gradient($startcolor, $endcolor) {
+    background: -webkit-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
+    background:    -moz-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
+    background:     -ms-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
+    background:      -o-linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
+    background:         linear-gradient(90deg, $startcolor 10%, $endcolor 90%);
 }

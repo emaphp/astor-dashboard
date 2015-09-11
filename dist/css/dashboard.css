@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -22,7 +22,7 @@
  * Mixins
  */
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -49,9 +49,6 @@
  * General UI
  */
 /**
- * UI Panels
- */
-/**
  * Theme buttons, backgrounds. colors, etc
  */
 /**
@@ -64,7 +61,7 @@
  * Footer
  */
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -126,7 +123,7 @@ input[type=checkbox] + .btn-group {
   margin: 0; }
 
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -180,7 +177,7 @@ a, a:hover, a:focus {
   color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -310,7 +307,7 @@ a, a:hover, a:focus {
   margin-left: -180px; }
 
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -330,57 +327,52 @@ header {
   min-height: 60px;
   padding: 0 15px; }
 
-ul.top-bar > li {
-  float: left; }
-  ul.top-bar > li .dropdown-icon {
-    color: #7459E1 !important;
-    background-color: transparent !important;
-    border: solid 1px #7459E1 !important;
-    font-size: 16px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    padding: 2px 6px;
-    margin-right: 15px; }
-    ul.top-bar > li .dropdown-icon:hover, ul.top-bar > li .dropdown-icon:focus, ul.top-bar > li .dropdown-icon:visited, ul.top-bar > li .dropdown-icon:active {
-      text-decoration: none;
-      background-color: transparent !important; }
-    ul.top-bar > li .dropdown-icon:hover {
-      color: #aa9aed !important;
-      border-color: #aa9aed !important; }
-  ul.top-bar > li .logout {
-    font-family: "Ruda", sans-serif;
-    color: #fff !important;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    background: #7459E1 !important;
-    margin: 15px 15px 0 0;
-    border: 1px solid #7459E1 !important;
-    font-size: 12px;
-    padding: 5px 15px; }
-    ul.top-bar > li .logout:hover, ul.top-bar > li .logout:focus, ul.top-bar > li .logout:visited, ul.top-bar > li .logout:active {
-      color: #fff !important;
-      background: transparent !important;
-      border: 1px solid #7459E1 !important; }
-
-.notify-row {
+.notification-row {
   float: left;
-  margin: 15px 0 0 60px; }
-  .notify-row .notification span.label {
-    display: inline-block;
-    height: 18px;
-    width: 20px;
-    padding: 5px; }
-  .notify-row .badge {
+  margin: 15px 0 0 50px; }
+  .notification-row .badge {
     position: absolute;
     right: -10px;
     top: -10px;
     z-index: 100;
     color: #fff;
     background: #4588E0; }
+  .notification-row > ul.nav > li {
+    float: left; }
+    .notification-row > ul.nav > li .dropdown-icon {
+      color: #7459E1 !important;
+      background-color: transparent !important;
+      border: solid 1px #7459E1 !important;
+      font-size: 16px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin-right: 15px; }
+      .notification-row > ul.nav > li .dropdown-icon:hover, .notification-row > ul.nav > li .dropdown-icon:focus, .notification-row > ul.nav > li .dropdown-icon:visited, .notification-row > ul.nav > li .dropdown-icon:active {
+        text-decoration: none;
+        background-color: transparent !important; }
+      .notification-row > ul.nav > li .dropdown-icon:hover {
+        color: #aa9aed !important;
+        border-color: #aa9aed !important; }
+
+ul.nav .logout {
+  font-family: "Ruda", sans-serif;
+  color: #fff !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background: #7459E1 !important;
+  margin: 15px 15px 0 0;
+  border: 1px solid #7459E1 !important;
+  font-size: 12px;
+  padding: 5px 15px; }
+  ul.nav .logout:hover, ul.nav .logout:focus, ul.nav .logout:visited, ul.nav .logout:active {
+    color: #fff !important;
+    background: transparent !important;
+    border: 1px solid #7459E1 !important; }
 
 .logo {
   font-size: 20px;
@@ -395,17 +387,16 @@ ul.top-bar > li {
 
 .dropdown-menu.extended {
   max-width: 300px !important;
-  min-width: 160px !important;
-  top: 42px;
-  width: 235px !important;
+  min-width: 235px !important;
+  top: 40px;
   padding: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176);
   border: none !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px; }
-  .dropdown-menu.extended .notify-arrow {
+  .dropdown-menu.extended .dropdown-top-arrow {
     border-style: solid;
     border-width: 0 9px 9px;
     height: 0;
@@ -424,63 +415,83 @@ ul.top-bar > li {
     background: #7459E1;
     color: #fff;
     font-family: "Ruda", sans-serif;
+    font-size: 14px;
     padding: 10px;
+    margin: 0;
     -webkit-border-radius: 4px 4px 0px 0px;
     -moz-border-radius: 4px 4px 0px 0px;
     -ms-border-radius: 4px 4px 0px 0px;
-    border-radius: 4px 4px 0px 0px;
-    margin: 0;
-    font-size: 14px; }
+    border-radius: 4px 4px 0px 0px; }
   .dropdown-menu.extended li a {
     color: #333 !important;
     border-bottom: 1px solid #ebebeb !important;
     font-size: 12px;
     list-style: none;
-    padding: 13px 10px !important;
+    padding: 14px 11px !important;
     width: 100%;
     display: inline-block; }
     .dropdown-menu.extended li a:hover {
       background: #f2f2f2 !important;
       color: #502ed9 !important;
       border-bottom: 1px solid #7459E1 !important; }
+    .dropdown-menu.extended li a.etc {
+      background: #f2f2f2; }
 
-.dropdown-menu.tasks-bar .task-info .description {
+.dropdown-menu.extended .notification {
+  padding: 5px 10px !important; }
+  .dropdown-menu.extended .notification .row {
+    margin-top: 1em; }
+  .dropdown-menu.extended .notification .ntf-priority {
+    font-size: 1.2em !important;
+    padding: 3px 7px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+    .dropdown-menu.extended .notification .ntf-priority .fa {
+      color: #f4f4f4 !important; }
+  .dropdown-menu.extended .notification time {
+    font-size: 11px;
+    font-style: italic; }
+  .dropdown-menu.extended .notification .notification-title {
+    font-size: 1em !important; }
+
+.dropdown-menu.extended .task .task-info .description {
   font-size: 13px;
   font-weight: normal; }
-.dropdown-menu.tasks-bar .task-info .percent {
+.dropdown-menu.extended .task .task-info .percent {
   color: #222;
   display: inline-block;
   float: right;
   font-size: 13px;
   padding-left: 10px;
-  margin-top: -4px; }
-.dropdown-menu.tasks-bar .progress {
+  margin-top: 0px; }
+.dropdown-menu.extended .task .progress {
   margin-bottom: 0 !important;
-  height: 10px; }
+  height: 10px;
+  margin-top: 6px; }
 
-.dropdown-menu.inbox li a .message {
-  padding: 3px 0; }
-.dropdown-menu.inbox li a:hover .message, .dropdown-menu.inbox li a:hover .time {
+.dropdown-menu.extended .message:hover .message, .dropdown-menu.extended .message:hover .time {
   color: #333 !important; }
-.dropdown-menu.inbox li a .photo img {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
+.dropdown-menu.extended .message .photo img {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
   float: left;
   height: 40px;
   margin-right: 6px;
   width: 40px; }
-.dropdown-menu.inbox li a .subject {
+.dropdown-menu.extended .message .message-detail {
   display: block; }
-  .dropdown-menu.inbox li a .subject .from {
+  .dropdown-menu.extended .message .message-detail .from {
     font-weight: 600; }
-  .dropdown-menu.inbox li a .subject .time {
+  .dropdown-menu.extended .message .message-detail .time {
     font-size: 11px;
     font-style: italic;
     position: absolute;
     right: 5px; }
-.dropdown-menu.inbox li a .message {
+.dropdown-menu.extended .message .message-body {
   display: block !important;
   font-size: 11px; }
 
@@ -488,7 +499,7 @@ ul.top-bar > li {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -582,7 +593,7 @@ ul.top-bar > li {
   font-family: "Ruda", sans-serif !important; }
 
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -596,18 +607,36 @@ ul.top-bar > li {
 .panel-row {
   margin-top: 25px; }
 
-.content-box {
+/**
+ * Panels
+ */
+.flat-panel {
+  border: 0 !important;
+  box-shadow: 0px 3px 2px #ababab; }
+  .flat-panel .panel-heading {
+    font-family: "Ruda", sans-serif;
+    color: #fff;
+    padding: 11px 15px;
+    font-size: 1.1em; }
+
+.content-panel {
   background: #fff;
   color: #444;
-  padding: 8px 15px 15px;
-  margin-bottom: 15px;
-  box-shadow: 0px 3px 2px #aab2bd; }
-  .content-box .content-header {
-    font-family: "Ruda", sans-serif;
-    margin-bottom: 1.2em;
-    color: #333; }
-    .content-box .content-header .fa {
-      color: #7459E1; }
+  box-shadow: 0px 3px 2px #ababab;
+  padding: 8px 16px 16px;
+  margin-bottom: 1.5em; }
+  .content-panel .panel-footer {
+    background: #fff;
+    border-top: solid 1px #bcaff1;
+    padding: 12px 6px 4px;
+    margin: 22px 0 0; }
+
+.content-header {
+  font-family: "Ruda", sans-serif;
+  margin: 0.5em 0 1.2em;
+  color: #333; }
+  .content-header .fa {
+    color: #7459E1; }
 
 .status-box {
   background: transparent;
@@ -635,30 +664,33 @@ ul.top-bar > li {
 
 .content-aside {
   background: #fff;
-  padding-top: 20px; }
+  padding-top: 12px; }
   .content-aside h3 {
     background: #7459E1;
     color: #fff;
     font-family: "Ruda", sans-serif;
     font-size: 16px;
     padding: 0 10px;
-    line-height: 60px;
-    height: 60px;
+    line-height: 50px;
+    height: 50px;
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
   .content-aside i {
     font-size: 12px;
     line-height: 16px; }
+  .content-aside h3 ~ .item {
+    margin-top: 8px; }
   .content-aside .item {
     border-bottom: 1px solid #eaeaea;
     display: inline-block;
-    padding: 12px 0 8px;
+    padding: 6px 0 6px;
     width: 100%;
     background: #fff; }
     .content-aside .item .item-thumb {
       width: 30px;
       margin: 0 8px 0 12px;
+      padding-top: 2px;
       display: block;
       float: left; }
     .content-aside .item .item-details {
@@ -680,18 +712,6 @@ ul.top-bar > li {
     .content-aside .contact .item-details {
       margin-left: 10px; }
 
-/**
- * Astor Dashboard - Version 1.3.1
- * A responsive dashboard made with Sass
- * Copyright Emmanuel Antico 2015
- * Released under the MIT License
- *
- * File: _badges.scss
- * Author: @emaphp
- */
-/**
- * Badges types
- */
 .badge.bg-primary {
   background: #337ab7; }
 
@@ -707,46 +727,70 @@ ul.top-bar > li {
 .badge.bg-info {
   background: #5bc0de; }
 
+.ntf-priority-low {
+  background: #299C34 !important; }
+
+.ntf-priority-normal {
+  background: #ECF32F !important; }
+
+.ntf-priority-high {
+  background: #F9A340 !important; }
+
+.ntf-priority-urgent {
+  background: #F94040 !important; }
+
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
  *
- * File: _ui-panels.scss
+ * File: _components.scss
  * Author: @emaphp
  */
 /**
- * UI Panels
+ * Components
  */
-.ui-panel {
-  height: 250px;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); }
-  .ui-panel:hover {
-    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3); }
-
-.info-panel {
-  text-align: center;
-  background: #444c57;
-  color: #fff; }
-  .info-panel .info-panel-header {
-    font-family: "Ruda", sans-serif;
-    background: #7459E1;
-    padding: 3px;
-    margin-bottom: 15px;
-    color: #fff; }
-    .info-panel .info-panel-header h5 {
-      text-transform: uppercase; }
-  .info-panel p {
-    margin-top: 5px;
-    margin-left: 15px; }
-  .info-panel .small {
-    font-family: "Ruda", sans-serif;
-    font-size: 10px;
-    color: #fff;
-    text-transform: uppercase; }
-  .info-panel .fa {
-    color: #7459E1; }
+.todo-list {
+  padding: 5px; }
+  .todo-list .todo-list-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .todo-list .todo-list-content ul li {
+      padding: 15px 0 15px 20px;
+      position: relative;
+      background: #f5f5f5;
+      margin-bottom: 4px;
+      border-left: 3px solid #777; }
+      .todo-list .todo-list-content ul li .todo-checkbox {
+        float: left;
+        width: 30px; }
+      .todo-list .todo-list-content ul li .todo-description {
+        overflow: hidden;
+        margin-right: 10px; }
+        .todo-list .todo-list-content ul li .todo-description .todo-name {
+          color: #555;
+          margin-right: 8px; }
+      .todo-list .todo-list-content ul li.finished .todo-name {
+        text-decoration: line-through; }
+  .todo-list .todo-list-content .todo-success {
+    border-left: 3px solid #5cb85c; }
+  .todo-list .todo-list-content .todo-primary {
+    border-left: 3px solid #337ab7; }
+  .todo-list .todo-list-content .todo-info {
+    border-left: 3px solid #5bc0de; }
+  .todo-list .todo-list-content .todo-warning {
+    border-left: 3px solid #f0ad4e; }
+  .todo-list .todo-list-content .todo-error {
+    border-left: 3px solid #d9534f; }
+  .todo-list .todo-list-content .todo-theme {
+    border-left: 3px solid #7459E1; }
+  .todo-list .todo-list-content .todo-theme-alt {
+    border-left: 3px solid #4588E0; }
+  .todo-list .todo-list-footer {
+    margin-top: 15px;
+    overflow: hidden; }
 
 .tasks-panel {
   display: block;
@@ -806,110 +850,8 @@ ul.top-bar > li {
     .tasks-panel label:hover:before {
       border: 1px solid #4588E0; }
 
-.profile-panel {
-  background: #fff;
-  padding-top: 13px;
-  padding-bottom: 5px;
-  border: 0; }
-  .profile-panel h4 {
-    margin-left: 10px; }
-  .profile-panel .profile-details {
-    background: url(../img/profile.jpg) no-repeat center top;
-    margin-top: -15px;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 150px;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    .profile-panel .profile-details h3 {
-      color: #fff;
-      padding-top: 50px;
-      margin: 0px;
-      text-align: center; }
-    .profile-panel .profile-details h6 {
-      color: #fff;
-      text-align: center;
-      margin-bottom: 0px;
-      font-weight: 900; }
-  .profile-panel .profile-button a {
-    display: block;
-    background: #7459E1;
-    height: 50px;
-    color: white;
-    padding-top: 14px;
-    font-weight: 400;
-    font-size: 15px;
-    -webkit-transition: background-color 0.6s;
-    -moz-transition: background-color 0.6s;
-    -o-transition: background-color 0.6s;
-    -ms-transition: background-color 0.6s;
-    transition: background-color 0.6s; }
-    .profile-panel .profile-button a:hover {
-      background: #6AAE3C;
-      -webkit-transition: background-color 0.6s;
-      -moz-transition: background-color 0.6s;
-      -o-transition: background-color 0.6s;
-      -ms-transition: background-color 0.6s;
-      transition: background-color 0.6s; }
-
 /**
- * Astor Dashboard - Version 1.3.1
- * A responsive dashboard made with Sass
- * Copyright Emmanuel Antico 2015
- * Released under the MIT License
- *
- * File: _components.scss
- * Author: @emaphp
- */
-/**
- * Components
- */
-.todo-list {
-  padding: 5px; }
-  .todo-list .todo-list-content ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none; }
-    .todo-list .todo-list-content ul li {
-      padding: 15px 0 15px 20px;
-      position: relative;
-      background: #f5f5f5;
-      margin-bottom: 4px;
-      border-left: 3px solid #777; }
-      .todo-list .todo-list-content ul li .todo-checkbox {
-        float: left;
-        width: 30px; }
-      .todo-list .todo-list-content ul li .todo-description {
-        overflow: hidden;
-        margin-right: 10px; }
-        .todo-list .todo-list-content ul li .todo-description .todo-name {
-          color: #555;
-          margin-right: 8px; }
-      .todo-list .todo-list-content ul li.finished .todo-name {
-        text-decoration: line-through; }
-  .todo-list .todo-list-content .todo-success {
-    border-left: 3px solid #5cb85c; }
-  .todo-list .todo-list-content .todo-primary {
-    border-left: 3px solid #337ab7; }
-  .todo-list .todo-list-content .todo-info {
-    border-left: 3px solid #5bc0de; }
-  .todo-list .todo-list-content .todo-warning {
-    border-left: 3px solid #f0ad4e; }
-  .todo-list .todo-list-content .todo-error {
-    border-left: 3px solid #d9534f; }
-  .todo-list .todo-list-content .todo-theme {
-    border-left: 3px solid #7459E1; }
-  .todo-list .todo-list-content .todo-theme-alt {
-    border-left: 3px solid #4588E0; }
-  .todo-list .todo-list-footer {
-    margin-top: 15px;
-    overflow: hidden; }
-
-/**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -923,7 +865,7 @@ ul.top-bar > li {
 footer {
   font-family: "Ruda", sans-serif;
   height: 50px;
-  background: #4588E0;
+  background: #7459E1;
   color: #fff;
   padding: 14px 0 12px 0;
   position: absolute;
@@ -935,7 +877,7 @@ footer {
 .go-top {
   margin-right: 1%;
   float: right;
-  background: #4524c9;
+  background: #313131;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 50%;
@@ -943,10 +885,10 @@ footer {
   -ms-border-radius: 50%;
   border-radius: 50%; }
   .go-top i {
-    color: #fff; }
+    color: #87b2eb; }
 
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -1064,7 +1006,7 @@ footer {
   max-width: 600px; }
 
 /**
- * Astor Dashboard - Version 1.3.1
+ * Astor Dashboard - Version 1.4.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -1155,10 +1097,10 @@ footer {
 
   ul.sidebar-menu li ul.sub li a {
     padding: 0; } }
+@media (max-width: 640px) {
+  .notification-row {
+    display: none; } }
 @media (max-width: 480px) {
-  .notify-row, .search, .sr-input, .sr-btn {
-    display: none; }
-
   ul.top-menu > li {
     float: right; }
 
