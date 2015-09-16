@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -61,11 +61,12 @@ $adb-selection-background: darken($adb-theme-color, 15%) !default;
  * Header
  */
 
-// Logo
-$adb-header-logo-font-size: 20px !default;
-$adb-header-logo-font-family: $adb-theme-font-alt !default;
-$adb-header-logo-color: #fff !default;
-$adb-header-logo-hover-color: #fff !default;
+// Brand
+$adb-header-brand-font-size: 20px !default;
+$adb-header-brand-font-family: $adb-theme-font-alt !default;
+$adb-header-brand-color: #fff !default;
+$adb-header-brand-hover-color: #fff !default;
+$adb-header-brand-hover-margin: 5px 0 0 0 !default;
 
 // Notification row
 $adb-header-notification-row-margin: 15px 0 0 50px !default;
@@ -143,7 +144,7 @@ $adb-sidebar-notification-color: #fff !default;
 $adb-sidebar-notification-margin: 1em !default;
 $adb-sidebar-notification-padding: 3px 16px !default;
 $adb-sidebar-notification-border-radius: 12px !default;
-$adb-sidebar-notification-unread-background: darken(desaturate($adb-theme-color, 20%), 30%) !default;
+$adb-sidebar-notification-unread-background: darken(desaturate($adb-theme-color, 5%), 5%) !default;
 $adb-sidebar-notification-unread-color: lighten($adb-theme-color, 25%) !default;
 
 /**
@@ -172,15 +173,16 @@ $adb-content-aside-item-badge-color: $adb-theme-color-alt !default;
 
 // Flat panel
 $adb-flat-panel-heading-font: $adb-theme-font-alt !default;
-$adb-flat-panel-heading-color: #fff ;
+$adb-flat-panel-heading-color: #fff !default;
 $adb-flat-panel-heading-padding: 11px 15px !default;
 $adb-flat-panel-heading-font-size: 1.1em !default;
-$adb-flat-panel-box-shadow: 0px 3px 2px #ababab !default;
+$adb-flat-panel-box-shadow: 1px 3px 5px #ababab !default;
+$adb-flat-panel-border-radius: 0 !default;
 
 // Content panel
 $adb-content-panel-background: #fff !default;
 $adb-content-panel-color: $adb-body-color !default;
-$adb-content-panel-box-shadow: 0px 3px 2px #ababab !default;
+$adb-content-panel-box-shadow: 1px 3px 5px #ababab !default;
 $adb-content-panel-padding: 8px 16px 16px !default;
 $adb-content-panel-footer-border: solid 1px lighten($adb-theme-color, 20%) !default;
 $adb-content-panel-footer-padding: 12px 6px 4px !default;
@@ -223,11 +225,11 @@ $adb-panel-theme-alt-border-color: lighten($adb-theme-color-alt, 20%) !default;
  */
 
 // Todo List
-$adb-todo-item-border-width: 3px;
-$adb-todo-item-background: #f5f5f5;
-$adb-todo-item-border-default-background: #777;
-$adb-todo-item-description-color: #555;
-$adb-todo-item-finished-decoration: line-through;
+$adb-todo-item-border-width: 3px !default;
+$adb-todo-item-background: #f5f5f5 !default;
+$adb-todo-item-border-default-background: #777 !default;
+$adb-todo-item-description-color: #555 !default;
+$adb-todo-item-finished-decoration: line-through !default;
 
 // Tasks panel
 $adb-tasks-panel-font: $adb-theme-font-alt !default;

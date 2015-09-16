@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -22,7 +22,7 @@
  * Mixins
  */
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -61,7 +61,7 @@
  * Footer
  */
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -123,7 +123,7 @@ input[type=checkbox] + .btn-group {
   margin: 0; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -177,7 +177,7 @@ a, a:hover, a:focus {
   color: #fff; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -292,16 +292,18 @@ a, a:hover, a:focus {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     border-radius: 12px; }
+    #sidebar-menu li.notification-alert * {
+      line-height: 2.6em; }
     #sidebar-menu li.notification-alert a {
       color: #fff;
-      padding: 3px 16px !important; }
+      padding: 3px 16px; }
       #sidebar-menu li.notification-alert a:hover {
         background: none; }
-      #sidebar-menu li.notification-alert a span.pull-right {
-        font-weight: 700;
-        color: #eee; }
+    #sidebar-menu li.notification-alert span.pull-right {
+      font-weight: 700;
+      color: #eee; }
     #sidebar-menu li.notification-alert.notification-unread {
-      background: #392978; }
+      background: #6549d8; }
       #sidebar-menu li.notification-alert.notification-unread span.pull-right {
         color: #cec5f5; }
 
@@ -327,7 +329,7 @@ a, a:hover, a:focus {
   margin-left: -180px; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -346,6 +348,15 @@ header {
   background: #222;
   min-height: 60px;
   padding: 0 15px; }
+  header .navbar-brand {
+    font-size: 20px;
+    color: #fff;
+    font-family: "Ruda", sans-serif;
+    margin: 5px 0 0 0; }
+    header .navbar-brand:hover, header .navbar-brand:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: none; }
 
 .notification-row {
   float: left;
@@ -393,17 +404,6 @@ ul.nav .logout {
     color: #fff !important;
     background: transparent !important;
     border: 1px solid #7459E1 !important; }
-
-.logo {
-  font-size: 20px;
-  color: #fff;
-  font-family: "Ruda", sans-serif;
-  float: left;
-  margin-top: 15px; }
-  .logo:hover, .logo:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: none; }
 
 .dropdown-menu.extended {
   max-width: 300px !important;
@@ -519,7 +519,7 @@ ul.nav .logout {
   .dropdown-menu.extended {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important; } }
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -613,7 +613,7 @@ ul.nav .logout {
   font-family: "Ruda", sans-serif !important; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -632,17 +632,26 @@ ul.nav .logout {
  */
 .flat-panel {
   border: 0 !important;
-  box-shadow: 0px 3px 2px #ababab; }
+  box-shadow: 1px 3px 5px #ababab; }
   .flat-panel .panel-heading {
     font-family: "Ruda", sans-serif;
     color: #fff;
     padding: 11px 15px;
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+  .flat-panel .panel-footer {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
 
 .content-panel {
   background: #fff;
   color: #444;
-  box-shadow: 0px 3px 2px #ababab;
+  box-shadow: 1px 3px 5px #ababab;
   padding: 8px 16px 16px;
   margin-bottom: 1.5em; }
   .content-panel .panel-footer {
@@ -693,14 +702,12 @@ ul.nav .logout {
     padding: 0 10px;
     line-height: 50px;
     height: 50px;
-    margin: 0;
+    margin: 0 0 0.6em;
     text-align: center;
     text-transform: uppercase; }
   .content-aside i {
     font-size: 12px;
     line-height: 16px; }
-  .content-aside h3 ~ .item {
-    margin-top: 8px; }
   .content-aside .item {
     border-bottom: 1px solid #eaeaea;
     display: inline-block;
@@ -760,7 +767,7 @@ ul.nav .logout {
   background: #F94040 !important; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -871,7 +878,7 @@ ul.nav .logout {
       border: 1px solid #4588E0; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -908,7 +915,7 @@ footer {
     color: #87b2eb; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -1026,7 +1033,7 @@ footer {
   max-width: 600px; }
 
 /**
- * Astor Dashboard - Version 1.4.1
+ * Astor Dashboard - Version 1.4.2
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -1121,7 +1128,10 @@ footer {
     display: none; }
 
   .notification-alert {
-    display: block !important; } }
+    display: block !important; }
+
+  .navbar-brand {
+    padding-left: 0.3em; } }
 @media (max-width: 480px) {
   ul.top-menu > li {
     float: right; } }
