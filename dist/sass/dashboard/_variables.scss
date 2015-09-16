@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.0
+ * Astor Dashboard - Version 1.4.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -134,7 +134,17 @@ $adb-sidebar-sub-link-hover-background: transparent !default;
 $adb-sidebar-sub-link-active-color: lighten(desaturate($adb-theme-color, 5%), 15%) !default;
 $adb-sidebar-sub-link-active-background: transparent !default;
 
+// Toggle color
 $adb-sidebar-toggle-closed-color: $adb-theme-color !default;
+
+// Notification alerts
+$adb-sidebar-notification-background: darken(saturate($adb-sidebar-background, 5%), 10%) !default;
+$adb-sidebar-notification-color: #fff !default;
+$adb-sidebar-notification-margin: 1em !default;
+$adb-sidebar-notification-padding: 3px 16px !default;
+$adb-sidebar-notification-border-radius: 12px !default;
+$adb-sidebar-notification-unread-background: darken(desaturate($adb-theme-color, 20%), 30%) !default;
+$adb-sidebar-notification-unread-color: lighten($adb-theme-color, 25%) !default;
 
 /**
  * General UI

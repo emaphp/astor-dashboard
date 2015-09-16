@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.0
+ * Astor Dashboard - Version 1.4.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -131,6 +131,35 @@
 
     li.sub-menu{
         line-height: 15px;
+    }
+
+    li.notification-alert {
+        display: none;
+        background: $adb-sidebar-notification-background;
+        margin-bottom: $adb-sidebar-notification-margin;
+        @include radius($adb-sidebar-notification-border-radius);
+
+        a {
+            color: $adb-sidebar-notification-color;
+            padding: $adb-sidebar-notification-padding !important;
+
+            &:hover {
+                background: none;
+            }
+
+            span.pull-right {
+                font-weight: 700;
+                color: #eee;
+            }
+        }
+
+        &.notification-unread {
+            background: $adb-sidebar-notification-unread-background;
+
+            span.pull-right {
+                color: $adb-sidebar-notification-unread-color;
+            }
+        }
     }
 }
 
