@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.0
+ * Astor Dashboard - Version 1.4.1
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -41,11 +41,11 @@ $(function() {
     };
 
     // Toggle navigation icon
-    var sidevarIsVisible = $(window).width() <= 768 ? false : !!$('#sidebar > ul').is(':visible');
+    var sidevarIsVisible = !!$('#sidebar > ul').is(':visible');
 
     // Obtain initial status from data attribute
     var status = $('#sidebar').data('status');
-    if (status === 'hidden' && sidevarIsVisible) {
+    if ((status === 'hidden' && sidevarIsVisible) || $(window).width() <= 768) {
         hideSidebar();
         sidevarIsVisible = false;
     }
