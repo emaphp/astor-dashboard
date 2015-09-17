@@ -114,11 +114,11 @@
         background: $adb-content-aside-header-background;
         color: $adb-content-aside-header-color;
         font-family: $adb-content-aside-header-font;
-        font-size: 16px;
-        padding: 0 10px;
-        line-height: 50px;
-        height: 50px;
-        margin: 0 0 0.6em;
+        font-size: $adb-content-aside-header-font-size;
+        padding: $adb-content-aside-header-padding;
+        line-height: $adb-content-aside-header-height;
+        height: $adb-content-aside-header-height;
+        margin: $adb-content-aside-header-margin;
         text-align: center;
         text-transform: uppercase;
     }
