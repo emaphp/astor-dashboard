@@ -1,6 +1,6 @@
 {
   "name": "astor-dashboard",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "A responsive dashboard made with Sass",
   "main": [
     "dist/css/dashmin.css",

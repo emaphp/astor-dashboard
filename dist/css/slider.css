@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.3
+ * Astor Dashboard - Version 1.4.4
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -8,7 +8,7 @@
  * Author: @emaphp
  */
 /**
- * Astor Dashboard - Version 1.4.2
+ * Astor Dashboard - Version 1.4.4
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -107,6 +107,10 @@
         height: 1px;
         border-left-color: #4588E0;
         margin-left: 0; }
+    .slider.slider-vertical .slider-tick-label-container {
+      white-space: nowrap; }
+      .slider.slider-vertical .slider-tick-label-container .slider-tick-label {
+        padding-left: 4px; }
   .slider.slider-disabled .slider-handle {
     background-image: -moz-linear-gradient(top, #bfbfbf, #b2b2b2);
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bfbfbf), to(#b2b2b2));

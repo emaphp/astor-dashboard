@@ -1,6 +1,6 @@
 {
   "name": "astor-dashboard",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "homepage": "https://github.com/emaphp/astor-dashboard",
   "authors": [
     "Emmanuel Antico <emmanuel.antico@gmail.com>"
@@ -29,14 +29,14 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "jquery.scrollTo": "~2.1.2",
-    "datatables": "~1.10.9",
+    "datatables": "~1.10.10",
     "jquery.bandoneon": "~1.0.0",
     "select2": "~4.0.0",
     "astor-datatables": "~1.1.0",
-    "font-awesome": "~4.4.0",
+    "font-awesome": "~4.5.0",
     "bootstrap-checkbox": "~1.2.14",
     "eonasdan-bootstrap-datetimepicker": "~4.17.37",
-    "seiyria-bootstrap-slider": "~5.2.1",
+    "seiyria-bootstrap-slider": "~5.2.6",
     "typeahead.js": "~0.11.1",
     "bootstrap3-typeahead": "~3.1.1"
   }

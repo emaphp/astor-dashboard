@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.3
+ * Astor Dashboard - Version 1.4.4
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
@@ -128,6 +128,14 @@ $slider-tick-background: #f9f9f9 !default;
                 border-left-color: $adb-theme-color-alt;
                 margin-left: 0;
             }
+        }
+        
+        .slider-tick-label-container {
+			white-space: nowrap;
+			
+			.slider-tick-label {
+				padding-left: 4px;
+			}
         }
     }
 
