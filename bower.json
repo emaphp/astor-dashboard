@@ -1,6 +1,6 @@
 {
   "name": "astor-dashboard",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "homepage": "https://github.com/emaphp/astor-dashboard",
   "authors": [
     "Emmanuel Antico <emmanuel.antico@gmail.com>"
@@ -36,7 +36,7 @@
     "font-awesome": "~4.5.0",
     "bootstrap-checkbox": "~1.2.14",
     "eonasdan-bootstrap-datetimepicker": "~4.17.37",
-    "seiyria-bootstrap-slider": "~5.2.6",
+    "seiyria-bootstrap-slider": "~6.0.6",
     "typeahead.js": "~0.11.1",
     "bootstrap3-typeahead": "~3.1.1"
   }
