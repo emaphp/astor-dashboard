@@ -1,6 +1,6 @@
 {
   "name": "astor-dashboard",
-  "version": "1.4.5",
+  "version": "1.5.0",
   "description": "A responsive dashboard made with Sass",
   "main": [
     "dist/css/dashmin.css",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/emaphp/astor-dashboard#readme",
   "devDependencies": {
-    "bootstrap-sass": "^3.3.5",
+    "bootstrap-sass": "^3.3.6",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-ruby-sass": "^2.0.6",

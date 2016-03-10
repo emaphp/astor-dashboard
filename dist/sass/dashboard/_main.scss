@@ -1,5 +1,5 @@
 /**
- * Astor Dashboard - Version 1.4.5
+ * Astor Dashboard - Version 1.5.0
  * A responsive dashboard made with Sass
  * Copyright Emmanuel Antico 2015
  * Released under the MIT License
