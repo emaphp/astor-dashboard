@@ -29,9 +29,7 @@ gulp.task('dashboard', ['dashboard:build'], function () {
 
 // Datatables task
 gulp.task('datatables:build', function () {
-    return sass('dist/sass/datatables-build.scss', {
-        loadPath: './bower_components/astor-datatables/dist/sass'
-    })
+    return sass('dist/sass/datatables-build.scss')
       .on('error', function (err) {console.error('Error!', err.message);})
       .pipe(concat('datatables.css'))
       .pipe(gulp.dest('dist/css'));
