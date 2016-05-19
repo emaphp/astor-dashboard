@@ -1,7 +1,7 @@
 /**
- * Astor Dashboard - Version 1.5.0
+ * Astor Dashboard - Version 1.6.0
  * A responsive dashboard made with Sass
- * Copyright Emmanuel Antico 2015
+ * Copyright Emmanuel Antico 2015 - 2016
  * Released under the MIT License
  *
  * File: slider-build.scss
@@ -9,20 +9,30 @@
  */
 
 // Mixins
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
+@mixin _border-radius($radius) {
+    -webkit-border-radius: $radius; 
+    -moz-border-radius:    $radius;
+    border-radius:         $radius;
 }
-
- @mixin background-image ($colorstart, $colorend) {
-     background-image: -moz-linear-gradient(top, $colorstart, $colorend);
-     background-image: -webkit-gradient(linear, 0 0, 0 100%, from($colorstart), to($colorend));
-     background-image: -webkit-linear-gradient(top, $colorstart, $colorend);
-     background-image: -o-linear-gradient(top, $colorstart, $colorend);
-     background-image: linear-gradient(to bottom, $colorstart, $colorend);
-     background-repeat: repeat-x;
+@mixin _box-shadow($value...) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow:    $value;
+    box-shadow:         $value;
+}
+@mixin _box-sizing($value) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing:    $value;
+    box-sizing:         $value;
+}
+@mixin _background-image($colorstart, $colorend, $backcolor) {
+    background-color: $backcolor;
+    background-image: -moz-linear-gradient(top, $colorstart, $colorend);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($colorstart), to($colorend));
+    background-image: -webkit-linear-gradient(top, $colorstart, $colorend);
+    background-image: -o-linear-gradient(top, $colorstart, $colorend);
+    background-image: linear-gradient(to bottom, $colorstart, $colorend);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$colorstart}', endColorstr='#{$colorend}', GradiendType=0);
 }
 
 // Import Bootstrap variables/mixins
@@ -32,6 +42,7 @@
 // Import dashboard variables
 @import "dashboard/variables";
 
+// Default values
 $slider-size: 210px !default;
 $slider-line-height: 20px !default;
 $slider-border-radius: 4px !default;
@@ -43,6 +54,7 @@ $slider-handle-disabled-color: #bfbfbf !default;
 $slider-track-disabled-color: #c3c3c3 !default;
 $slider-tick-background: #f9f9f9 !default;
 
+// Rules
 .slider {
     display: inline-block;
     vertical-align: middle;
@@ -56,23 +68,26 @@ $slider-tick-background: #f9f9f9 !default;
             height: $slider-line-height / 2;
             width: 100%;
             margin-top: -$slider-line-height / 4;
-            top:  50%;
+            top: 50%;
             left: 0;
             border: $slider-border;
         }
 
-        .slider-selection, .slider-track-low, .slider-track-high {
+        .slider-selection,
+        .slider-track-low,
+        .slider-track-high {
             height: 100%;
             top: 0;
             bottom: 0;
         }
 
-        .slider-tick, .slider-handle {
+        .slider-tick,
+        .slider-handle {
             margin-left: -$slider-line-height / 2;
             margin-top: -$slider-line-height / 4;
 
             &.triangle {
-                border-width: 0 $slider-line-height / 2 $slider-line-height / 2 $slider-line-height / 2;
+                border-width: 0 $slider-line-height/2 $slider-line-height/2 $slider-line-height/2;
                 width: 0;
                 height: 0;
                 border-bottom-color: $adb-theme-color-alt;
@@ -111,46 +126,48 @@ $slider-tick-background: #f9f9f9 !default;
             bottom: 0;
         }
 
-        .slider-track-low, .slider-track-high {
+        .slider-track-low,
+        .slider-track-high {
             width: 100%;
             left: 0;
             right: 0;
         }
 
-        .slider-tick, .slider-handle {
+        .slider-tick,
+        .slider-handle {
             margin-left: -$slider-line-height / 4;
             margin-top: -$slider-line-height / 2;
 
             &.triangle {
-                border-width: $slider-line-height / 2 0 $slider-line-height / 2 $slider-line-height / 2;
+                border-width: $slider-line-height/2 0 $slider-line-height/2 $slider-line-height/2;
                 width: 1px;
                 height: 1px;
                 border-left-color: $adb-theme-color-alt;
                 margin-left: 0;
             }
-        }
-        
-        .slider-tick-label-container {
-			white-space: nowrap;
-			
-			.slider-tick-label {
-				padding-left: 4px;
-			}
+
+            .slider-tick-label-container {
+                white-space: nowrap;
+
+                .slider-tick-label {
+                    padding-left: $slider-line-height * .2;
+                }
+            }
         }
     }
 
     &.slider-disabled {
         .slider-handle {
-            @include background-image($slider-handle-disabled-color, darken($slider-handle-disabled-color, 5%));
+            @include _background-image($slider-handle-disabled-color, darken($slider-handle-disabled-color, 5%), $slider-handle-disabled-color);
         }
 
         .slider-track {
-            @include background-image($slider-track-disabled-color, lighten($slider-track-disabled-color, 5%));
+            @include _background-image($slider-track-disabled-color, lighten($slider-track-disabled-color, 5%), $slider-track-disabled-color);
             cursor: not-allowed;
         }
 
         .slider-selection {
-            @include background-image($slider-track-disabled-color, lighten($slider-track-disabled-color, 5%));
+            @include _background-image($slider-track-disabled-color, lighten($slider-track-disabled-color, 5%), $slider-track-disabled-color);
             cursor: not-allowed;
         }
     }
@@ -161,7 +178,7 @@ $slider-tick-background: #f9f9f9 !default;
 
     .tooltip-inner {
         white-space: nowrap;
-        max-width: none
+        max-width: none;
     }
 
     .tooltip {
@@ -176,45 +193,58 @@ $slider-tick-background: #f9f9f9 !default;
 }
 
 .slider-track {
-	position: absolute;
-	cursor: pointer;
-	@include background-image($slider-track-background, lighten($slider-track-background, 5%));
-	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-	@include border-radius($slider-border-radius);
+    position: absolute;
+    cursor: pointer;
+    @include _background-image($slider-track-background, lighten($slider-track-background, 5%), $slider-track-background);
+    @include _box-shadow(inset 0 1px 2px rgba(0, 0, 0, .1));
+    @include _border-radius($slider-border-radius);
 }
 
 .slider-selection {
-	position: absolute;
-	@include background-image($slider-selection-background, darken($slider-selection-background, 5%));
-    @include box-sizing(border-box);
-    @include border-radius($slider-border-radius);
+    position: absolute;
+    @include _background-image($slider-selection-background, darken($slider-selection-background, 5%), $slider-selection-background);
+    @include _box-shadow(inset 0 -1px 0 rgba(0, 0, 0, .1)); // just a bit
+    @include _box-sizing(border-box);
+    @include _border-radius($slider-border-radius);
 }
 
 .slider-selection.tick-slider-selection {
-    @include background-image($slider-selection-background, darken($slider-selection-background, 5%));
+    @include _background-image($slider-selection-background, darken($slider-selection-background, 5%), $slider-selection-background);
 }
 
-.slider-track-low, .slider-track-high {
+.slider-track-low,
+.slider-track-high {
     position: absolute;
     background: transparent;
-    @include box-sizing(border-box);
-    border-radius: border-radius($slider-border-radius);
+    @include _box-sizing(border-box);
+    @include _border-radius($slider-border-radius);
 }
 
 .slider-handle {
-	position: absolute;
-	width: $slider-line-height;
-	height: $slider-line-height;
-    @include background-image($slider-handle-color, darken($slider-handle-color, 5%));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    width: $slider-line-height;
+    height: $slider-line-height;
+    @include _background-image($slider-handle-color, darken($slider-handle-color, 5%), $slider-handle-color);
+    @include _box-shadow(inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05));
     border: 0px solid transparent;
 
     &.round {
-        @include border-radius($slider-line-height);
+        @include _border-radius($slider-line-height);
     }
 
     &.triangle {
         background: transparent none;
+    }
+
+    &.custom {
+        background: transparent none;
+
+        &::before {
+            line-height: $slider-line-height;
+            font-size: 20px;
+            content: '\25C6';
+            color: $adb-theme-color;
+        }
     }
 }
 
@@ -222,12 +252,12 @@ $slider-tick-background: #f9f9f9 !default;
     position: absolute;
     width: $slider-line-height;
     height: $slider-line-height;
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
-    @include background-image($slider-tick-background, darken($slider-tick-background, 5%));
-    @include box-sizing(border-box);
+    @include _background-image($slider-tick-background, darken($slider-tick-background, 5%), $slider-tick-background);
+    @include _box-shadow(inset 0 -1px 0 rgba(0, 0, 0, .15));
+    @include _box-sizing(border-box);
     filter: none;
-    opacity: 0.8;
-    border: $slider-border;
+    opacity: .8;
+    border: 0px solid transparent;
 
     &.round {
         border-radius: 50%;
@@ -237,8 +267,19 @@ $slider-tick-background: #f9f9f9 !default;
         background: transparent none;
     }
 
+    &.custom {
+        background: transparent none;
+
+        &::before {
+            line-height: $slider-line-height;
+            font-size: 20px;
+            content: '\25C6';
+            color: $adb-theme-color;
+        }
+    }
+
     &.in-selection {
-        @include background-image($slider-selection-background, darken($slider-selection-background, 5%));
+        @include _background-image($slider-selection-background, darken($slider-selection-background, 5%), $slider-selection-background);
         opacity: 1;
         border: 0px solid transparent;
     }
