@@ -1,7 +1,7 @@
 /**
- * Astor Dashboard - Version 1.5.0
+ * Astor Dashboard - Version 1.6.0
  * A responsive dashboard made with Sass
- * Copyright Emmanuel Antico 2015
+ * Copyright Emmanuel Antico 2015 - 2016
  * Released under the MIT License
  *
  * File: gulpfile.js
